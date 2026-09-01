@@ -44,6 +44,15 @@ function toMs(v) {
   return Number.isNaN(t) ? null : t;
 }
 
+// HTTP header 只能放 ASCII。含非 ASCII 的字串照 RFC 2047 編成 =?UTF-8?B?...?=，
+// 純 ASCII 就原樣送出（編了反而多一層雜訊）。
+function encodeHeader(s) {
+  const str = String(s == null ? "" : s);
+  // eslint-disable-next-line no-control-regex
+  if (!/[^\x00-\x7F]/.test(str)) return str;
+  return "=?UTF-8?B?" + Buffer.from(str, "utf8").toString("base64") + "?=";
+}
+
 // 把上次的 firstSeen 帶過來，沒見過的記今天。回傳 { items, fresh }。
 //
 // 第一次執行（沒有舊檔）是初次建檔，不是有新戲：firstSeen 記成 null，代表
@@ -203,7 +212,9 @@ async function notify(fresh) {
   const res = await fetch("https://ntfy.sh/" + topic, {
     method: "POST",
     headers: {
-      Title: `新上架 ${fresh.length} 檔`,
+      // 標題是 HTTP header，只能放 ASCII，中文要照 RFC 2047 編碼，
+      // 直接塞中文進去 ntfy 會顯示亂碼。訊息內文則是 UTF-8，不用處理。
+      Title: encodeHeader(`新上架 ${fresh.length} 檔`),
       Tags: "performing_arts",
       Click: process.env.BOARD_URL || "https://ntfy.sh"
     },
@@ -262,7 +273,7 @@ async function main() {
   await notify(fresh.filter(f => live.includes(f)));
 }
 
-module.exports = { isMusical, parseSaleTime, statusOf, mergeFirstSeen, toMs };
+module.exports = { isMusical, parseSaleTime, statusOf, mergeFirstSeen, toMs, encodeHeader };
 
 if (require.main === module) {
   main().catch(e => {

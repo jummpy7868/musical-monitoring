@@ -3,7 +3,7 @@
 "use strict";
 
 const assert = require("assert");
-const { isMusical, parseSaleTime, statusOf, mergeFirstSeen } = require("./fetch.js");
+const { isMusical, parseSaleTime, statusOf, mergeFirstSeen, encodeHeader } = require("./fetch.js");
 
 const DAY = 864e5;
 const NOW = Date.UTC(2026, 8, 1); // 2026-09-01
@@ -52,5 +52,14 @@ assert.deepEqual(r.fresh.map(x => x.id), ["c"], "只有沒見過的算新上架"
 const first = mergeFirstSeen([{ id: "x" }, { id: "y" }], [], "2026-09-01");
 assert.equal(first.fresh.length, 0, "初次建檔不該推播");
 assert.equal(first.items[0].firstSeen, null, "初次建檔的 firstSeen 是未知");
+
+// --- 推播標題編碼：HTTP header 只能放 ASCII，中文直接塞會變亂碼 ---
+assert.equal(encodeHeader("新上架 3 檔"), "=?UTF-8?B?" + Buffer.from("新上架 3 檔","utf8").toString("base64") + "?=");
+assert.ok(
+  [...encodeHeader("新上架 3 檔")].every(c => c.charCodeAt(0) < 128),
+  "編碼後必須全是 ASCII，否則 header 送不出去，ntfy 會顯示亂碼"
+);
+assert.equal(encodeHeader("New shows: 3"), "New shows: 3", "純 ASCII 不用編碼");
+assert.equal(encodeHeader(""), "");
 
 console.log("全部通過");
