@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>劇場開賣看板</title>
+<meta name="description" content="台灣音樂劇與舞台劇的開賣看板，資料來自 OPENTIX、寬宏、udn售票網。">
+<link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="開賣看板">
+<meta name="theme-color" content="#F7F5F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#17131A" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500&family=Archivo:wght@500;600&display=swap">
+<style>
+:root{
+  --bg:#F7F5F7; --surface:#FFFFFF; --ink:#221A24; --ink2:#5C5060; --ink3:#8B7F8F;
+  --rule:#E3DDE5; --rule2:#F0ECF1; --curtain:#8E2C4E; --gold:#8A6014; --slate:#265361;
+  --goldbg:#F6EEDC; --slatebg:#E2EFF2; --curtainbg:#F7E6EC;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --bg:#17131A; --surface:#201B23; --ink:#F0EAF1; --ink2:#B3A6B7; --ink3:#827587;
+  --rule:#322A36; --rule2:#282130; --curtain:#E58AA4; --gold:#D8AC55; --slate:#78B8C8;
+  --goldbg:#2E2515; --slatebg:#163037; --curtainbg:#381F28;
+}}
+:root[data-theme="dark"]{
+  --bg:#17131A; --surface:#201B23; --ink:#F0EAF1; --ink2:#B3A6B7; --ink3:#827587;
+  --rule:#322A36; --rule2:#282130; --curtain:#E58AA4; --gold:#D8AC55; --slate:#78B8C8;
+  --goldbg:#2E2515; --slatebg:#163037; --curtainbg:#381F28;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  font-size:15px; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:640px; margin:0 auto; padding:0 20px calc(72px + env(safe-area-inset-bottom))}
+
+header{padding:34px 0 20px}
+.eyebrow{
+  font-family:Archivo,sans-serif; font-weight:600; font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--curtain); margin:0 0 10px;
+}
+h1{
+  font-family:"Noto Serif TC",serif; font-weight:700; font-size:30px; line-height:1.25;
+  margin:0 0 12px; letter-spacing:.01em; text-wrap:balance;
+}
+.sub{color:var(--ink2); font-size:13.5px; margin:0}
+.sub b{font-family:Archivo,sans-serif; font-variant-numeric:tabular-nums; color:var(--ink); font-weight:600}
+
+.bar{
+  position:sticky; top:0; z-index:5; background:var(--bg);
+  padding:12px 0 10px; margin-bottom:4px; border-bottom:1px solid var(--rule);
+  display:flex; gap:6px; flex-wrap:wrap;
+}
+.chip{
+  font:500 13px/1 "Noto Sans TC",sans-serif; color:var(--ink2);
+  background:none; border:1px solid var(--rule); border-radius:999px;
+  padding:8px 13px; cursor:pointer; transition:.15s;
+}
+.chip:hover{border-color:var(--ink3); color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink); border-color:var(--ink); color:var(--bg)}
+.chip:focus-visible{outline:2px solid var(--curtain); outline-offset:2px}
+.count{font-family:Archivo,sans-serif; font-variant-numeric:tabular-nums; opacity:.6; margin-left:5px}
+
+section{margin-top:34px}
+.sechead{display:flex; align-items:baseline; gap:10px; margin-bottom:4px}
+h2{font-family:"Noto Serif TC",serif; font-weight:700; font-size:17px; margin:0; letter-spacing:.02em}
+.sechead .n{
+  font-family:Archivo,sans-serif; font-weight:600; font-size:12px;
+  font-variant-numeric:tabular-nums; color:var(--ink3);
+}
+.secnote{font-size:12.5px; color:var(--ink3); margin:2px 0 14px; line-height:1.55}
+
+.row{
+  display:grid; grid-template-columns:52px 1fr; gap:14px;
+  padding:16px 0; border-bottom:1px solid var(--rule2); align-items:start;
+}
+.row:last-child{border-bottom:none}
+.date{
+  font-family:Archivo,sans-serif; font-variant-numeric:tabular-nums; text-align:center;
+  padding-top:2px; line-height:1.15;
+}
+.date .m{display:block; font-size:10.5px; font-weight:600; letter-spacing:.1em; color:var(--ink3)}
+.date .d{display:block; font-size:22px; font-weight:600; color:var(--ink)}
+.date .y{display:block; font-size:10px; color:var(--ink3); margin-top:1px}
+.date.cd .d{color:var(--curtain)}
+.title{
+  font-family:"Noto Serif TC",serif; font-weight:500; font-size:16px; line-height:1.45;
+  margin:0 0 6px; color:var(--ink); text-decoration:none; display:block;
+}
+a.title:hover{color:var(--curtain); text-decoration:underline; text-underline-offset:3px}
+a.title:focus-visible{outline:2px solid var(--curtain); outline-offset:3px; border-radius:2px}
+.meta{display:flex; flex-wrap:wrap; gap:5px 9px; align-items:center; font-size:12.5px; color:var(--ink2)}
+.tag{
+  font:600 10.5px/1 Archivo,sans-serif; letter-spacing:.08em; text-transform:uppercase;
+  padding:4px 7px; border-radius:3px; white-space:nowrap;
+}
+.t-musical{background:var(--goldbg); color:var(--gold)}
+.t-play{background:var(--slatebg); color:var(--slate)}
+.t-new{background:var(--curtainbg); color:var(--curtain)}
+.src{font-size:11.5px; color:var(--ink3)}
+.price{font-family:Archivo,sans-serif; font-variant-numeric:tabular-nums}
+.dot{color:var(--rule); user-select:none}
+
+.note{
+  border:1px dashed var(--rule); border-radius:6px; padding:20px; margin-top:10px;
+  background:var(--surface); font-size:13.5px; color:var(--ink2); line-height:1.65;
+}
+.note strong{color:var(--ink); font-weight:500}
+
+footer{margin-top:44px; padding-top:18px; border-top:1px solid var(--rule); font-size:12px; color:var(--ink3); line-height:1.7}
+footer p{margin:0 0 7px}
+footer code{font-family:Archivo,ui-monospace,monospace; font-size:11.5px; color:var(--ink2)}
+@media (max-width:420px){
+  h1{font-size:25px} .wrap{padding-left:16px; padding-right:16px} .row{grid-template-columns:46px 1fr; gap:11px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="eyebrow">Taiwan Stage &middot; Ticket Board</p>
+  <h1>劇場開賣看板</h1>
+  <p class="sub" id="sub">載入中…</p>
+</header>
+
+<div class="bar" role="group" aria-label="類型篩選">
+  <button class="chip" data-f="all" aria-pressed="true">全部<span class="count" id="c-all"></span></button>
+  <button class="chip" data-f="音樂劇" aria-pressed="false">音樂劇<span class="count" id="c-m"></span></button>
+  <button class="chip" data-f="舞台劇" aria-pressed="false">舞台劇<span class="count" id="c-p"></span></button>
+</div>
+
+<div id="app"></div>
+
+<footer>
+  <p>資料每天早上 9 點與晚上 9 點更新。「開賣中」代表節目正在售票，不保證還有票。</p>
+  <p><code>OPENTIX</code> 戲劇-音樂劇 / 戲劇-現代戲劇 &middot; <code>寬宏</code> CATEGORY 80 / 116 / 139 &middot; <code>udn</code> Category 116</p>
+</footer>
+</div>
+
+<script>
+const M = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+const DAY = 864e5, WEEK = 7 * DAY;
+const now = Date.now();
+let DATA = null, filter = "all";
+
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
+const toMs = v => {
+  if (v == null) return null;
+  if (typeof v === "number") return v;
+  const t = Date.parse(String(v).replace(/\//g, "-"));
+  return isNaN(t) ? null : t;
+};
+
+function dateBlock(p, countdown) {
+  if (countdown && p.saleStart) {
+    const days = Math.ceil((p.saleStart - now) / DAY);
+    return '<div class="date cd"><span class="m">開賣</span><span class="d">' +
+      (days <= 0 ? "今天" : days) + '</span><span class="y">' + (days <= 0 ? "" : "天後") + '</span></div>';
+  }
+  const t = toMs(p.showStart), d = t ? new Date(t) : null;
+  return '<div class="date">' + (d
+    ? '<span class="m">' + M[d.getMonth()] + '</span><span class="d">' + d.getDate() + '</span><span class="y">' + d.getFullYear() + '</span>'
+    : '<span class="m">日期</span><span class="y">未定</span>') + '</div>';
+}
+
+function row(p, countdown) {
+  const isNew = p.firstSeen && (now - Date.parse(p.firstSeen)) < WEEK;
+  const meta = ['<span class="tag ' + (p.kind === "音樂劇" ? "t-musical" : "t-play") + '">' +
+    (p.kind === "音樂劇" ? "MUSICAL" : "PLAY") + "</span>"];
+  if (isNew && !countdown) meta.push('<span class="tag t-new">新上架</span>');
+  if (p.venue) meta.push("<span>" + esc(p.venue) + "</span>");
+  if (p.priceMin != null) meta.push('<span class="dot">&middot;</span><span class="price">NT$' +
+    p.priceMin.toLocaleString() + (p.priceMax && p.priceMax !== p.priceMin ? "–" + p.priceMax.toLocaleString() : "") + "</span>");
+  meta.push('<span class="dot">&middot;</span><span class="src">' + esc(p.source) + "</span>");
+  return '<div class="row">' + dateBlock(p, countdown) + '<div>' +
+    '<a class="title" href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.title) + "</a>" +
+    '<div class="meta">' + meta.join("") + "</div></div></div>";
+}
+
+function section(title, items, note, empty, countdown) {
+  return "<section><div class=\"sechead\"><h2>" + title + '</h2><span class="n">' + items.length + "</span></div>" +
+    (note ? '<p class="secnote">' + note + "</p>" : "") +
+    (items.length ? items.map(p => row(p, countdown)).join("") : '<div class="note">' + empty + "</div>") +
+    "</section>";
+}
+
+function render() {
+  const items = DATA.items.filter(p => filter === "all" || p.kind === filter);
+  const byShow = (a, b) => (toMs(a.showStart) || 8e15) - (toMs(b.showStart) || 8e15);
+
+  const upcoming = items.filter(p => p.status === "upcoming").sort((a, b) => a.saleStart - b.saleStart);
+  const fresh = items.filter(p => p.status !== "upcoming" && p.firstSeen && (now - Date.parse(p.firstSeen)) < WEEK).sort(byShow);
+  const freshSet = new Set(fresh);
+  const onsale = items.filter(p => p.status !== "upcoming" && !freshSet.has(p)).sort(byShow);
+
+  document.getElementById("app").innerHTML =
+    section("即將開賣", upcoming, "還沒開賣，倒數提醒你。",
+      "<strong>目前沒有已知開賣日期的未售節目。</strong>OPENTIX 的搜尋索引只收已開賣的節目；寬宏和 udn 要在節目頁寫出開賣時間才排得進來。",
+      true) +
+    section("本週新上架", fresh, "推播通知你的就是這一區。",
+      "<strong>這一週沒有新節目上架。</strong>剛建檔的話這裡本來就是空的 —— 建檔當下已存在的節目不算新上架，要等下一檔真正出現的新戲。") +
+    section("開賣中", onsale, "依演出日期排序，最近的在前面。", "目前沒有符合的節目。");
+}
+
+document.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
+  filter = b.dataset.f;
+  document.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  render();
+}));
+
+fetch("data.json?t=" + Math.floor(now / 6e5))
+  .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+  .then(d => {
+    DATA = d;
+    const u = new Date(d.updated), pad = n => String(n).padStart(2, "0");
+    document.getElementById("sub").innerHTML = "共 <b>" + d.items.length + "</b> 檔 &middot; OPENTIX、寬宏、udn售票網 &middot; 更新於 <b>" +
+      u.getFullYear() + "/" + pad(u.getMonth() + 1) + "/" + pad(u.getDate()) + " " + pad(u.getHours()) + ":" + pad(u.getMinutes()) + "</b>";
+    document.getElementById("c-all").textContent = d.items.length;
+    document.getElementById("c-m").textContent = d.items.filter(p => p.kind === "音樂劇").length;
+    document.getElementById("c-p").textContent = d.items.filter(p => p.kind === "舞台劇").length;
+    render();
+  })
+  .catch(e => {
+    document.getElementById("sub").textContent = "資料載入失敗";
+    document.getElementById("app").innerHTML =
+      '<div class="note"><strong>讀不到 data.json（' + esc(e.message) + '）。</strong><br>' +
+      "如果是剛部署，等排程跑過一次就會有資料；本機測試請先執行 <code>node fetch.js</code>，再用 <code>npx serve</code> 之類的靜態伺服器開啟（直接用檔案路徑開會被瀏覽器擋住讀取）。</div>";
+  });
+</script>
+</body>
+</html>
