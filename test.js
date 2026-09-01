@@ -3,7 +3,7 @@
 "use strict";
 
 const assert = require("assert");
-const { isMusical, isTheatre, kindOf, parseSaleTime, statusOf, mergeFirstSeen, encodeHeader } = require("./fetch.js");
+const { isMusical, isTheatre, kindOf, parseSaleTime, statusOf, mergeFirstSeen, dueReminders, encodeHeader } = require("./fetch.js");
 
 const DAY = 864e5;
 const NOW = Date.UTC(2026, 8, 1); // 2026-09-01
@@ -88,5 +88,35 @@ assert.equal(kindOf(["戲劇-音樂劇"], "義興閣掌中劇團《四靈國：�
 assert.equal(kindOf(["戲劇-音樂劇"], "「外交官的故事」部分發表會（含劇團重要報告等）"), "舞台劇");
 assert.equal(kindOf(["音樂-音樂劇場"], "2026趨勢詩劇場《零雨的房間》"), "舞台劇");
 assert.equal(kindOf([], null), "舞台劇");
+
+// --- 演出前提醒：只在剛跨過門檻那次推，不能連續七天每天吵 ---
+const D = n => NOW + n * DAY;
+const shows = [
+  { id: "a", showStart: D(3) },   // 3 天後演出
+  { id: "b", showStart: D(30) },  // 還早
+  { id: "c", showStart: D(-2) },  // 已經演完
+  { id: "d", showStart: null }    // 沒有日期
+];
+// 上次執行是 12 小時前，那時 a 已經在 7 天內了 → 這次不該重複提醒
+assert.deepEqual(
+  dueReminders(shows, ["a", "b", "c", "d"], 7, NOW, NOW - DAY / 2).map(x => x.id),
+  [],
+  "上次執行就已經在區間內的，不該再推一次"
+);
+// 上次執行是 10 天前，a 是這期間才跨進 7 天內的 → 要提醒
+assert.deepEqual(
+  dueReminders(shows, ["a", "b", "c", "d"], 7, NOW, NOW - 10 * DAY).map(x => x.id),
+  ["a"],
+  "剛跨過門檻的才提醒"
+);
+// 沒標記就不提醒，即使快演了
+assert.deepEqual(dueReminders(shows, [], 7, NOW, NOW - 10 * DAY), []);
+assert.deepEqual(dueReminders(shows, null, 7, NOW, NOW - 10 * DAY), []);
+// 第一次執行（沒有上次紀錄）：區間內的都提醒，但不能翻出已演完或沒日期的
+assert.deepEqual(
+  dueReminders(shows, ["a", "b", "c", "d"], 7, NOW, 0).map(x => x.id),
+  ["a"],
+  "已演完和沒有日期的都不該進來"
+);
 
 console.log("全部通過");

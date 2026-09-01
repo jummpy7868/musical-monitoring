@@ -76,9 +76,18 @@ h2{font-family:"Noto Serif TC",serif; font-weight:700; font-size:17px; margin:0;
 .secnote{font-size:12.5px; color:var(--ink3); margin:2px 0 14px; line-height:1.55}
 
 .row{
-  display:grid; grid-template-columns:52px 1fr; gap:14px;
+  display:grid; grid-template-columns:52px 1fr 34px; gap:14px;
   padding:16px 0; border-bottom:1px solid var(--rule2); align-items:start;
 }
+.star{
+  grid-column:3; justify-self:end; margin-top:-2px;
+  background:none; border:none; cursor:pointer; padding:4px; line-height:1;
+  font-size:19px; color:var(--rule); transition:.15s;
+}
+.star:hover{color:var(--ink3); transform:scale(1.12)}
+.star[aria-pressed="true"]{color:var(--curtain)}
+.star:focus-visible{outline:2px solid var(--curtain); outline-offset:2px; border-radius:4px}
+.row.marked .title{font-weight:700}
 .row:last-child{border-bottom:none}
 .date{
   font-family:Archivo,sans-serif; font-variant-numeric:tabular-nums; text-align:center;
@@ -112,6 +121,32 @@ a.title:focus-visible{outline:2px solid var(--curtain); outline-offset:3px; bord
 }
 .note strong{color:var(--ink); font-weight:500}
 
+/* 同步／提醒設定 */
+details.sync{margin-top:38px; border-top:1px solid var(--rule); padding-top:16px}
+details.sync summary{
+  cursor:pointer; font-size:13px; color:var(--ink2); list-style:none;
+  display:flex; align-items:center; gap:6px;
+}
+details.sync summary::-webkit-details-marker{display:none}
+details.sync summary::before{content:"＋"; color:var(--ink3); font-size:12px}
+details.sync[open] summary::before{content:"−"}
+details.sync summary:hover{color:var(--ink)}
+.syncbody{padding:14px 0 4px; font-size:13px; color:var(--ink2); line-height:1.7}
+.syncbody h3{font-size:13px; margin:16px 0 6px; color:var(--ink); font-weight:500}
+.syncbody h3:first-child{margin-top:0}
+.syncbody ol{margin:6px 0; padding-left:20px}
+.syncbody code{
+  font-family:Archivo,ui-monospace,monospace; font-size:12px;
+  background:var(--rule2); padding:1px 5px; border-radius:3px; color:var(--ink);
+}
+.btn{
+  font:500 13px/1 "Noto Sans TC",sans-serif; color:var(--ink);
+  background:var(--surface); border:1px solid var(--rule); border-radius:6px;
+  padding:9px 14px; cursor:pointer; transition:.15s; margin:6px 6px 0 0;
+}
+.btn:hover{border-color:var(--ink3)}
+.btn:focus-visible{outline:2px solid var(--curtain); outline-offset:2px}
+
 footer{margin-top:44px; padding-top:18px; border-top:1px solid var(--rule); font-size:12px; color:var(--ink3); line-height:1.7}
 footer p{margin:0 0 7px}
 footer code{font-family:Archivo,ui-monospace,monospace; font-size:11.5px; color:var(--ink2)}
@@ -133,9 +168,31 @@ footer code{font-family:Archivo,ui-monospace,monospace; font-size:11.5px; color:
   <button class="chip" data-f="all" aria-pressed="true">全部<span class="count" id="c-all"></span></button>
   <button class="chip" data-f="音樂劇" aria-pressed="false">音樂劇<span class="count" id="c-m"></span></button>
   <button class="chip" data-f="舞台劇" aria-pressed="false">舞台劇<span class="count" id="c-p"></span></button>
+  <button class="chip" data-f="marked" aria-pressed="false">★ 已標記<span class="count" id="c-k"></span></button>
 </div>
 
 <div id="app"></div>
+
+<details class="sync">
+  <summary>把標記帶到其他裝置 · 設定演出前提醒</summary>
+  <div class="syncbody">
+    <p>標記存在這個瀏覽器裡，手機和電腦各自獨立。下面兩個按鈕可以把標記帶出去。</p>
+
+    <h3>帶到其他裝置</h3>
+    <p>複製連結後在另一台裝置開啟，標記就會合併過去（不會蓋掉那邊原有的標記）。</p>
+    <button class="btn" id="btn-link">複製同步連結</button>
+
+    <h3>演出前推播提醒</h3>
+    <p>推播是 GitHub Actions 在雲端跑的，看不到你瀏覽器裡的標記，所以要把清單放進 repo 一次：</p>
+    <ol>
+      <li>按下面的按鈕複製清單</li>
+      <li>打開 <code>watchlist.json</code>（<a id="wl-link" href="#" target="_blank" rel="noopener">在 GitHub 編輯</a>），貼上、覆蓋原本內容、Commit</li>
+      <li>之後演出前 7 天會收到推播</li>
+    </ol>
+    <p>標記有變動時再重做一次就好。</p>
+    <button class="btn" id="btn-watchlist">複製提醒清單</button>
+  </div>
+</details>
 
 <footer>
   <p>資料每天早上 9 點與晚上 9 點更新。「開賣中」代表節目正在售票，不保證還有票。</p>
@@ -148,6 +205,40 @@ const M = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DE
 const DAY = 864e5, WEEK = 7 * DAY;
 const now = Date.now();
 let DATA = null, filter = "all";
+
+// ---- 標記 ----
+// 存在 localStorage，只在這個瀏覽器裡。無痕視窗或關閉網站資料時讀寫會直接拋錯，
+// 所以每次存取都包起來，讀不到就當作沒有標記，頁面照常顯示。
+const KEY = "marks";
+function loadMarks() {
+  try {
+    return new Set(JSON.parse(localStorage.getItem(KEY) || "[]"));
+  } catch (e) {
+    return new Set();
+  }
+}
+function saveMarks(set) {
+  try {
+    localStorage.setItem(KEY, JSON.stringify([...set]));
+  } catch (e) {
+    // 存不進去就只在這次瀏覽有效，不擋操作
+  }
+}
+let MARKS = loadMarks();
+
+// 網址帶 #m=... 就把裡面的標記併進來（合併，不覆蓋這台裝置原有的）
+(function importFromHash() {
+  const m = location.hash.match(/[#&]m=([A-Za-z0-9+/=_-]+)/);
+  if (!m) return;
+  try {
+    const ids = atob(m[1].replace(/-/g, "+").replace(/_/g, "/")).split("\n").filter(Boolean);
+    ids.forEach(id => MARKS.add(id));
+    saveMarks(MARKS);
+    history.replaceState(null, "", location.pathname + location.search);
+  } catch (e) {
+    // 連結壞掉就當沒這回事
+  }
+})();
 
 const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
 const toMs = v => {
@@ -178,9 +269,12 @@ function row(p, countdown) {
   if (p.priceMin != null) meta.push('<span class="dot">&middot;</span><span class="price">NT$' +
     p.priceMin.toLocaleString() + (p.priceMax && p.priceMax !== p.priceMin ? "–" + p.priceMax.toLocaleString() : "") + "</span>");
   meta.push('<span class="dot">&middot;</span><span class="src">' + esc(p.source) + "</span>");
-  return '<div class="row">' + dateBlock(p, countdown) + '<div>' +
+  const on = MARKS.has(p.id);
+  return '<div class="row' + (on ? " marked" : "") + '">' + dateBlock(p, countdown) + "<div>" +
     '<a class="title" href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.title) + "</a>" +
-    '<div class="meta">' + meta.join("") + "</div></div></div>";
+    '<div class="meta">' + meta.join("") + "</div></div>" +
+    '<button class="star" data-id="' + esc(p.id) + '" aria-pressed="' + on + '" aria-label="' +
+    (on ? "取消標記 " : "標記 ") + esc(p.title) + '">' + (on ? "★" : "☆") + "</button></div>";
 }
 
 function section(title, items, note, empty, countdown) {
@@ -191,10 +285,17 @@ function section(title, items, note, empty, countdown) {
 }
 
 function render() {
-  const items = DATA.items.filter(p => filter === "all" || p.kind === filter);
-  const byShow = (a, b) => (toMs(a.showStart) || 8e15) - (toMs(b.showStart) || 8e15);
+  const items = DATA.items.filter(p =>
+    filter === "all" ? true : filter === "marked" ? MARKS.has(p.id) : p.kind === filter
+  );
+  // 標記過的排在各區最前面，其餘依演出日期
+  const byShow = (a, b) => {
+    const m = (MARKS.has(b.id) ? 1 : 0) - (MARKS.has(a.id) ? 1 : 0);
+    return m || (toMs(a.showStart) || 8e15) - (toMs(b.showStart) || 8e15);
+  };
 
-  const upcoming = items.filter(p => p.status === "upcoming").sort((a, b) => a.saleStart - b.saleStart);
+  const upcoming = items.filter(p => p.status === "upcoming")
+    .sort((a, b) => (MARKS.has(b.id) ? 1 : 0) - (MARKS.has(a.id) ? 1 : 0) || a.saleStart - b.saleStart);
   const fresh = items.filter(p => p.status !== "upcoming" && p.firstSeen && (now - Date.parse(p.firstSeen)) < WEEK).sort(byShow);
   const freshSet = new Set(fresh);
   const onsale = items.filter(p => p.status !== "upcoming" && !freshSet.has(p)).sort(byShow);
@@ -205,7 +306,9 @@ function render() {
       true) +
     section("本週新上架", fresh, "推播通知你的就是這一區。",
       "<strong>這一週沒有新節目上架。</strong>剛建檔的話這裡本來就是空的 —— 建檔當下已存在的節目不算新上架，要等下一檔真正出現的新戲。") +
-    section("開賣中", onsale, "依演出日期排序，最近的在前面。", "目前沒有符合的節目。");
+    section("開賣中", onsale, "依演出日期排序，標記過的排在最前面。", "目前沒有符合的節目。");
+
+  document.getElementById("c-k").textContent = DATA.items.filter(p => MARKS.has(p.id)).length;
 }
 
 document.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
@@ -213,6 +316,27 @@ document.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () =
   document.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
   render();
 }));
+
+// 星號用事件委派：清單每次 render 都會重畫，逐一綁定會漏掉新的節點
+document.getElementById("app").addEventListener("click", e => {
+  const b = e.target.closest(".star");
+  if (!b) return;
+  const id = b.dataset.id;
+  const on = !MARKS.has(id);
+  if (on) MARKS.add(id); else MARKS.delete(id);
+  saveMarks(MARKS);
+
+  // 只更新這一列。整頁重畫會讓 157 列全部重建，手機上會頓一下，
+  // 而且捲動位置和剛點的那一列位置都會跳掉。
+  b.setAttribute("aria-pressed", String(on));
+  b.setAttribute("aria-label", (on ? "取消標記 " : "標記 ") + b.getAttribute("aria-label").replace(/^(取消標記|標記) /, ""));
+  b.textContent = on ? "★" : "☆";
+  b.closest(".row").classList.toggle("marked", on);
+  document.getElementById("c-k").textContent = DATA.items.filter(p => MARKS.has(p.id)).length;
+
+  // 在「已標記」檢視下取消標記，那一列就該消失了，這時才需要重畫
+  if (filter === "marked" && !on) render();
+});
 
 fetch("data.json?t=" + Math.floor(now / 6e5))
   .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
@@ -232,6 +356,47 @@ fetch("data.json?t=" + Math.floor(now / 6e5))
       '<div class="note"><strong>讀不到 data.json（' + esc(e.message) + '）。</strong><br>' +
       "如果是剛部署，等排程跑過一次就會有資料；本機測試請先執行 <code>node fetch.js</code>，再用 <code>npx serve</code> 之類的靜態伺服器開啟（直接用檔案路徑開會被瀏覽器擋住讀取）。</div>";
   });
+
+// ---- 同步／提醒的兩個複製按鈕 ----
+async function copyText(text, btn, done) {
+  const label = btn.textContent;
+  try {
+    await navigator.clipboard.writeText(text);
+    btn.textContent = done;
+  } catch (e) {
+    // 部分瀏覽器不給剪貼簿權限，退而求其次把內容選起來讓使用者自己複製
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.cssText = "position:fixed;top:50%;left:5%;width:90%;height:120px;z-index:99";
+    document.body.appendChild(ta);
+    ta.select();
+    btn.textContent = "請手動複製";
+    setTimeout(() => ta.remove(), 8000);
+  }
+  setTimeout(() => (btn.textContent = label), 2500);
+}
+
+document.getElementById("btn-link").addEventListener("click", e => {
+  const b64 = btoa([...MARKS].join("\n")).replace(/\+/g, "-").replace(/\//g, "_");
+  copyText(location.origin + location.pathname + "#m=" + b64, e.currentTarget, "已複製 ✓");
+});
+
+document.getElementById("btn-watchlist").addEventListener("click", e => {
+  copyText(JSON.stringify([...MARKS], null, 1), e.currentTarget, "已複製 ✓");
+});
+
+// 「在 GitHub 編輯」的連結，從目前網址推出 repo 位置（帳號.github.io/repo/）。
+// 本機測試等非 GitHub Pages 環境推導不出來，這時換成純文字，不要留一個壞連結。
+(function () {
+  const a = document.getElementById("wl-link");
+  const m = location.hostname.match(/^([\w-]+)\.github\.io$/);
+  const repo = location.pathname.split("/").filter(Boolean)[0];
+  if (m && repo) {
+    a.href = "https://github.com/" + m[1] + "/" + repo + "/edit/main/watchlist.json";
+  } else {
+    a.replaceWith(document.createTextNode("在 repo 裡編輯"));
+  }
+})();
 
 // 註冊 service worker：讓這頁可以被安裝成 App，離線時也打得開。
 // 用 file:// 直接開檔案時瀏覽器不允許註冊，所以包在 try 裡不讓它中斷頁面。

@@ -74,6 +74,21 @@ function encodeHeader(s) {
   return "=?UTF-8?B?" + Buffer.from(str, "utf8").toString("base64") + "?=";
 }
 
+// 從標記清單裡挑出「還有幾天就演出」的節目。
+// 只在剛好跨過門檻的那一天提醒（前一次執行時還沒進入區間），否則會連續七天每天吵。
+function dueReminders(items, watchlist, daysAhead = 7, now = Date.now(), lastRun = 0) {
+  const marked = new Set(watchlist || []);
+  const window = daysAhead * 864e5;
+  return items.filter(it => {
+    if (!marked.has(it.id)) return false;
+    const t = toMs(it.showStart);
+    if (!t || t < now) return false;
+    const enteredNow = t - now <= window;
+    const enteredBefore = lastRun > 0 && t - lastRun <= window;
+    return enteredNow && !enteredBefore;
+  });
+}
+
 // 把上次的 firstSeen 帶過來，沒見過的記今天。回傳 { items, fresh }。
 //
 // 第一次執行（沒有舊檔）是初次建檔，不是有新戲：firstSeen 記成 null，代表
@@ -224,24 +239,36 @@ async function fillSaleTime(items, known) {
 
 // ---------- 推播 ----------
 
-async function notify(fresh) {
+async function push(title, body, tag) {
   const topic = process.env.NTFY_TOPIC;
   if (!topic) return console.error("（未設 NTFY_TOPIC，略過推播）");
-  if (!fresh.length) return;
-  const lines = fresh.slice(0, 10).map(p => `${p.kind === "音樂劇" ? "🎵" : "🎭"} ${p.title}`);
-  if (fresh.length > 10) lines.push(`⋯ 另外還有 ${fresh.length - 10} 檔`);
   const res = await fetch("https://ntfy.sh/" + topic, {
     method: "POST",
     headers: {
       // 標題是 HTTP header，只能放 ASCII，中文要照 RFC 2047 編碼，
       // 直接塞中文進去 ntfy 會顯示亂碼。訊息內文則是 UTF-8，不用處理。
-      Title: encodeHeader(`新上架 ${fresh.length} 檔`),
-      Tags: "performing_arts",
+      Title: encodeHeader(title),
+      Tags: tag,
       Click: process.env.BOARD_URL || "https://ntfy.sh"
     },
-    body: lines.join("\n")
+    body
   });
-  console.error(res.ok ? `已推播 ${fresh.length} 檔` : "推播失敗 HTTP " + res.status);
+  console.error(res.ok ? `已推播：${title}` : "推播失敗 HTTP " + res.status);
+}
+
+async function notify(fresh, due) {
+  if (fresh.length) {
+    const lines = fresh.slice(0, 10).map(p => `${p.kind === "音樂劇" ? "🎵" : "🎭"} ${p.title}`);
+    if (fresh.length > 10) lines.push(`⋯ 另外還有 ${fresh.length - 10} 檔`);
+    await push(`新上架 ${fresh.length} 檔`, lines.join("\n"), "performing_arts");
+  }
+  if (due.length) {
+    const lines = due.map(p => {
+      const d = new Date(toMs(p.showStart) + 8 * 3600e3);
+      return `${d.getMonth() + 1}/${d.getDate()} ${p.title}${p.venue ? "　" + p.venue : ""}`;
+    });
+    await push(`你標記的戲快演了（${due.length} 檔）`, lines.join("\n"), "bell");
+  }
 }
 
 // ---------- 主流程 ----------
@@ -264,10 +291,20 @@ async function main() {
   if (failed === jobs.length) throw new Error("三個來源全部失敗，不覆寫 data.json");
 
   let previous = [];
+  let lastRun = 0;
   try {
-    previous = JSON.parse(fs.readFileSync(DATA_FILE, "utf8")).items || [];
+    const old = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
+    previous = old.items || [];
+    lastRun = old.updated || 0;
   } catch (e) {
     // 第一次執行還沒有檔案
+  }
+
+  let watchlist = [];
+  try {
+    watchlist = JSON.parse(fs.readFileSync("watchlist.json", "utf8"));
+  } catch (e) {
+    // 沒有標記清單就只推「新上架」
   }
 
   // 已知節目的 saleStart 直接沿用，省掉重複的詳情頁請求
@@ -291,10 +328,12 @@ async function main() {
       `，其中即將開賣 ${live.filter(i => i.status === "upcoming").length} 檔，今天新上架 ${fresh.length} 檔`
   );
 
-  await notify(fresh.filter(f => live.includes(f)));
+  const due = dueReminders(live, watchlist, 7, Date.now(), lastRun);
+  if (watchlist.length) console.error(`標記 ${watchlist.length} 檔，其中 ${due.length} 檔即將演出`);
+  await notify(fresh.filter(f => live.includes(f)), due);
 }
 
-module.exports = { isMusical, isTheatre, kindOf, parseSaleTime, statusOf, mergeFirstSeen, toMs, encodeHeader };
+module.exports = { isMusical, isTheatre, kindOf, parseSaleTime, statusOf, mergeFirstSeen, dueReminders, toMs, encodeHeader };
 
 if (require.main === module) {
   main().catch(e => {
