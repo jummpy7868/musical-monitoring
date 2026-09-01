@@ -1,5 +1,5 @@
 {
- "updated": 1788242365588,
+ "updated": 1788245871502,
  "count": 167,
  "items": [
   {
@@ -195,22 +195,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2043526998491496449",
-   "source": "OPENTIX",
-   "title": "果陀劇場《我在詐騙公司上班》2026騙局升級",
-   "kind": "音樂劇",
-   "saleStart": 1776654000000,
-   "showStart": 1788589800000,
-   "showEnd": 1788597000000,
-   "venue": "雲林表演廳",
-   "priceMin": 400,
-   "priceMax": 1300,
-   "image": "https://s3.resource.opentix.life/upload/program/1776067677545wwCzZUoBXr.jpeg",
-   "url": "https://www.opentix.life/event/2043526998491496449",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2059097848899674113",
    "source": "OPENTIX",
    "title": "《記憶的星光》",
@@ -223,6 +207,22 @@
    "priceMax": 1000,
    "image": "https://s3.resource.opentix.life/upload/program/1782189642546cqJMI2JAUR.png",
    "url": "https://www.opentix.life/event/2059097848899674113",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2043526998491496449",
+   "source": "OPENTIX",
+   "title": "果陀劇場《我在詐騙公司上班》2026騙局升級",
+   "kind": "音樂劇",
+   "saleStart": 1776654000000,
+   "showStart": 1788589800000,
+   "showEnd": 1788597000000,
+   "venue": "雲林表演廳",
+   "priceMin": 400,
+   "priceMax": 1300,
+   "image": "https://s3.resource.opentix.life/upload/program/1776067677545wwCzZUoBXr.jpeg",
+   "url": "https://www.opentix.life/event/2043526998491496449",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1891,22 +1891,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2076505628948193281",
-   "source": "OPENTIX",
-   "title": "萍蓬草劇團《乞丐王子》奇蹟轉運站",
-   "kind": "舞台劇",
-   "saleStart": 1784692800000,
-   "showStart": 1794033000000,
-   "showEnd": 1794036600000,
-   "venue": "彰化縣文化局員林演藝廳表演廳",
-   "priceMin": 500,
-   "priceMax": 600,
-   "image": "https://s3.resource.opentix.life/upload/program/1786677765528AvV7DIfELA.jpeg",
-   "url": "https://www.opentix.life/event/2076505628948193281",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2082659728235339777",
    "source": "OPENTIX",
    "title": "巨風之鳴·當代心靈－2026佳偶聲合唱團年度音樂會",
@@ -1919,6 +1903,22 @@
    "priceMax": 1000,
    "image": "https://s3.resource.opentix.life/upload/program/1785379668125WpLTTBvRLA.jpeg",
    "url": "https://www.opentix.life/event/2082659728235339777",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2076505628948193281",
+   "source": "OPENTIX",
+   "title": "萍蓬草劇團《乞丐王子》奇蹟轉運站",
+   "kind": "舞台劇",
+   "saleStart": 1784692800000,
+   "showStart": 1794033000000,
+   "showEnd": 1794036600000,
+   "venue": "彰化縣文化局員林演藝廳表演廳",
+   "priceMin": 500,
+   "priceMax": 600,
+   "image": "https://s3.resource.opentix.life/upload/program/1786677765528AvV7DIfELA.jpeg",
+   "url": "https://www.opentix.life/event/2076505628948193281",
    "firstSeen": null,
    "status": "onsale"
   },
