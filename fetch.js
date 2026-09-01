@@ -14,6 +14,21 @@ const getText = async url => (await fetch(url, { headers: { "User-Agent": UA } }
 // udn 不分音樂劇和舞台劇，只能看標題。寬宏和 OPENTIX 有官方分類，這只用來覆寫。
 const isMusical = title => /音樂劇|musical/i.test(title || "");
 
+// OPENTIX 的 categories 是主辦自己勾的、可複選、常常亂勾——演唱會和合唱團音樂會
+// 都看過被掛上「戲劇-音樂劇」。displayCategory 才是 OPENTIX 判定的主分類，準得多。
+//
+// 但只認 displayCategory 會誤殺真的音樂劇：《太空阿嬤》音樂劇、寶塚 OG、誠品親子
+// 音樂劇都被歸在「音樂」或「親子」底下。所以主分類是戲劇就收，不是的話要標題
+// 明講才收。刻意不放「劇場」——那會誤中場館名和「劇場開箱」這種活動。
+const RESCUE = /音樂劇|musical|舞台劇|劇團|寶塚/i;
+const isTheatre = (displayCategory, title) =>
+  displayCategory === "戲劇" || RESCUE.test(title || "");
+
+// 必須精確比對「戲劇-音樂劇」：用 /音樂劇/ 做子字串比對會誤中「音樂-音樂劇場」，
+// 把音樂劇場的節目標成音樂劇。
+const kindOf = (categories, title) =>
+  (categories || []).includes("戲劇-音樂劇") || isMusical(title) ? "音樂劇" : "舞台劇";
+
 // 寬宏詳情頁把開賣時間寫在自由文字裡：「開賣時間：2026年04月22日(三)中午12點」
 // 回傳 epoch ms（台灣時間 UTC+8），解不出來回 null。
 function parseSaleTime(text) {
@@ -97,12 +112,12 @@ async function opentix() {
     const found = (await res.json()).result?.found || [];
     if (!found.length) break;
     for (const { source: s } of found) {
-      const cats = s.categories || [];
+      if (!isTheatre(s.displayCategory, s.title)) continue;
       out.push({
         id: "opentix:" + s.id,
         source: "OPENTIX",
         title: s.title,
-        kind: cats.some(c => /音樂劇/.test(c)) || isMusical(s.title) ? "音樂劇" : "舞台劇",
+        kind: kindOf(s.categories, s.title),
         saleStart: s.onlineStartDateTime || null,
         showStart: s.startDateTime || null,
         showEnd: s.endDateTime || null,
@@ -273,7 +288,7 @@ async function main() {
   await notify(fresh.filter(f => live.includes(f)));
 }
 
-module.exports = { isMusical, parseSaleTime, statusOf, mergeFirstSeen, toMs, encodeHeader };
+module.exports = { isMusical, isTheatre, kindOf, parseSaleTime, statusOf, mergeFirstSeen, toMs, encodeHeader };
 
 if (require.main === module) {
   main().catch(e => {

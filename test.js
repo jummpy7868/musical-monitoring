@@ -3,7 +3,7 @@
 "use strict";
 
 const assert = require("assert");
-const { isMusical, parseSaleTime, statusOf, mergeFirstSeen, encodeHeader } = require("./fetch.js");
+const { isMusical, isTheatre, kindOf, parseSaleTime, statusOf, mergeFirstSeen, encodeHeader } = require("./fetch.js");
 
 const DAY = 864e5;
 const NOW = Date.UTC(2026, 8, 1); // 2026-09-01
@@ -61,5 +61,30 @@ assert.ok(
 );
 assert.equal(encodeHeader("New shows: 3"), "New shows: 3", "純 ASCII 不用編碼");
 assert.equal(encodeHeader(""), "");
+
+// --- OPENTIX 主分類過濾：categories 是主辦亂勾的，displayCategory 才準 ---
+// 主分類是戲劇就收
+assert.equal(isTheatre("戲劇", "果陀劇場《我在詐騙公司上班》"), true);
+// 主辦把演唱會、合唱團音樂會、工作坊掛上「戲劇-音樂劇」，要靠主分類擋掉
+assert.equal(isTheatre("音樂", "【2026聲浪藝術節】夏川里美屏東演唱會"), false);
+assert.equal(isTheatre("音樂", "巨風之鳴－2026佳偶聲合唱團年度音樂會"), false);
+assert.equal(isTheatre("活動/學習", "SHOW點工作坊_《感官開發工作坊》"), false);
+assert.equal(isTheatre("親子", "【朱宗慶打擊樂團２】豆莢寶寶兒童音樂會"), false);
+// 但真的音樂劇被歸在「音樂」或「親子」底下時，要靠標題救回來
+assert.equal(isTheatre("音樂", "《太空阿嬤》音樂劇"), true);
+assert.equal(isTheatre("音樂", "寶塚OG夢幻舞台《築夢之橋》"), true);
+assert.equal(isTheatre("親子", "誠品親子音樂劇《阿卡的兒歌大冒險》"), true);
+assert.equal(isTheatre("親子", "九歌兒童劇團《大樹、小鳥與牽牛花》"), true);
+// 「劇場」不能當救援關鍵字，否則場館名和這種活動會被誤收
+assert.equal(isTheatre("活動/學習", "2026新北表演場館劇場開箱—樹林藝文中心《米奇去哪裡》"), false);
+
+// --- 音樂劇判定：必須精確比對，不能用子字串 ---
+assert.equal(kindOf(["戲劇-音樂劇"], "《我的遺願清單》"), "音樂劇");
+assert.equal(kindOf(["戲劇-現代戲劇"], "果陀劇場《我在詐騙公司上班》"), "舞台劇");
+// 「音樂-音樂劇場」含有「音樂劇」三個字，子字串比對會誤判成音樂劇
+assert.equal(kindOf(["音樂-音樂劇場", "戲劇-現代戲劇"], "2026趨勢詩劇場《零雨的房間》"), "舞台劇");
+// 分類沒標但標題明講的，仍算音樂劇
+assert.equal(kindOf(["戲劇-現代戲劇"], "C MUSICAL 韓國授權音樂劇《我的遺願清單》"), "音樂劇");
+assert.equal(kindOf([], null), "舞台劇");
 
 console.log("全部通過");
