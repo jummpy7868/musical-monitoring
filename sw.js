@@ -1,7 +1,7 @@
 // Service worker：讓看板可以安裝成 App，並在沒網路時仍打得開（顯示上次抓到的資料）。
 // 改版時把 VERSION 加一，舊快取才會被清掉。
-const VERSION = "v1";
-const SHELL = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png"];
+const VERSION = "v2";
+const SHELL = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
