@@ -3,7 +3,7 @@
 "use strict";
 
 const assert = require("assert");
-const { isMusical, isTheatre, kindOf, parseSaleTime, statusOf, mergeFirstSeen, dueReminders, encodeHeader } = require("./fetch.js");
+const { isMusical, isJunk, isTheatre, kindOf, parseSaleTime, statusOf, mergeFirstSeen, dueReminders, encodeHeader } = require("./fetch.js");
 
 const DAY = 864e5;
 const NOW = Date.UTC(2026, 8, 1); // 2026-09-01
@@ -118,5 +118,17 @@ assert.deepEqual(
   ["a"],
   "已演完和沒有日期的都不該進來"
 );
+
+// --- 售票網自己的測試商品要擋掉 ---
+// 寬宏在戲劇分類裡放的這筆，被排程當成新上架推播出去過
+assert.equal(isJunk("系統測試(請勿購買)-3D"), true);
+assert.equal(isJunk("測試用商品"), true);
+assert.equal(isJunk("僅供測試"), true);
+// 真的節目不能被誤殺——劇名裡出現「測試」是有可能的
+assert.equal(isJunk("不可能在一個晚上演完莎士比亞全集吧?"), false);
+assert.equal(isJunk("躍演《勸世三姊妹》中文音樂劇"), false);
+assert.equal(isJunk("《壓力測試》"), false, "劇名含「測試」但沒有請勿購買等字樣，不該被當成測試資料");
+assert.equal(isJunk(""), false);
+assert.equal(isJunk(null), false);
 
 console.log("全部通過");

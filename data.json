@@ -1,6 +1,6 @@
 {
- "updated": 1788268503974,
- "count": 159,
+ "updated": 1788276032829,
+ "count": 158,
  "items": [
   {
    "id": "opentix:2079807327897186305",
@@ -147,22 +147,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2043526998491496449",
-   "source": "OPENTIX",
-   "title": "果陀劇場《我在詐騙公司上班》2026騙局升級",
-   "kind": "舞台劇",
-   "saleStart": 1776654000000,
-   "showStart": 1788589800000,
-   "showEnd": 1788597000000,
-   "venue": "雲林表演廳",
-   "priceMin": 400,
-   "priceMax": 1300,
-   "image": "https://s3.resource.opentix.life/upload/program/1776067677545wwCzZUoBXr.jpeg",
-   "url": "https://www.opentix.life/event/2043526998491496449",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2059097848899674113",
    "source": "OPENTIX",
    "title": "《記憶的星光》",
@@ -175,6 +159,22 @@
    "priceMax": 1000,
    "image": "https://s3.resource.opentix.life/upload/program/1782189642546cqJMI2JAUR.png",
    "url": "https://www.opentix.life/event/2059097848899674113",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2043526998491496449",
+   "source": "OPENTIX",
+   "title": "果陀劇場《我在詐騙公司上班》2026騙局升級",
+   "kind": "舞台劇",
+   "saleStart": 1776654000000,
+   "showStart": 1788589800000,
+   "showEnd": 1788597000000,
+   "venue": "雲林表演廳",
+   "priceMin": 400,
+   "priceMax": 1300,
+   "image": "https://s3.resource.opentix.life/upload/program/1776067677545wwCzZUoBXr.jpeg",
+   "url": "https://www.opentix.life/event/2043526998491496449",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -403,22 +403,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2057004988266651648",
-   "source": "OPENTIX",
-   "title": "明華園戲劇總團《貓．阿修羅》",
-   "kind": "舞台劇",
-   "saleStart": 1782705600000,
-   "showStart": 1789731000000,
-   "showEnd": 1789894500000,
-   "venue": "國家戲劇院",
-   "priceMin": 800,
-   "priceMax": 3300,
-   "image": "https://s3.resource.opentix.life/upload/program/1787281153962o4ls57smbq.png",
-   "url": "https://www.opentix.life/event/2057004988266651648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2060308522436108289",
    "source": "OPENTIX",
    "title": "樹德科技大學表演藝術系第17屆畢業製作《失聲》",
@@ -431,6 +415,22 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1780052376146qCsygDgKYY.png",
    "url": "https://www.opentix.life/event/2060308522436108289",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2057004988266651648",
+   "source": "OPENTIX",
+   "title": "明華園戲劇總團《貓．阿修羅》",
+   "kind": "舞台劇",
+   "saleStart": 1782705600000,
+   "showStart": 1789731000000,
+   "showEnd": 1789894500000,
+   "venue": "國家戲劇院",
+   "priceMin": 800,
+   "priceMax": 3300,
+   "image": "https://s3.resource.opentix.life/upload/program/1787281153962o4ls57smbq.png",
+   "url": "https://www.opentix.life/event/2057004988266651648",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1139,22 +1139,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082037328271515648",
-   "source": "OPENTIX",
-   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
-   "kind": "舞台劇",
-   "saleStart": 1786334400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792308600000,
-   "venue": "牯嶺街小劇場一樓實驗劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
-   "url": "https://www.opentix.life/event/2082037328271515648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2071498427878363137",
    "source": "OPENTIX",
    "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
@@ -1167,6 +1151,22 @@
    "priceMax": 1500,
    "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
    "url": "https://www.opentix.life/event/2071498427878363137",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082037328271515648",
+   "source": "OPENTIX",
+   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
+   "kind": "舞台劇",
+   "saleStart": 1786334400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792308600000,
+   "venue": "牯嶺街小劇場一樓實驗劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
+   "url": "https://www.opentix.life/event/2082037328271515648",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1651,22 +1651,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2070116012517888001",
-   "source": "OPENTIX",
-   "title": "2026秋天藝術節 菲利普．肯恩《人間樂園》",
-   "kind": "舞台劇",
-   "saleStart": 1785124800000,
-   "showStart": 1793964600000,
-   "showEnd": 1794126300000,
-   "venue": "國家戲劇院",
-   "priceMin": 600,
-   "priceMax": 2000,
-   "image": "https://s3.resource.opentix.life/upload/program/1785132411369fmvl1LwFDQ.png",
-   "url": "https://www.opentix.life/event/2070116012517888001",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2075422956057141248",
    "source": "OPENTIX",
    "title": "2026正港雄有戲─橄欖葉劇團《四個同床異夢的枕邊人》",
@@ -1679,6 +1663,22 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1785450115517sLIGcjSGpv.jpeg",
    "url": "https://www.opentix.life/event/2075422956057141248",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2070116012517888001",
+   "source": "OPENTIX",
+   "title": "2026秋天藝術節 菲利普．肯恩《人間樂園》",
+   "kind": "舞台劇",
+   "saleStart": 1785124800000,
+   "showStart": 1793964600000,
+   "showEnd": 1794126300000,
+   "venue": "國家戲劇院",
+   "priceMin": 600,
+   "priceMax": 2000,
+   "image": "https://s3.resource.opentix.life/upload/program/1785132411369fmvl1LwFDQ.png",
+   "url": "https://www.opentix.life/event/2070116012517888001",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -2432,22 +2432,6 @@
    "image": "https://imgs2.utiki.com.tw/Data/KHAM/Images/UTK2401/P19CQHU9_RWD.JPG?v=202608301110",
    "url": "https://kham.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P19CQHU9",
    "firstSeen": null,
-   "status": "onsale"
-  },
-  {
-   "id": "kham:P0VOGVGB",
-   "source": "寬宏",
-   "title": "系統測試(請勿購買)-3D",
-   "kind": "舞台劇",
-   "saleStart": null,
-   "showStart": null,
-   "showEnd": null,
-   "venue": "",
-   "priceMin": null,
-   "priceMax": null,
-   "image": "",
-   "url": "https://kham.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P0VOGVGB",
-   "firstSeen": "2026-09-01",
    "status": "onsale"
   },
   {

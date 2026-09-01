@@ -24,6 +24,10 @@ const RESCUE = /音樂劇|musical|舞台劇|劇團|寶塚/i;
 const isTheatre = (displayCategory, title) =>
   displayCategory === "戲劇" || RESCUE.test(title || "");
 
+// 售票網自己的測試商品。寬宏在戲劇分類裡放了一筆「系統測試(請勿購買)-3D」，
+// 排程跑起來後被當成新上架推播出去了。這類標題的訊號很明確，直接擋掉。
+const isJunk = title => /請勿購買|系統測試|測試用|勿下單|僅供測試/.test(title || "");
+
 // 音樂劇 vs 舞台劇只看標題，不看 categories。
 //
 // 主辦勾的「戲劇-音樂劇」不能用來分這一刀：實測 150 檔裡有 14 檔只有分類標、
@@ -133,7 +137,7 @@ async function opentix() {
     const found = (await res.json()).result?.found || [];
     if (!found.length) break;
     for (const { source: s } of found) {
-      if (!isTheatre(s.displayCategory, s.title)) continue;
+      if (isJunk(s.title) || !isTheatre(s.displayCategory, s.title)) continue;
       out.push({
         id: "opentix:" + s.id,
         source: "OPENTIX",
@@ -165,7 +169,7 @@ async function kham() {
     let m;
     while ((m = re.exec(html))) {
       const title = m[2].trim();
-      if (!/[一-鿿]/.test(title)) continue;
+      if (!/[一-鿿]/.test(title) || isJunk(title)) continue;
       const img = (html.match(new RegExp(m[1] + "_RWD\\.[A-Za-z]+\\?v=\\d+")) || [])[0];
       out.push({
         id: "kham:" + m[1],
@@ -198,6 +202,7 @@ async function udn() {
   let m;
   while ((m = re.exec(html))) {
     const title = m[2].trim();
+    if (isJunk(title)) continue;
     const parts = m[3].replace(/<[^>]*>/g, "|").split("|").map(s => s.trim()).filter(Boolean);
     const dates = (parts.find(x => /\d{4}\/\d{2}\/\d{2}/.test(x)) || "").split("~").map(s => s.trim());
     const prices = (parts.find(x => /NT ?\$/.test(x)) || "").match(/[\d,]+/g) || [];
@@ -333,7 +338,7 @@ async function main() {
   await notify(fresh.filter(f => live.includes(f)), due);
 }
 
-module.exports = { isMusical, isTheatre, kindOf, parseSaleTime, statusOf, mergeFirstSeen, dueReminders, toMs, encodeHeader };
+module.exports = { isMusical, isJunk, isTheatre, kindOf, parseSaleTime, statusOf, mergeFirstSeen, dueReminders, toMs, encodeHeader };
 
 if (require.main === module) {
   main().catch(e => {
