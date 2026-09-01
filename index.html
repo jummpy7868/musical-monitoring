@@ -260,11 +260,14 @@ function dateBlock(p, countdown) {
     : '<span class="m">日期</span><span class="y">未定</span>') + '</div>';
 }
 
+// 一週內第一次被抓到的算新上架。初次建檔的節目 firstSeen 是 null，不算。
+const isFresh = p => !!p.firstSeen && now - Date.parse(p.firstSeen) < WEEK;
+
 function row(p, countdown) {
-  const isNew = p.firstSeen && (now - Date.parse(p.firstSeen)) < WEEK;
+  const isNew = isFresh(p);
   const meta = ['<span class="tag ' + (p.kind === "音樂劇" ? "t-musical" : "t-play") + '">' +
     (p.kind === "音樂劇" ? "MUSICAL" : "PLAY") + "</span>"];
-  if (isNew && !countdown) meta.push('<span class="tag t-new">新上架</span>');
+  if (isNew) meta.push('<span class="tag t-new">新上架</span>');
   if (p.venue) meta.push("<span>" + esc(p.venue) + "</span>");
   if (p.priceMin != null) meta.push('<span class="dot">&middot;</span><span class="price">NT$' +
     p.priceMin.toLocaleString() + (p.priceMax && p.priceMax !== p.priceMin ? "–" + p.priceMax.toLocaleString() : "") + "</span>");
@@ -288,25 +291,27 @@ function render() {
   const items = DATA.items.filter(p =>
     filter === "all" ? true : filter === "marked" ? MARKS.has(p.id) : p.kind === filter
   );
-  // 標記過的排在各區最前面，其餘依演出日期
-  const byShow = (a, b) => {
-    const m = (MARKS.has(b.id) ? 1 : 0) - (MARKS.has(a.id) ? 1 : 0);
-    return m || (toMs(a.showStart) || 8e15) - (toMs(b.showStart) || 8e15);
-  };
+  // 「新上架」是節目的屬性不是位置，所以做成標籤而不是獨立區塊——一個節目
+  // 可以同時是「即將開賣」又是「新上架」，拆成兩區就會出現推播說有、畫面卻
+  // 找不到的矛盾。排序上仍讓它靠前，免得淹沒在一百多檔裡。
+  const marked = p => (MARKS.has(p.id) ? 1 : 0);
 
+  // 即將開賣只有幾筆、全部看得見，倒數最近的就該在最前面——把「新上架」也算進
+  // 排序會讓 3 天後排到 1 天後上面，看起來像壞掉。
   const upcoming = items.filter(p => p.status === "upcoming")
-    .sort((a, b) => (MARKS.has(b.id) ? 1 : 0) - (MARKS.has(a.id) ? 1 : 0) || a.saleStart - b.saleStart);
-  const fresh = items.filter(p => p.status !== "upcoming" && p.firstSeen && (now - Date.parse(p.firstSeen)) < WEEK).sort(byShow);
-  const freshSet = new Set(fresh);
-  const onsale = items.filter(p => p.status !== "upcoming" && !freshSet.has(p)).sort(byShow);
+    .sort((a, b) => marked(b) - marked(a) || a.saleStart - b.saleStart);
+
+  // 開賣中有一百多筆，新上架不往前排就會被埋掉。
+  const onsale = items.filter(p => p.status !== "upcoming").sort((a, b) =>
+    marked(b) - marked(a) ||
+    (isFresh(b) ? 1 : 0) - (isFresh(a) ? 1 : 0) ||
+    (toMs(a.showStart) || 8e15) - (toMs(b.showStart) || 8e15));
 
   document.getElementById("app").innerHTML =
     section("即將開賣", upcoming, "節目已上架但還沒開賣，倒數提醒你。",
       "<strong>目前沒有已上架但尚未開賣的節目。</strong>這一區只有在售票網先掛出節目頁、開賣時間又還沒到的時候才有內容。",
       true) +
-    section("本週新上架", fresh, "推播通知你的就是這一區。",
-      "<strong>這一週沒有新節目上架。</strong>剛建檔的話這裡本來就是空的 —— 建檔當下已存在的節目不算新上架，要等下一檔真正出現的新戲。") +
-    section("開賣中", onsale, "依演出日期排序，標記過的排在最前面。", "目前沒有符合的節目。");
+    section("開賣中", onsale, "依演出日期排序，標記過和新上架的排在前面。", "目前沒有符合的節目。");
 
   document.getElementById("c-k").textContent = DATA.items.filter(p => MARKS.has(p.id)).length;
 }
