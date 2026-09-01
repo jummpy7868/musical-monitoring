@@ -45,9 +45,18 @@ Settings → Pages → Source 選 `Deploy from a branch`，分支選 `main`、�
 
 Actions → 抓取售票資料 → Run workflow。第一次執行是初次建檔，不會推播。
 
-**5. 加到手機主畫面**
+**5. 安裝成 App**
 
-用手機瀏覽器開啟看板網址，選「加入主畫面」，就會像一個 App。
+看板是 PWA，手機和桌面都能安裝成獨立應用程式。
+
+- **Windows / macOS（Chrome）**：開啟網址後，網址列右側會出現安裝圖示（螢幕加下箭頭），點它即可。找不到的話走右上角 ⋮ →「投放、儲存及分享」→「將頁面安裝為應用程式」。
+- **Windows（Edge）**：右上角 ⋯ →「應用程式」→「將此網站安裝為應用程式」。
+- **iPhone（Safari）**：分享按鈕 → 加入主畫面。
+- **Android（Chrome）**：右上角 ⋮ → 安裝應用程式。
+
+安裝後會有獨立視窗和工作列圖示。Chrome 可以在應用程式設定裡勾選開機自動啟動。
+
+`sw.js` 會快取頁面外殼與圖示，`data.json` 走 network-first —— 沒網路時打得開，顯示上次抓到的資料。改動前端後要把 `sw.js` 裡的 `VERSION` 加一，舊快取才會被換掉。
 
 ## 本機執行
 
@@ -101,4 +110,6 @@ npx serve
 | `test.js` | 純邏輯自我檢查，不打網路 |
 | `index.html` | 看板，讀 `data.json` |
 | `data.json` | 目前的節目快照，由 Actions 更新 |
+| `sw.js` | Service worker，PWA 安裝與離線快取 |
+| `manifest.json` `icon-*.png` | App 名稱與圖示 |
 | `.github/workflows/watch.yml` | 排程 |
