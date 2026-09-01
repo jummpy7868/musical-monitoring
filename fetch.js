@@ -24,10 +24,16 @@ const RESCUE = /音樂劇|musical|舞台劇|劇團|寶塚/i;
 const isTheatre = (displayCategory, title) =>
   displayCategory === "戲劇" || RESCUE.test(title || "");
 
-// 必須精確比對「戲劇-音樂劇」：用 /音樂劇/ 做子字串比對會誤中「音樂-音樂劇場」，
-// 把音樂劇場的節目標成音樂劇。
-const kindOf = (categories, title) =>
-  (categories || []).includes("戲劇-音樂劇") || isMusical(title) ? "音樂劇" : "舞台劇";
+// 音樂劇 vs 舞台劇只看標題，不看 categories。
+//
+// 主辦勾的「戲劇-音樂劇」不能用來分這一刀：實測 150 檔裡有 14 檔只有分類標、
+// 標題沒講，其中包含兩檔布袋戲、一檔兒童劇和一場「部分發表會」。台灣的劇名
+// 幾乎都會把「音樂劇」寫進去（《勸世三姊妹》中文音樂劇、C MUSICAL 韓國授權
+// 音樂劇⋯），所以標題反而是最可靠的訊號。
+//
+// 代價是標題沒寫的真音樂劇會被歸到舞台劇——兩者都在看板上，只是分組不同，
+// 比起把布袋戲標成音樂劇，這個方向的錯誤便宜得多。
+const kindOf = (categories, title) => (isMusical(title) ? "音樂劇" : "舞台劇");
 
 // 寬宏詳情頁把開賣時間寫在自由文字裡：「開賣時間：2026年04月22日(三)中午12點」
 // 回傳 epoch ms（台灣時間 UTC+8），解不出來回 null。
