@@ -3,7 +3,7 @@
 "use strict";
 
 const assert = require("assert");
-const { isMusical, isJunk, isTheatre, kindOf, parseSaleTime, statusOf, mergeFirstSeen, dueReminders, encodeHeader } = require("./fetch.js");
+const { isMusical, isJunk, isTheatre, kindOf, parseSaleTime, parseSaleStartLd, statusOf, mergeFirstSeen, dueReminders, encodeHeader } = require("./fetch.js");
 
 const DAY = 864e5;
 const NOW = Date.UTC(2026, 8, 1); // 2026-09-01
@@ -130,5 +130,47 @@ assert.equal(isJunk("躍演《勸世三姊妹》中文音樂劇"), false);
 assert.equal(isJunk("《壓力測試》"), false, "劇名含「測試」但沒有請勿購買等字樣，不該被當成測試資料");
 assert.equal(isJunk(""), false);
 assert.equal(isJunk(null), false);
+
+// --- OPENTIX 節目頁 JSON-LD 的開賣時間 ---
+const ld = (starts) => starts.map(s =>
+  `<script type="application/ld+json">${JSON.stringify(
+    { "@context": "http://schema.org", "@type": "Event", name: "X",
+      offers: { "@type": "AggregateOffer", availabilityStarts: s, validFrom: s } }
+  )}</script>`).join("\n");
+
+// 一個節目多個場次，取最早的那個
+assert.equal(
+  parseSaleStartLd(ld(["2026-09-04T12:00:00", "2026-09-06T12:00:00"])),
+  Date.parse("2026-09-04T12:00:00+08:00"),
+  "多場次要取最早的開賣時間"
+);
+// 沒帶時區的字串必須當成台灣時間，不能當 UTC（會差 8 小時）
+assert.equal(
+  parseSaleStartLd(ld(["2026-09-04T12:00:00"])),
+  Date.UTC(2026, 8, 4, 4),
+  "JSON-LD 沒帶時區，要當台灣時間解讀"
+);
+// 只有 validFrom 沒有 availabilityStarts 也要能取到
+assert.equal(
+  parseSaleStartLd('<script type="application/ld+json">' +
+    '{"@type":"Event","offers":{"validFrom":"2026-09-04T12:00:00"}}</script>'),
+  Date.UTC(2026, 8, 4, 4)
+);
+// 壞掉的 JSON 區塊要跳過，不能讓整頁解析失敗
+assert.equal(
+  parseSaleStartLd('<script type="application/ld+json">{壞掉的</script>' +
+    ld(["2026-09-04T12:00:00"])),
+  Date.UTC(2026, 8, 4, 4),
+  "一塊壞掉不該影響其他塊"
+);
+// 非 Event 的區塊（麵包屑之類）不算
+assert.equal(
+  parseSaleStartLd('<script type="application/ld+json">' +
+    '{"@type":"BreadcrumbList","offers":{"validFrom":"2026-01-01T00:00:00"}}</script>'),
+  null
+);
+assert.equal(parseSaleStartLd("<html>沒有 JSON-LD</html>"), null);
+assert.equal(parseSaleStartLd(""), null);
+assert.equal(parseSaleStartLd(null), null);
 
 console.log("全部通過");

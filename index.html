@@ -301,8 +301,8 @@ function render() {
   const onsale = items.filter(p => p.status !== "upcoming" && !freshSet.has(p)).sort(byShow);
 
   document.getElementById("app").innerHTML =
-    section("即將開賣", upcoming, "還沒開賣，倒數提醒你。",
-      "<strong>目前沒有已知開賣日期的未售節目。</strong>OPENTIX 的搜尋索引只收已開賣的節目；寬宏和 udn 要在節目頁寫出開賣時間才排得進來。",
+    section("即將開賣", upcoming, "節目已上架但還沒開賣，倒數提醒你。",
+      "<strong>目前沒有已上架但尚未開賣的節目。</strong>這一區只有在售票網先掛出節目頁、開賣時間又還沒到的時候才有內容。",
       true) +
     section("本週新上架", fresh, "推播通知你的就是這一區。",
       "<strong>這一週沒有新節目上架。</strong>剛建檔的話這裡本來就是空的 —— 建檔當下已存在的節目不算新上架，要等下一檔真正出現的新戲。") +

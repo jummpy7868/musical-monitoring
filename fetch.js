@@ -39,6 +39,34 @@ const isJunk = title => /請勿購買|系統測試|測試用|勿下單|僅供測
 // 比起把布袋戲標成音樂劇，這個方向的錯誤便宜得多。
 const kindOf = (categories, title) => (isMusical(title) ? "音樂劇" : "舞台劇");
 
+// OPENTIX 節目頁的 JSON-LD 帶有真正的售票起始時間。
+//
+// 搜尋 API 的 onlineStartDateTime 是「節目頁上架時間」，不是開賣時間——兩者可以差
+// 到九天（《勸世三姊妹》5/5 上架、5/14 開賣）。因為誤把它當開賣時間，「即將開賣」
+// 那一區長期都是 0。真正的時間只在節目頁的 <script type="application/ld+json"> 裡：
+//   offers.availabilityStarts / offers.validFrom
+// 一個節目每個場次一塊 Event，取最早的那個當開賣時間。
+function parseSaleStartLd(html) {
+  const starts = [];
+  for (const m of String(html || "").matchAll(
+    /<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/g
+  )) {
+    let j;
+    try {
+      j = JSON.parse(m[1]);
+    } catch (e) {
+      continue; // 壞掉的區塊跳過，不要讓整頁解析失敗
+    }
+    const s =
+      j && j["@type"] === "Event" && j.offers &&
+      (j.offers.availabilityStarts || j.offers.validFrom);
+    if (!s) continue;
+    const t = Date.parse(s + "+08:00"); // JSON-LD 沒帶時區，OPENTIX 給的是台灣時間
+    if (!Number.isNaN(t)) starts.push(t);
+  }
+  return starts.length ? Math.min(...starts) : null;
+}
+
 // 寬宏詳情頁把開賣時間寫在自由文字裡：「開賣時間：2026年04月22日(三)中午12點」
 // 回傳 epoch ms（台灣時間 UTC+8），解不出來回 null。
 function parseSaleTime(text) {
@@ -143,7 +171,8 @@ async function opentix() {
         source: "OPENTIX",
         title: s.title,
         kind: kindOf(s.categories, s.title),
-        saleStart: s.onlineStartDateTime || null,
+        listedAt: s.onlineStartDateTime || null, // 節目頁上架時間，不是開賣時間
+        saleStart: null, // 真正的開賣時間要進節目頁讀 JSON-LD，補在 resolveSaleTimes()
         showStart: s.startDateTime || null,
         showEnd: s.endDateTime || null,
         venue: (s.eventVenues || [])[0]?.name || "",
@@ -225,21 +254,42 @@ async function udn() {
   return out;
 }
 
-// 寬宏和 udn 的開賣時間只寫在詳情頁自由文字裡。只查沒有 saleStart 的新節目——
-// 已經查過的會保留結果，所以穩定運作後每天只有個位數請求。
-async function fillSaleTime(items, known) {
-  const targets = items.filter(it => !it.saleStart && !known.has(it.id));
-  for (const it of targets.slice(0, 30)) {
+// 開賣時間都只在節目詳情頁：OPENTIX 在 JSON-LD 裡，寬宏和 udn 在中文自由文字裡。
+//
+// 快取規則：已經解析出、而且開賣時間已過的就不再查（那個值不會再變）。還沒開賣的
+// 每次都重查，因為主辦可能改期，而且這種節目數量很少。第一次執行要查全部，之後
+// 每天大概只有個位數。
+async function resolveSaleTimes(items, previous, limit = 200) {
+  const cached = new Map(
+    (previous || []).filter(p => p.saleStart).map(p => [p.id, p.saleStart])
+  );
+  const now = Date.now();
+  let fetched = 0;
+
+  for (const it of items) {
+    const hit = cached.get(it.id);
+    if (hit && hit <= now) {
+      it.saleStart = hit; // 已開賣，時間不會再變
+      continue;
+    }
+    if (fetched >= limit) {
+      if (hit) it.saleStart = hit; // 額度用完就先沿用舊值
+      continue;
+    }
     try {
       const html = await getText(it.url);
-      const text = html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ");
-      const t = parseSaleTime(text);
-      if (t) it.saleStart = t;
+      it.saleStart =
+        parseSaleStartLd(html) ||
+        parseSaleTime(html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ")) ||
+        hit ||
+        null;
     } catch (e) {
-      // 單一節目讀不到就跳過，不影響整批
+      it.saleStart = hit || null; // 單一節目讀不到就跳過，不影響整批
     }
-    await sleep(500);
+    fetched++;
+    await sleep(350);
   }
+  return fetched;
 }
 
 // ---------- 推播 ----------
@@ -312,12 +362,8 @@ async function main() {
     // 沒有標記清單就只推「新上架」
   }
 
-  // 已知節目的 saleStart 直接沿用，省掉重複的詳情頁請求
-  const known = new Map(previous.filter(p => p.saleStart).map(p => [p.id, p.saleStart]));
-  items.forEach(it => {
-    if (!it.saleStart && known.has(it.id)) it.saleStart = known.get(it.id);
-  });
-  await fillSaleTime(items, known);
+  const fetched = await resolveSaleTimes(items, previous);
+  console.error(`\n查了 ${fetched} 個節目頁取開賣時間，其餘沿用快取`);
 
   const today = new Date(Date.now() + 8 * 3600e3).toISOString().slice(0, 10); // 台灣日期
   const { fresh } = mergeFirstSeen(items, previous, today);
@@ -338,7 +384,7 @@ async function main() {
   await notify(fresh.filter(f => live.includes(f)), due);
 }
 
-module.exports = { isMusical, isJunk, isTheatre, kindOf, parseSaleTime, statusOf, mergeFirstSeen, dueReminders, toMs, encodeHeader };
+module.exports = { isMusical, isJunk, isTheatre, kindOf, parseSaleTime, parseSaleStartLd, statusOf, mergeFirstSeen, dueReminders, toMs, encodeHeader };
 
 if (require.main === module) {
   main().catch(e => {
