@@ -10,7 +10,8 @@
 <meta name="apple-mobile-web-app-title" content="開賣看板">
 <meta name="theme-color" content="#F7F5F7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#17131A" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500&family=Archivo:wght@500;600&display=swap">
 <style>
@@ -231,6 +232,14 @@ fetch("data.json?t=" + Math.floor(now / 6e5))
       '<div class="note"><strong>讀不到 data.json（' + esc(e.message) + '）。</strong><br>' +
       "如果是剛部署，等排程跑過一次就會有資料；本機測試請先執行 <code>node fetch.js</code>，再用 <code>npx serve</code> 之類的靜態伺服器開啟（直接用檔案路徑開會被瀏覽器擋住讀取）。</div>";
   });
+
+// 註冊 service worker：讓這頁可以被安裝成 App，離線時也打得開。
+// 用 file:// 直接開檔案時瀏覽器不允許註冊，所以包在 try 裡不讓它中斷頁面。
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  });
+}
 </script>
 </body>
 </html>
