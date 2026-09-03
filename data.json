@@ -1,24 +1,7 @@
 {
- "updated": 1788398004792,
+ "updated": 1788441365404,
  "count": 160,
  "items": [
-  {
-   "id": "opentix:2082748580382793729",
-   "source": "OPENTIX",
-   "title": "聲韻跨海峽・同心詠家園——海南非物質文化遺產主題演出",
-   "kind": "舞台劇",
-   "listedAt": 1788314400000,
-   "saleStart": null,
-   "showStart": null,
-   "showEnd": null,
-   "venue": "桃園市政府文化局演藝廳",
-   "priceMin": null,
-   "priceMax": null,
-   "image": "https://s3.resource.opentix.life/upload/program/1788314587419HHAlHc5ijH.png",
-   "url": "https://www.opentix.life/event/2082748580382793729",
-   "firstSeen": "2026-09-02",
-   "status": "onsale"
-  },
   {
    "id": "opentix:2079807327897186305",
    "source": "OPENTIX",
@@ -1244,23 +1227,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082037328271515648",
-   "source": "OPENTIX",
-   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
-   "kind": "舞台劇",
-   "listedAt": 1786334400000,
-   "saleStart": 1786334400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792308600000,
-   "venue": "牯嶺街小劇場一樓實驗劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
-   "url": "https://www.opentix.life/event/2082037328271515648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2071498427878363137",
    "source": "OPENTIX",
    "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
@@ -1274,6 +1240,23 @@
    "priceMax": 1500,
    "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
    "url": "https://www.opentix.life/event/2071498427878363137",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082037328271515648",
+   "source": "OPENTIX",
+   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
+   "kind": "舞台劇",
+   "listedAt": 1786334400000,
+   "saleStart": 1786334400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792308600000,
+   "venue": "牯嶺街小劇場一樓實驗劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
+   "url": "https://www.opentix.life/event/2082037328271515648",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1788,23 +1771,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2075422956057141248",
-   "source": "OPENTIX",
-   "title": "2026正港雄有戲─橄欖葉劇團《四個同床異夢的枕邊人》",
-   "kind": "舞台劇",
-   "listedAt": 1785902400000,
-   "saleStart": 1785902400000,
-   "showStart": 1793964600000,
-   "showEnd": 1794125400000,
-   "venue": "駁二正港小劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1785450115517sLIGcjSGpv.jpeg",
-   "url": "https://www.opentix.life/event/2075422956057141248",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2070116012517888001",
    "source": "OPENTIX",
    "title": "2026秋天藝術節 菲利普．肯恩《人間樂園》",
@@ -1818,6 +1784,23 @@
    "priceMax": 2000,
    "image": "https://s3.resource.opentix.life/upload/program/1785132411369fmvl1LwFDQ.png",
    "url": "https://www.opentix.life/event/2070116012517888001",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2075422956057141248",
+   "source": "OPENTIX",
+   "title": "2026正港雄有戲─橄欖葉劇團《四個同床異夢的枕邊人》",
+   "kind": "舞台劇",
+   "listedAt": 1785902400000,
+   "saleStart": 1785902400000,
+   "showStart": 1793964600000,
+   "showEnd": 1794125400000,
+   "venue": "駁二正港小劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1785450115517sLIGcjSGpv.jpeg",
+   "url": "https://www.opentix.life/event/2075422956057141248",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1994,7 +1977,7 @@
   {
    "id": "opentix:2072574785822879745",
    "source": "OPENTIX",
-   "title": "果陀劇場音樂劇《生命最美好的5分鍾》2026苗北藝術節",
+   "title": "果陀劇場音樂劇《生命最美好的5分鐘》2026苗北藝術節",
    "kind": "音樂劇",
    "listedAt": 1784088000000,
    "saleStart": 1784088000000,
@@ -2553,6 +2536,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2082753505317773312",
+   "source": "OPENTIX",
+   "title": "2026藝術綠洲創作計畫-何日君再來劇團《未來．火車．歌廳秀》",
+   "kind": "舞台劇",
+   "listedAt": 1788408000000,
+   "saleStart": 1788408000000,
+   "showStart": 1797593400000,
+   "showEnd": 1797760800000,
+   "venue": "桃園火車站",
+   "priceMin": 400,
+   "priceMax": 400,
+   "image": "https://s3.resource.opentix.life/upload/program/1785401644229d3UnUzLbrl.jpeg",
+   "url": "https://www.opentix.life/event/2082753505317773312",
+   "firstSeen": "2026-09-03",
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2064993947364380673",
    "source": "OPENTIX",
    "title": "誠品親子音樂劇《阿卡的兒歌大冒險》三部曲—時光旅行篇",
@@ -2614,7 +2614,7 @@
    "venue": "",
    "priceMin": null,
    "priceMax": null,
-   "image": "https://imgs2.utiki.com.tw/Data/KHAM/Images/UTK2401/P19CQHU9_RWD.JPG?v=202608301110",
+   "image": "https://imgs2.utiki.com.tw/Data/KHAM/Images/UTK2401/P19CQHU9_RWD.JPG?v=202609031517",
    "url": "https://kham.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P19CQHU9",
    "firstSeen": null,
    "status": "onsale"
