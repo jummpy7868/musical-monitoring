@@ -1,5 +1,5 @@
 {
- "updated": 1788441365404,
+ "updated": 1788484344451,
  "count": 160,
  "items": [
   {
@@ -1227,23 +1227,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2071498427878363137",
-   "source": "OPENTIX",
-   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
-   "kind": "舞台劇",
-   "listedAt": 1785211200000,
-   "saleStart": 1785816000000,
-   "showStart": 1792150200000,
-   "showEnd": 1792309800000,
-   "venue": "臺中國家歌劇院中劇院",
-   "priceMin": 700,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
-   "url": "https://www.opentix.life/event/2071498427878363137",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2082037328271515648",
    "source": "OPENTIX",
    "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
@@ -1257,6 +1240,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
    "url": "https://www.opentix.life/event/2082037328271515648",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2071498427878363137",
+   "source": "OPENTIX",
+   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
+   "kind": "舞台劇",
+   "listedAt": 1785211200000,
+   "saleStart": 1785816000000,
+   "showStart": 1792150200000,
+   "showEnd": 1792309800000,
+   "venue": "臺中國家歌劇院中劇院",
+   "priceMin": 700,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
+   "url": "https://www.opentix.life/event/2071498427878363137",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1771,23 +1771,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2070116012517888001",
-   "source": "OPENTIX",
-   "title": "2026秋天藝術節 菲利普．肯恩《人間樂園》",
-   "kind": "舞台劇",
-   "listedAt": 1785124800000,
-   "saleStart": 1785556800000,
-   "showStart": 1793964600000,
-   "showEnd": 1794126300000,
-   "venue": "國家戲劇院",
-   "priceMin": 600,
-   "priceMax": 2000,
-   "image": "https://s3.resource.opentix.life/upload/program/1785132411369fmvl1LwFDQ.png",
-   "url": "https://www.opentix.life/event/2070116012517888001",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2075422956057141248",
    "source": "OPENTIX",
    "title": "2026正港雄有戲─橄欖葉劇團《四個同床異夢的枕邊人》",
@@ -1801,6 +1784,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1785450115517sLIGcjSGpv.jpeg",
    "url": "https://www.opentix.life/event/2075422956057141248",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2070116012517888001",
+   "source": "OPENTIX",
+   "title": "2026秋天藝術節 菲利普．肯恩《人間樂園》",
+   "kind": "舞台劇",
+   "listedAt": 1785124800000,
+   "saleStart": 1785556800000,
+   "showStart": 1793964600000,
+   "showEnd": 1794126300000,
+   "venue": "國家戲劇院",
+   "priceMin": 600,
+   "priceMax": 2000,
+   "image": "https://s3.resource.opentix.life/upload/program/1785132411369fmvl1LwFDQ.png",
+   "url": "https://www.opentix.life/event/2070116012517888001",
    "firstSeen": null,
    "status": "onsale"
   },
