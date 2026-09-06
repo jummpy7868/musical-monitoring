@@ -54,8 +54,19 @@ h1{
 .bar{
   position:sticky; top:0; z-index:5; background:var(--bg);
   padding:12px 0 10px; margin-bottom:4px; border-bottom:1px solid var(--rule);
-  display:flex; gap:6px; flex-wrap:wrap;
+  display:flex; gap:8px; flex-direction:column;
 }
+.chips{display:flex; gap:6px; flex-wrap:wrap}
+.search{
+  width:100%; font:400 15px/1.2 "Noto Sans TC",sans-serif;
+  color:var(--ink); background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px;
+  padding:11px 13px; -webkit-appearance:none; appearance:none;
+}
+.search::placeholder{color:var(--ink3)}
+.search:focus{outline:2px solid var(--curtain); outline-offset:-1px; border-color:transparent}
+.search::-webkit-search-cancel-button{cursor:pointer}
+mark{background:var(--curtainbg); color:var(--curtain); border-radius:2px; padding:0 1px}
 .chip{
   font:500 13px/1 "Noto Sans TC",sans-serif; color:var(--ink2);
   background:none; border:1px solid var(--rule); border-radius:999px;
@@ -164,11 +175,15 @@ footer code{font-family:Archivo,ui-monospace,monospace; font-size:11.5px; color:
   <p class="sub" id="sub">載入中…</p>
 </header>
 
-<div class="bar" role="group" aria-label="類型篩選">
-  <button class="chip" data-f="all" aria-pressed="true">全部<span class="count" id="c-all"></span></button>
-  <button class="chip" data-f="音樂劇" aria-pressed="false">音樂劇<span class="count" id="c-m"></span></button>
-  <button class="chip" data-f="舞台劇" aria-pressed="false">舞台劇<span class="count" id="c-p"></span></button>
-  <button class="chip" data-f="marked" aria-pressed="false">★ 已標記<span class="count" id="c-k"></span></button>
+<div class="bar">
+  <input class="search" id="q" type="search" inputmode="search" autocomplete="off"
+         placeholder="搜尋劇名、場館、劇團…" aria-label="搜尋節目">
+  <div class="chips" role="group" aria-label="類型篩選">
+    <button class="chip" data-f="all" aria-pressed="true">全部<span class="count" id="c-all"></span></button>
+    <button class="chip" data-f="音樂劇" aria-pressed="false">音樂劇<span class="count" id="c-m"></span></button>
+    <button class="chip" data-f="舞台劇" aria-pressed="false">舞台劇<span class="count" id="c-p"></span></button>
+    <button class="chip" data-f="marked" aria-pressed="false">★ 已標記<span class="count" id="c-k"></span></button>
+  </div>
 </div>
 
 <div id="app"></div>
@@ -204,7 +219,7 @@ footer code{font-family:Archivo,ui-monospace,monospace; font-size:11.5px; color:
 const M = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
 const DAY = 864e5, WEEK = 7 * DAY;
 const now = Date.now();
-let DATA = null, filter = "all";
+let DATA = null, filter = "all", TERMS = [];
 
 // ---- 標記 ----
 // 存在 localStorage，只在這個瀏覽器裡。無痕視窗或關閉網站資料時讀寫會直接拋錯，
@@ -263,18 +278,41 @@ function dateBlock(p, countdown) {
 // 一週內第一次被抓到的算新上架。初次建檔的節目 firstSeen 是 null，不算。
 const isFresh = p => !!p.firstSeen && now - Date.parse(p.firstSeen) < WEEK;
 
+// 搜尋：比對劇名、場館、來源。空白當成 AND，「果陀 詐騙」兩個詞都要中。
+// 沒有做模糊比對——劇名都是中文，逐字比對已經夠用，錯字容忍反而會撈進雜訊。
+const norm = s => String(s == null ? "" : s).toLowerCase();
+function matches(p, terms) {
+  if (!terms.length) return true;
+  const hay = norm(p.title) + " " + norm(p.venue) + " " + norm(p.source) + " " + norm(p.kind);
+  return terms.every(t => hay.includes(t));
+}
+
+// 把命中的字串包成 <mark>。輸入已經 escape 過，所以是在 escape 後的字串上做。
+function highlight(escaped, terms) {
+  if (!terms.length) return escaped;
+  let out = escaped;
+  for (const t of terms) {
+    if (!t) continue;
+    const re = new RegExp("(" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "gi");
+    // 避開已經插入的標籤，只換標籤外的文字
+    out = out.split(/(<[^>]*>)/).map(seg => seg.startsWith("<") ? seg : seg.replace(re, "<mark>$1</mark>")).join("");
+  }
+  return out;
+}
+
 function row(p, countdown) {
   const isNew = isFresh(p);
   const meta = ['<span class="tag ' + (p.kind === "音樂劇" ? "t-musical" : "t-play") + '">' +
     (p.kind === "音樂劇" ? "MUSICAL" : "PLAY") + "</span>"];
   if (isNew) meta.push('<span class="tag t-new">新上架</span>');
-  if (p.venue) meta.push("<span>" + esc(p.venue) + "</span>");
+  if (p.venue) meta.push("<span>" + highlight(esc(p.venue), TERMS) + "</span>");
   if (p.priceMin != null) meta.push('<span class="dot">&middot;</span><span class="price">NT$' +
     p.priceMin.toLocaleString() + (p.priceMax && p.priceMax !== p.priceMin ? "–" + p.priceMax.toLocaleString() : "") + "</span>");
   meta.push('<span class="dot">&middot;</span><span class="src">' + esc(p.source) + "</span>");
   const on = MARKS.has(p.id);
   return '<div class="row' + (on ? " marked" : "") + '">' + dateBlock(p, countdown) + "<div>" +
-    '<a class="title" href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.title) + "</a>" +
+    '<a class="title" href="' + esc(p.url) + '" target="_blank" rel="noopener">' +
+    highlight(esc(p.title), TERMS) + "</a>" +
     '<div class="meta">' + meta.join("") + "</div></div>" +
     '<button class="star" data-id="' + esc(p.id) + '" aria-pressed="' + on + '" aria-label="' +
     (on ? "取消標記 " : "標記 ") + esc(p.title) + '">' + (on ? "★" : "☆") + "</button></div>";
@@ -289,8 +327,10 @@ function section(title, items, note, empty, countdown) {
 
 function render() {
   const items = DATA.items.filter(p =>
-    filter === "all" ? true : filter === "marked" ? MARKS.has(p.id) : p.kind === filter
+    (filter === "all" ? true : filter === "marked" ? MARKS.has(p.id) : p.kind === filter) &&
+    matches(p, TERMS)
   );
+  const searching = TERMS.length > 0;
   // 「新上架」是節目的屬性不是位置，所以做成標籤而不是獨立區塊——一個節目
   // 可以同時是「即將開賣」又是「新上架」，拆成兩區就會出現推播說有、畫面卻
   // 找不到的矛盾。排序上仍讓它靠前，免得淹沒在一百多檔裡。
@@ -307,11 +347,21 @@ function render() {
     (isFresh(b) ? 1 : 0) - (isFresh(a) ? 1 : 0) ||
     (toMs(a.showStart) || 8e15) - (toMs(b.showStart) || 8e15));
 
-  document.getElementById("app").innerHTML =
-    section("即將開賣", upcoming, "節目已上架但還沒開賣，倒數提醒你。",
+  // 搜尋時空區塊只會製造雜訊——沒命中的那一區直接不畫，把版面留給有結果的
+  const parts = [];
+  if (upcoming.length || !searching) {
+    parts.push(section("即將開賣", upcoming, "節目已上架但還沒開賣，倒數提醒你。",
       "<strong>目前沒有已上架但尚未開賣的節目。</strong>這一區只有在售票網先掛出節目頁、開賣時間又還沒到的時候才有內容。",
-      true) +
-    section("開賣中", onsale, "依演出日期排序，標記過和新上架的排在前面。", "目前沒有符合的節目。");
+      true));
+  }
+  if (onsale.length || !searching) {
+    parts.push(section("開賣中", onsale, "依演出日期排序，標記過和新上架的排在前面。", "目前沒有符合的節目。"));
+  }
+  if (searching && !upcoming.length && !onsale.length) {
+    parts.push('<div class="note" style="margin-top:28px"><strong>找不到「' +
+      esc(TERMS.join(" ")) + '」。</strong><br>試試更短的關鍵字，或只打劇名的一部分。</div>');
+  }
+  document.getElementById("app").innerHTML = parts.join("");
 
   document.getElementById("c-k").textContent = DATA.items.filter(p => MARKS.has(p.id)).length;
 }
@@ -321,6 +371,11 @@ document.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () =
   document.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
   render();
 }));
+
+document.getElementById("q").addEventListener("input", e => {
+  TERMS = norm(e.target.value).split(/\s+/).filter(Boolean);
+  if (DATA) render();
+});
 
 // 星號用事件委派：清單每次 render 都會重畫，逐一綁定會漏掉新的節點
 document.getElementById("app").addEventListener("click", e => {

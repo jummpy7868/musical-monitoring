@@ -1,6 +1,6 @@
 // Service worker：讓看板可以安裝成 App，並在沒網路時仍打得開（顯示上次抓到的資料）。
 // 改動前端後把 VERSION 加一，舊的頁面快取才會被換掉。
-const VERSION = "v6";
+const VERSION = "v7";
 const SHELL = "shell-" + VERSION;
 
 // 資料快取刻意不帶版本號：改前端不該把上次抓到的節目資料一起丟掉，
