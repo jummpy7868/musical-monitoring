@@ -1,6 +1,6 @@
 {
- "updated": 1788743661686,
- "count": 151,
+ "updated": 1788787035783,
+ "count": 153,
  "items": [
   {
    "id": "opentix:2064176941388025857",
@@ -241,23 +241,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2057004988266651648",
-   "source": "OPENTIX",
-   "title": "明華園戲劇總團《貓．阿修羅》",
-   "kind": "舞台劇",
-   "listedAt": 1782705600000,
-   "saleStart": 1782878400000,
-   "showStart": 1789731000000,
-   "showEnd": 1789894500000,
-   "venue": "國家戲劇院",
-   "priceMin": 800,
-   "priceMax": 3300,
-   "image": "https://s3.resource.opentix.life/upload/program/1787281153962o4ls57smbq.png",
-   "url": "https://www.opentix.life/event/2057004988266651648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2060308522436108289",
    "source": "OPENTIX",
    "title": "樹德科技大學表演藝術系第17屆畢業製作《失聲》",
@@ -271,6 +254,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1780052376146qCsygDgKYY.png",
    "url": "https://www.opentix.life/event/2060308522436108289",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2057004988266651648",
+   "source": "OPENTIX",
+   "title": "明華園戲劇總團《貓．阿修羅》",
+   "kind": "舞台劇",
+   "listedAt": 1782705600000,
+   "saleStart": 1782878400000,
+   "showStart": 1789731000000,
+   "showEnd": 1789894500000,
+   "venue": "國家戲劇院",
+   "priceMin": 800,
+   "priceMax": 3300,
+   "image": "https://s3.resource.opentix.life/upload/program/1787281153962o4ls57smbq.png",
+   "url": "https://www.opentix.life/event/2057004988266651648",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1040,23 +1040,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082037328271515648",
-   "source": "OPENTIX",
-   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
-   "kind": "舞台劇",
-   "listedAt": 1786334400000,
-   "saleStart": 1786334400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792308600000,
-   "venue": "牯嶺街小劇場一樓實驗劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
-   "url": "https://www.opentix.life/event/2082037328271515648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2071498427878363137",
    "source": "OPENTIX",
    "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
@@ -1070,6 +1053,23 @@
    "priceMax": 1500,
    "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
    "url": "https://www.opentix.life/event/2071498427878363137",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082037328271515648",
+   "source": "OPENTIX",
+   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
+   "kind": "舞台劇",
+   "listedAt": 1786334400000,
+   "saleStart": 1786334400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792308600000,
+   "venue": "牯嶺街小劇場一樓實驗劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
+   "url": "https://www.opentix.life/event/2082037328271515648",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1731,7 +1731,7 @@
    "venue": "彰化縣文化局員林演藝廳表演廳",
    "priceMin": 500,
    "priceMax": 600,
-   "image": "https://s3.resource.opentix.life/upload/program/1786677765528AvV7DIfELA.jpeg",
+   "image": "https://s3.resource.opentix.life/upload/program/1788759983819igHEQmC9A1.jpeg",
    "url": "https://www.opentix.life/event/2076505628948193281",
    "firstSeen": null,
    "status": "onsale"
@@ -1802,6 +1802,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/17805602169286Bpa39qcet.png",
    "url": "https://www.opentix.life/event/2059817032922460161",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2091822012383260673",
+   "source": "OPENTIX",
+   "title": "盤花仙境大冒險",
+   "kind": "舞台劇",
+   "listedAt": 1788753600000,
+   "saleStart": 1788753600000,
+   "showStart": 1794051000000,
+   "showEnd": 1794055800000,
+   "venue": "屏東藝術館",
+   "priceMin": 300,
+   "priceMax": 500,
+   "image": "https://s3.resource.opentix.life/upload/program/17875643677502JFfB2r6dB.png",
+   "url": "https://www.opentix.life/event/2091822012383260673",
+   "firstSeen": "2026-09-07",
    "status": "onsale"
   },
   {
@@ -1922,6 +1939,23 @@
    "url": "https://www.opentix.life/event/2059826841548611585",
    "firstSeen": null,
    "status": "onsale"
+  },
+  {
+   "id": "opentix:2087017782302437377",
+   "source": "OPENTIX",
+   "title": "極致藝術《海象莫雷的漂流日誌》親子音樂劇",
+   "kind": "音樂劇",
+   "listedAt": 1788753600000,
+   "saleStart": 1789012800000,
+   "showStart": 1794639600000,
+   "showEnd": 1800175200000,
+   "venue": "新北市藝文中心演藝廳",
+   "priceMin": 600,
+   "priceMax": 2000,
+   "image": "https://s3.resource.opentix.life/upload/program/17884942207654flqd6LLDd.jpeg",
+   "url": "https://www.opentix.life/event/2087017782302437377",
+   "firstSeen": "2026-09-07",
+   "status": "upcoming"
   },
   {
    "id": "opentix:2043952009527836673",
