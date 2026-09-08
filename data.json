@@ -1,6 +1,6 @@
 {
- "updated": 1788830096574,
- "count": 153,
+ "updated": 1788873483521,
+ "count": 154,
  "items": [
   {
    "id": "opentix:2064176941388025857",
@@ -1040,23 +1040,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082037328271515648",
-   "source": "OPENTIX",
-   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
-   "kind": "舞台劇",
-   "listedAt": 1786334400000,
-   "saleStart": 1786334400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792308600000,
-   "venue": "牯嶺街小劇場一樓實驗劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
-   "url": "https://www.opentix.life/event/2082037328271515648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2071498427878363137",
    "source": "OPENTIX",
    "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
@@ -1070,6 +1053,23 @@
    "priceMax": 1500,
    "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
    "url": "https://www.opentix.life/event/2071498427878363137",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082037328271515648",
+   "source": "OPENTIX",
+   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
+   "kind": "舞台劇",
+   "listedAt": 1786334400000,
+   "saleStart": 1786334400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792308600000,
+   "venue": "牯嶺街小劇場一樓實驗劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
+   "url": "https://www.opentix.life/event/2082037328271515648",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1731,7 +1731,7 @@
    "venue": "彰化縣文化局員林演藝廳表演廳",
    "priceMin": 500,
    "priceMax": 600,
-   "image": "https://s3.resource.opentix.life/upload/program/1788759983819igHEQmC9A1.jpeg",
+   "image": "https://s3.resource.opentix.life/upload/program/1788829825697NqVbZt0Hvm.jpeg",
    "url": "https://www.opentix.life/event/2076505628948193281",
    "firstSeen": null,
    "status": "onsale"
@@ -1870,6 +1870,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/17805460649736quw2xnUph.png",
    "url": "https://www.opentix.life/event/2059825607998676993",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2095392859876958209",
+   "source": "OPENTIX",
+   "title": "試試製作所《不在場練習》",
+   "kind": "舞台劇",
+   "listedAt": 1788840000000,
+   "saleStart": 1788840000000,
+   "showStart": 1794569400000,
+   "showEnd": 1794728700000,
+   "venue": "牯嶺街小劇場一樓實驗劇場",
+   "priceMin": 1200,
+   "priceMax": 2000,
+   "image": "https://s3.resource.opentix.life/upload/program/1788415113380DCDAc2Mspl.jpeg",
+   "url": "https://www.opentix.life/event/2095392859876958209",
+   "firstSeen": "2026-09-08",
    "status": "onsale"
   },
   {
