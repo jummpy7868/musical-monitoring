@@ -1,6 +1,6 @@
 {
- "updated": 1788916457758,
- "count": 154,
+ "updated": 1788959833749,
+ "count": 155,
  "items": [
   {
    "id": "opentix:2064176941388025857",
@@ -9,7 +9,7 @@
    "kind": "舞台劇",
    "listedAt": 1782878400000,
    "saleStart": 1783569600000,
-   "showStart": 1788953400000,
+   "showStart": 1789039800000,
    "showEnd": 1789650000000,
    "venue": "臺灣大學藝文中心遊心劇場",
    "priceMin": 300,
@@ -26,7 +26,7 @@
    "kind": "音樂劇",
    "listedAt": 1779687000000,
    "saleStart": 1779687000000,
-   "showStart": 1788953400000,
+   "showStart": 1789039800000,
    "showEnd": 1790496600000,
    "venue": "西門紅樓二樓劇場",
    "priceMin": 1200,
@@ -241,23 +241,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2060308522436108289",
-   "source": "OPENTIX",
-   "title": "樹德科技大學表演藝術系第17屆畢業製作《失聲》",
-   "kind": "舞台劇",
-   "listedAt": 1780891200000,
-   "saleStart": 1780891200000,
-   "showStart": 1789731000000,
-   "showEnd": 1789891200000,
-   "venue": "駁二正港小劇場",
-   "priceMin": 400,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1780052376146qCsygDgKYY.png",
-   "url": "https://www.opentix.life/event/2060308522436108289",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2057004988266651648",
    "source": "OPENTIX",
    "title": "明華園戲劇總團《貓．阿修羅》",
@@ -271,6 +254,23 @@
    "priceMax": 3300,
    "image": "https://s3.resource.opentix.life/upload/program/1787281153962o4ls57smbq.png",
    "url": "https://www.opentix.life/event/2057004988266651648",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2060308522436108289",
+   "source": "OPENTIX",
+   "title": "樹德科技大學表演藝術系第17屆畢業製作《失聲》",
+   "kind": "舞台劇",
+   "listedAt": 1780891200000,
+   "saleStart": 1780891200000,
+   "showStart": 1789731000000,
+   "showEnd": 1789891200000,
+   "venue": "駁二正港小劇場",
+   "priceMin": 400,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1780052376146qCsygDgKYY.png",
+   "url": "https://www.opentix.life/event/2060308522436108289",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1037,6 +1037,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1781243307077yl5cbDuODW.jpeg",
    "url": "https://www.opentix.life/event/2037069944678072321",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2095065236091641857",
+   "source": "OPENTIX",
+   "title": "盜火劇團《熊出沒的森林》讀劇演出",
+   "kind": "舞台劇",
+   "listedAt": 1788926400000,
+   "saleStart": 1788926400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792222200000,
+   "venue": "新竹縣政府文化局演奏廳",
+   "priceMin": 400,
+   "priceMax": 400,
+   "image": "https://s3.resource.opentix.life/upload/program/1788841283159mmxDIuLqZt.png",
+   "url": "https://www.opentix.life/event/2095065236091641857",
+   "firstSeen": "2026-09-09",
    "status": "onsale"
   },
   {
@@ -2428,7 +2445,7 @@
    "venue": "國家兩廳院實驗劇場",
    "priceMin": 1000,
    "priceMax": 1000,
-   "image": "https://s3.resource.opentix.life/default/programInfoDefault.png",
+   "image": "https://s3.resource.opentix.life/upload/program/1788953176137EakHuw2PQ5.jpeg",
    "url": "https://www.opentix.life/event/2089874937535913985",
    "firstSeen": null,
    "status": "onsale"
