@@ -1,5 +1,5 @@
 {
- "updated": 1788873483521,
+ "updated": 1788916457758,
  "count": 154,
  "items": [
   {
@@ -1040,23 +1040,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2071498427878363137",
-   "source": "OPENTIX",
-   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
-   "kind": "舞台劇",
-   "listedAt": 1785211200000,
-   "saleStart": 1785816000000,
-   "showStart": 1792150200000,
-   "showEnd": 1792309800000,
-   "venue": "臺中國家歌劇院中劇院",
-   "priceMin": 700,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
-   "url": "https://www.opentix.life/event/2071498427878363137",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2082037328271515648",
    "source": "OPENTIX",
    "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
@@ -1070,6 +1053,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
    "url": "https://www.opentix.life/event/2082037328271515648",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2071498427878363137",
+   "source": "OPENTIX",
+   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
+   "kind": "舞台劇",
+   "listedAt": 1785211200000,
+   "saleStart": 1785816000000,
+   "showStart": 1792150200000,
+   "showEnd": 1792309800000,
+   "venue": "臺中國家歌劇院中劇院",
+   "priceMin": 700,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
+   "url": "https://www.opentix.life/event/2071498427878363137",
    "firstSeen": null,
    "status": "onsale"
   },
