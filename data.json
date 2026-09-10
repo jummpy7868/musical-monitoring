@@ -1,24 +1,7 @@
 {
- "updated": 1789002878124,
+ "updated": 1789046136517,
  "count": 155,
  "items": [
-  {
-   "id": "opentix:2064176941388025857",
-   "source": "OPENTIX",
-   "title": "跨學科文本展演《無窮彼方》",
-   "kind": "舞台劇",
-   "listedAt": 1782878400000,
-   "saleStart": 1783569600000,
-   "showStart": 1789039800000,
-   "showEnd": 1789650000000,
-   "venue": "臺灣大學藝文中心遊心劇場",
-   "priceMin": 300,
-   "priceMax": 300,
-   "image": "https://s3.resource.opentix.life/upload/program/17827022237721HnCRAPSTR.jpeg",
-   "url": "https://www.opentix.life/event/2064176941388025857",
-   "firstSeen": null,
-   "status": "onsale"
-  },
   {
    "id": "opentix:2054406826574860289",
    "source": "OPENTIX",
@@ -26,7 +9,7 @@
    "kind": "音樂劇",
    "listedAt": 1779687000000,
    "saleStart": 1779687000000,
-   "showStart": 1789039800000,
+   "showStart": 1789108200000,
    "showEnd": 1790496600000,
    "venue": "西門紅樓二樓劇場",
    "priceMin": 1200,
@@ -220,6 +203,23 @@
    "priceMax": 1800,
    "image": "https://s3.resource.opentix.life/upload/program/1779958376846HBY3lDOOOq.jpeg",
    "url": "https://www.opentix.life/event/2057670301236293632",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2064176941388025857",
+   "source": "OPENTIX",
+   "title": "跨學科文本展演《無窮彼方》",
+   "kind": "舞台劇",
+   "listedAt": 1782878400000,
+   "saleStart": 1783569600000,
+   "showStart": 1789558200000,
+   "showEnd": 1789650000000,
+   "venue": "臺灣大學藝文中心遊心劇場",
+   "priceMin": 300,
+   "priceMax": 300,
+   "image": "https://s3.resource.opentix.life/upload/program/17827022237721HnCRAPSTR.jpeg",
+   "url": "https://www.opentix.life/event/2064176941388025857",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1635,23 +1635,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2070116012517888001",
-   "source": "OPENTIX",
-   "title": "2026秋天藝術節 菲利普．肯恩《人間樂園》",
-   "kind": "舞台劇",
-   "listedAt": 1785124800000,
-   "saleStart": 1785556800000,
-   "showStart": 1793964600000,
-   "showEnd": 1794126300000,
-   "venue": "國家戲劇院",
-   "priceMin": 600,
-   "priceMax": 2000,
-   "image": "https://s3.resource.opentix.life/upload/program/1785132411369fmvl1LwFDQ.png",
-   "url": "https://www.opentix.life/event/2070116012517888001",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2075422956057141248",
    "source": "OPENTIX",
    "title": "2026正港雄有戲─橄欖葉劇團《四個同床異夢的枕邊人》",
@@ -1665,6 +1648,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1785450115517sLIGcjSGpv.jpeg",
    "url": "https://www.opentix.life/event/2075422956057141248",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2070116012517888001",
+   "source": "OPENTIX",
+   "title": "2026秋天藝術節 菲利普．肯恩《人間樂園》",
+   "kind": "舞台劇",
+   "listedAt": 1785124800000,
+   "saleStart": 1785556800000,
+   "showStart": 1793964600000,
+   "showEnd": 1794126300000,
+   "venue": "國家戲劇院",
+   "priceMin": 600,
+   "priceMax": 2000,
+   "image": "https://s3.resource.opentix.life/upload/program/1785132411369fmvl1LwFDQ.png",
+   "url": "https://www.opentix.life/event/2070116012517888001",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1989,7 +1989,7 @@
    "image": "https://s3.resource.opentix.life/upload/program/17884942207654flqd6LLDd.jpeg",
    "url": "https://www.opentix.life/event/2087017782302437377",
    "firstSeen": "2026-09-07",
-   "status": "upcoming"
+   "status": "onsale"
   },
   {
    "id": "opentix:2043952009527836673",
@@ -2015,7 +2015,7 @@
    "kind": "音樂劇",
    "listedAt": 1785902400000,
    "saleStart": 1789012800000,
-   "showStart": 1795242600000,
+   "showStart": 1795228200000,
    "showEnd": 1795336200000,
    "venue": "新北市藝文中心演藝廳",
    "priceMin": 600,
@@ -2023,7 +2023,7 @@
    "image": "https://s3.resource.opentix.life/upload/program/17736200701549Uw8RA7T1P.png",
    "url": "https://www.opentix.life/event/2029816885442543616",
    "firstSeen": null,
-   "status": "upcoming"
+   "status": "onsale"
   },
   {
    "id": "opentix:2051266879060606977",
@@ -2349,6 +2349,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2097251126499532800",
+   "source": "OPENTIX",
+   "title": "《地球人遇見小王子》",
+   "kind": "舞台劇",
+   "listedAt": 1789023600000,
+   "saleStart": 1789023600000,
+   "showStart": 1796450400000,
+   "showEnd": 1799584800000,
+   "venue": "大事件劇場",
+   "priceMin": 500,
+   "priceMax": 500,
+   "image": "https://s3.resource.opentix.life/upload/program/17888584711975HK3sCMHnS.jpeg",
+   "url": "https://www.opentix.life/event/2097251126499532800",
+   "firstSeen": "2026-09-10",
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2084474010942377985",
    "source": "OPENTIX",
    "title": "《當時光起舞》臺北市中山堂90週年紀念演出",
@@ -2430,23 +2447,6 @@
    "priceMax": 350,
    "image": "https://s3.resource.opentix.life/upload/program/1768748886775BPmXYgEbqD.png",
    "url": "https://www.opentix.life/event/2009540733916356608",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
-   "id": "opentix:2089874937535913985",
-   "source": "OPENTIX",
-   "title": "複象公場《洋基之子》臺文混血劇場",
-   "kind": "舞台劇",
-   "listedAt": 1787976000000,
-   "saleStart": 1787976000000,
-   "showStart": 1797593400000,
-   "showEnd": 1797752400000,
-   "venue": "國家兩廳院實驗劇場",
-   "priceMin": 1000,
-   "priceMax": 1000,
-   "image": "https://s3.resource.opentix.life/upload/program/1788953176137EakHuw2PQ5.jpeg",
-   "url": "https://www.opentix.life/event/2089874937535913985",
    "firstSeen": null,
    "status": "onsale"
   },
