@@ -1,5 +1,5 @@
 {
- "updated": 1788959833749,
+ "updated": 1789002878124,
  "count": 155,
  "items": [
   {
@@ -241,23 +241,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2057004988266651648",
-   "source": "OPENTIX",
-   "title": "明華園戲劇總團《貓．阿修羅》",
-   "kind": "舞台劇",
-   "listedAt": 1782705600000,
-   "saleStart": 1782878400000,
-   "showStart": 1789731000000,
-   "showEnd": 1789894500000,
-   "venue": "國家戲劇院",
-   "priceMin": 800,
-   "priceMax": 3300,
-   "image": "https://s3.resource.opentix.life/upload/program/1787281153962o4ls57smbq.png",
-   "url": "https://www.opentix.life/event/2057004988266651648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2060308522436108289",
    "source": "OPENTIX",
    "title": "樹德科技大學表演藝術系第17屆畢業製作《失聲》",
@@ -271,6 +254,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1780052376146qCsygDgKYY.png",
    "url": "https://www.opentix.life/event/2060308522436108289",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2057004988266651648",
+   "source": "OPENTIX",
+   "title": "明華園戲劇總團《貓．阿修羅》",
+   "kind": "舞台劇",
+   "listedAt": 1782705600000,
+   "saleStart": 1782878400000,
+   "showStart": 1789731000000,
+   "showEnd": 1789894500000,
+   "venue": "國家戲劇院",
+   "priceMin": 800,
+   "priceMax": 3300,
+   "image": "https://s3.resource.opentix.life/upload/program/1787281153962o4ls57smbq.png",
+   "url": "https://www.opentix.life/event/2057004988266651648",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1635,23 +1635,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2075422956057141248",
-   "source": "OPENTIX",
-   "title": "2026正港雄有戲─橄欖葉劇團《四個同床異夢的枕邊人》",
-   "kind": "舞台劇",
-   "listedAt": 1785902400000,
-   "saleStart": 1785902400000,
-   "showStart": 1793964600000,
-   "showEnd": 1794125400000,
-   "venue": "駁二正港小劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1785450115517sLIGcjSGpv.jpeg",
-   "url": "https://www.opentix.life/event/2075422956057141248",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2070116012517888001",
    "source": "OPENTIX",
    "title": "2026秋天藝術節 菲利普．肯恩《人間樂園》",
@@ -1665,6 +1648,23 @@
    "priceMax": 2000,
    "image": "https://s3.resource.opentix.life/upload/program/1785132411369fmvl1LwFDQ.png",
    "url": "https://www.opentix.life/event/2070116012517888001",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2075422956057141248",
+   "source": "OPENTIX",
+   "title": "2026正港雄有戲─橄欖葉劇團《四個同床異夢的枕邊人》",
+   "kind": "舞台劇",
+   "listedAt": 1785902400000,
+   "saleStart": 1785902400000,
+   "showStart": 1793964600000,
+   "showEnd": 1794125400000,
+   "venue": "駁二正港小劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1785450115517sLIGcjSGpv.jpeg",
+   "url": "https://www.opentix.life/event/2075422956057141248",
    "firstSeen": null,
    "status": "onsale"
   },
