@@ -1,5 +1,5 @@
 {
- "updated": 1789391887078,
+ "updated": 1789435014907,
  "count": 153,
  "items": [
   {
@@ -71,23 +71,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2057004988266651648",
-   "source": "OPENTIX",
-   "title": "明華園戲劇總團《貓．阿修羅》",
-   "kind": "舞台劇",
-   "listedAt": 1782705600000,
-   "saleStart": 1782878400000,
-   "showStart": 1789731000000,
-   "showEnd": 1789894500000,
-   "venue": "國家戲劇院",
-   "priceMin": 800,
-   "priceMax": 3300,
-   "image": "https://s3.resource.opentix.life/upload/program/1787281153962o4ls57smbq.png",
-   "url": "https://www.opentix.life/event/2057004988266651648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2060308522436108289",
    "source": "OPENTIX",
    "title": "樹德科技大學表演藝術系第17屆畢業製作《失聲》",
@@ -101,6 +84,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1780052376146qCsygDgKYY.png",
    "url": "https://www.opentix.life/event/2060308522436108289",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2057004988266651648",
+   "source": "OPENTIX",
+   "title": "明華園戲劇總團《貓．阿修羅》",
+   "kind": "舞台劇",
+   "listedAt": 1782705600000,
+   "saleStart": 1782878400000,
+   "showStart": 1789731000000,
+   "showEnd": 1789894500000,
+   "venue": "國家戲劇院",
+   "priceMin": 800,
+   "priceMax": 3300,
+   "image": "https://s3.resource.opentix.life/upload/program/1787281153962o4ls57smbq.png",
+   "url": "https://www.opentix.life/event/2057004988266651648",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -955,23 +955,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082037328271515648",
-   "source": "OPENTIX",
-   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
-   "kind": "舞台劇",
-   "listedAt": 1786334400000,
-   "saleStart": 1786334400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792308600000,
-   "venue": "牯嶺街小劇場一樓實驗劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
-   "url": "https://www.opentix.life/event/2082037328271515648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2071498427878363137",
    "source": "OPENTIX",
    "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
@@ -985,6 +968,23 @@
    "priceMax": 1500,
    "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
    "url": "https://www.opentix.life/event/2071498427878363137",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082037328271515648",
+   "source": "OPENTIX",
+   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
+   "kind": "舞台劇",
+   "listedAt": 1786334400000,
+   "saleStart": 1786334400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792308600000,
+   "venue": "牯嶺街小劇場一樓實驗劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
+   "url": "https://www.opentix.life/event/2082037328271515648",
    "firstSeen": null,
    "status": "onsale"
   },
