@@ -1,5 +1,5 @@
 {
- "updated": 1789737260225,
+ "updated": 1789780379054,
  "count": 160,
  "items": [
   {
@@ -224,23 +224,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2066809416750247937",
-   "source": "OPENTIX",
-   "title": "OPEN週末劇院_阮劇團《樓上的好人》",
-   "kind": "舞台劇",
-   "listedAt": 1784174400000,
-   "saleStart": 1784174400000,
-   "showStart": 1789817400000,
-   "showEnd": 1789891200000,
-   "venue": "彰化縣文化局員林演藝廳小劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1784173112309LgOQWPGHI6.jpeg",
-   "url": "https://www.opentix.life/event/2066809416750247937",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2060308522436108289",
    "source": "OPENTIX",
    "title": "樹德科技大學表演藝術系第17屆畢業製作《失聲》",
@@ -254,6 +237,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1780052376146qCsygDgKYY.png",
    "url": "https://www.opentix.life/event/2060308522436108289",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2066809416750247937",
+   "source": "OPENTIX",
+   "title": "OPEN週末劇院_阮劇團《樓上的好人》",
+   "kind": "舞台劇",
+   "listedAt": 1784174400000,
+   "saleStart": 1784174400000,
+   "showStart": 1789817400000,
+   "showEnd": 1789891200000,
+   "venue": "彰化縣文化局員林演藝廳小劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1784173112309LgOQWPGHI6.jpeg",
+   "url": "https://www.opentix.life/event/2066809416750247937",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -615,23 +615,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082029137613692928",
-   "source": "OPENTIX",
-   "title": "2026趨勢詩劇場《零雨的房間》",
-   "kind": "舞台劇",
-   "listedAt": 1785729600000,
-   "saleStart": 1785729600000,
-   "showStart": 1791009000000,
-   "showEnd": 1791100200000,
-   "venue": "臺灣大學藝文中心遊心劇場",
-   "priceMin": 700,
-   "priceMax": 700,
-   "image": "https://s3.resource.opentix.life/upload/program/1785907246918ZUkseE0a1H.jpeg",
-   "url": "https://www.opentix.life/event/2082029137613692928",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2056657152138346497",
    "source": "OPENTIX",
    "title": "《咱兜lán tau》雙版本巡演",
@@ -645,6 +628,23 @@
    "priceMax": 2000,
    "image": "https://s3.resource.opentix.life/upload/program/1779179678642AvCdyxtZxd.jpeg",
    "url": "https://www.opentix.life/event/2056657152138346497",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082029137613692928",
+   "source": "OPENTIX",
+   "title": "2026趨勢詩劇場《零雨的房間》",
+   "kind": "舞台劇",
+   "listedAt": 1785729600000,
+   "saleStart": 1785729600000,
+   "showStart": 1791009000000,
+   "showEnd": 1791100200000,
+   "venue": "臺灣大學藝文中心遊心劇場",
+   "priceMin": 700,
+   "priceMax": 700,
+   "image": "https://s3.resource.opentix.life/upload/program/1785907246918ZUkseE0a1H.jpeg",
+   "url": "https://www.opentix.life/event/2082029137613692928",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -989,23 +989,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2081904868818423809",
-   "source": "OPENTIX",
-   "title": "新文化館年度戲劇演出《大正十六年》",
-   "kind": "舞台劇",
-   "listedAt": 1785902400000,
-   "saleStart": 1785902400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792310400000,
-   "venue": "西門紅樓二樓劇場",
-   "priceMin": 800,
-   "priceMax": 1000,
-   "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
-   "url": "https://www.opentix.life/event/2081904868818423809",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2094279822423867392",
    "source": "OPENTIX",
    "title": "犀牛劇團《非常新生活》",
@@ -1020,6 +1003,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
    "url": "https://www.opentix.life/event/2094279822423867392",
    "firstSeen": "2026-09-05",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2081904868818423809",
+   "source": "OPENTIX",
+   "title": "新文化館年度戲劇演出《大正十六年》",
+   "kind": "舞台劇",
+   "listedAt": 1785902400000,
+   "saleStart": 1785902400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792310400000,
+   "venue": "西門紅樓二樓劇場",
+   "priceMin": 800,
+   "priceMax": 1000,
+   "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
+   "url": "https://www.opentix.life/event/2081904868818423809",
+   "firstSeen": null,
    "status": "onsale"
   },
   {
