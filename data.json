@@ -1,5 +1,5 @@
 {
- "updated": 1789910011558,
+ "updated": 1789953263101,
  "count": 148,
  "items": [
   {
@@ -411,23 +411,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082029137613692928",
-   "source": "OPENTIX",
-   "title": "2026趨勢詩劇場《零雨的房間》",
-   "kind": "舞台劇",
-   "listedAt": 1785729600000,
-   "saleStart": 1785729600000,
-   "showStart": 1791009000000,
-   "showEnd": 1791100200000,
-   "venue": "臺灣大學藝文中心遊心劇場",
-   "priceMin": 700,
-   "priceMax": 700,
-   "image": "https://s3.resource.opentix.life/upload/program/1785907246918ZUkseE0a1H.jpeg",
-   "url": "https://www.opentix.life/event/2082029137613692928",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2056657152138346497",
    "source": "OPENTIX",
    "title": "《咱兜lán tau》雙版本巡演",
@@ -441,6 +424,23 @@
    "priceMax": 2000,
    "image": "https://s3.resource.opentix.life/upload/program/1779179678642AvCdyxtZxd.jpeg",
    "url": "https://www.opentix.life/event/2056657152138346497",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082029137613692928",
+   "source": "OPENTIX",
+   "title": "2026趨勢詩劇場《零雨的房間》",
+   "kind": "舞台劇",
+   "listedAt": 1785729600000,
+   "saleStart": 1785729600000,
+   "showStart": 1791009000000,
+   "showEnd": 1791100200000,
+   "venue": "臺灣大學藝文中心遊心劇場",
+   "priceMin": 700,
+   "priceMax": 700,
+   "image": "https://s3.resource.opentix.life/upload/program/1785907246918ZUkseE0a1H.jpeg",
+   "url": "https://www.opentix.life/event/2082029137613692928",
    "firstSeen": null,
    "status": "onsale"
   },
