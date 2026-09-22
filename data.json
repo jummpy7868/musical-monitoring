@@ -1,6 +1,6 @@
 {
- "updated": 1790039572346,
- "count": 148,
+ "updated": 1790082980484,
+ "count": 152,
  "items": [
   {
    "id": "opentix:2054406826574860289",
@@ -734,23 +734,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082037328271515648",
-   "source": "OPENTIX",
-   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
-   "kind": "舞台劇",
-   "listedAt": 1786334400000,
-   "saleStart": 1786334400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792308600000,
-   "venue": "牯嶺街小劇場一樓實驗劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
-   "url": "https://www.opentix.life/event/2082037328271515648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2071498427878363137",
    "source": "OPENTIX",
    "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
@@ -764,6 +747,23 @@
    "priceMax": 1500,
    "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
    "url": "https://www.opentix.life/event/2071498427878363137",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082037328271515648",
+   "source": "OPENTIX",
+   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
+   "kind": "舞台劇",
+   "listedAt": 1786334400000,
+   "saleStart": 1786334400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792308600000,
+   "venue": "牯嶺街小劇場一樓實驗劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
+   "url": "https://www.opentix.life/event/2082037328271515648",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -785,23 +785,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2094279822423867392",
-   "source": "OPENTIX",
-   "title": "犀牛劇團《非常新生活》",
-   "kind": "舞台劇",
-   "listedAt": 1788580800000,
-   "saleStart": 1788580800000,
-   "showStart": 1792150200000,
-   "showEnd": 1792310400000,
-   "venue": "犀有空間",
-   "priceMin": 550,
-   "priceMax": 550,
-   "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
-   "url": "https://www.opentix.life/event/2094279822423867392",
-   "firstSeen": "2026-09-05",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2081904868818423809",
    "source": "OPENTIX",
    "title": "新文化館年度戲劇演出《大正十六年》",
@@ -816,6 +799,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
    "url": "https://www.opentix.life/event/2081904868818423809",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2094279822423867392",
+   "source": "OPENTIX",
+   "title": "犀牛劇團《非常新生活》",
+   "kind": "舞台劇",
+   "listedAt": 1788580800000,
+   "saleStart": 1788580800000,
+   "showStart": 1792150200000,
+   "showEnd": 1792310400000,
+   "venue": "犀有空間",
+   "priceMin": 550,
+   "priceMax": 550,
+   "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
+   "url": "https://www.opentix.life/event/2094279822423867392",
+   "firstSeen": "2026-09-05",
    "status": "onsale"
   },
   {
@@ -1346,6 +1346,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2101978067626668032",
+   "source": "OPENTIX",
+   "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
+   "kind": "舞台劇",
+   "listedAt": 1790049600000,
+   "saleStart": 1790049600000,
+   "showStart": 1793428200000,
+   "showEnd": 1793433600000,
+   "venue": "南投縣政府文化局演藝廳",
+   "priceMin": 300,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
+   "url": "https://www.opentix.life/event/2101978067626668032",
+   "firstSeen": "2026-09-22",
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2054370434090917888",
    "source": "OPENTIX",
    "title": "2026臺東藝術節《我不是影后》",
@@ -1720,6 +1737,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2101940424675528705",
+   "source": "OPENTIX",
+   "title": "拾棲劇團《賞屋大會—2026我們城中見》",
+   "kind": "舞台劇",
+   "listedAt": 1790049600000,
+   "saleStart": 1790049600000,
+   "showStart": 1794625200000,
+   "showEnd": 1795338000000,
+   "venue": "臺博小客廳",
+   "priceMin": 980,
+   "priceMax": 1680,
+   "image": "https://s3.resource.opentix.life/upload/program/1790074292449FMaYqJ6tk4.png",
+   "url": "https://www.opentix.life/event/2101940424675528705",
+   "firstSeen": "2026-09-22",
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2082004320853954561",
    "source": "OPENTIX",
    "title": "九歌兒童劇團《大樹、小鳥與牽牛花》",
@@ -1921,6 +1955,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1781335703929dkXEPcxawk.jpeg",
    "url": "https://www.opentix.life/event/2064992985067073537",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2090378180198309889",
+   "source": "OPENTIX",
+   "title": "両両製造 X 陳盈達《遮有真濟小王子》",
+   "kind": "舞台劇",
+   "listedAt": 1790049600000,
+   "saleStart": 1790049600000,
+   "showStart": 1795242600000,
+   "showEnd": 1795333800000,
+   "venue": "米倉劇場",
+   "priceMin": 800,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1787563051772RGA5RvdcP0.jpeg",
+   "url": "https://www.opentix.life/event/2090378180198309889",
+   "firstSeen": "2026-09-22",
    "status": "onsale"
   },
   {
@@ -2230,6 +2281,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2099691316232441857",
+   "source": "OPENTIX",
+   "title": "2026貓裏表演藝術節《錯位的圓舞曲》",
+   "kind": "舞台劇",
+   "listedAt": 1790049600000,
+   "saleStart": 1790049600000,
+   "showStart": 1796470200000,
+   "showEnd": 1796543400000,
+   "venue": "EX Studio黑盒子劇場",
+   "priceMin": 500,
+   "priceMax": 750,
+   "image": "https://s3.resource.opentix.life/upload/program/17900613841491TJEoWaGw3.jpeg",
+   "url": "https://www.opentix.life/event/2099691316232441857",
+   "firstSeen": "2026-09-22",
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2084474010942377985",
    "source": "OPENTIX",
    "title": "《當時光起舞》臺北市中山堂90週年紀念演出",
@@ -2427,7 +2495,7 @@
    "venue": "",
    "priceMin": null,
    "priceMax": null,
-   "image": "https://imgs2.utiki.com.tw/Data/KHAM/Images/UTK2401/P19CQHU9_RWD.JPG?v=202609161207",
+   "image": "https://imgs2.utiki.com.tw/Data/KHAM/Images/UTK2401/P19CQHU9_RWD.JPG?v=202609221813",
    "url": "https://kham.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P19CQHU9",
    "firstSeen": null,
    "status": "onsale"
