@@ -1,5 +1,5 @@
 {
- "updated": 1790169421402,
+ "updated": 1790212458831,
  "count": 158,
  "items": [
   {
@@ -411,23 +411,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2056657152138346497",
-   "source": "OPENTIX",
-   "title": "《咱兜lán tau》雙版本巡演",
-   "kind": "舞台劇",
-   "listedAt": 1780891200000,
-   "saleStart": 1780891200000,
-   "showStart": 1791009000000,
-   "showEnd": 1791102600000,
-   "venue": "米倉劇場",
-   "priceMin": 700,
-   "priceMax": 2000,
-   "image": "https://s3.resource.opentix.life/upload/program/1779179678642AvCdyxtZxd.jpeg",
-   "url": "https://www.opentix.life/event/2056657152138346497",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2082029137613692928",
    "source": "OPENTIX",
    "title": "2026趨勢詩劇場《零雨的房間》",
@@ -441,6 +424,23 @@
    "priceMax": 700,
    "image": "https://s3.resource.opentix.life/upload/program/1785907246918ZUkseE0a1H.jpeg",
    "url": "https://www.opentix.life/event/2082029137613692928",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2056657152138346497",
+   "source": "OPENTIX",
+   "title": "《咱兜lán tau》雙版本巡演",
+   "kind": "舞台劇",
+   "listedAt": 1780891200000,
+   "saleStart": 1780891200000,
+   "showStart": 1791009000000,
+   "showEnd": 1791102600000,
+   "venue": "米倉劇場",
+   "priceMin": 700,
+   "priceMax": 2000,
+   "image": "https://s3.resource.opentix.life/upload/program/1779179678642AvCdyxtZxd.jpeg",
+   "url": "https://www.opentix.life/event/2056657152138346497",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -751,23 +751,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2071498427878363137",
-   "source": "OPENTIX",
-   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
-   "kind": "舞台劇",
-   "listedAt": 1785211200000,
-   "saleStart": 1785816000000,
-   "showStart": 1792150200000,
-   "showEnd": 1792309800000,
-   "venue": "臺中國家歌劇院中劇院",
-   "priceMin": 700,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
-   "url": "https://www.opentix.life/event/2071498427878363137",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2082037328271515648",
    "source": "OPENTIX",
    "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
@@ -781,6 +764,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
    "url": "https://www.opentix.life/event/2082037328271515648",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2071498427878363137",
+   "source": "OPENTIX",
+   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
+   "kind": "舞台劇",
+   "listedAt": 1785211200000,
+   "saleStart": 1785816000000,
+   "showStart": 1792150200000,
+   "showEnd": 1792309800000,
+   "venue": "臺中國家歌劇院中劇院",
+   "priceMin": 700,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
+   "url": "https://www.opentix.life/event/2071498427878363137",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -802,23 +802,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2094279822423867392",
-   "source": "OPENTIX",
-   "title": "犀牛劇團《非常新生活》",
-   "kind": "舞台劇",
-   "listedAt": 1788580800000,
-   "saleStart": 1788580800000,
-   "showStart": 1792150200000,
-   "showEnd": 1792310400000,
-   "venue": "犀有空間",
-   "priceMin": 550,
-   "priceMax": 550,
-   "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
-   "url": "https://www.opentix.life/event/2094279822423867392",
-   "firstSeen": "2026-09-05",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2081904868818423809",
    "source": "OPENTIX",
    "title": "新文化館年度戲劇演出《大正十六年》",
@@ -833,6 +816,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
    "url": "https://www.opentix.life/event/2081904868818423809",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2094279822423867392",
+   "source": "OPENTIX",
+   "title": "犀牛劇團《非常新生活》",
+   "kind": "舞台劇",
+   "listedAt": 1788580800000,
+   "saleStart": 1788580800000,
+   "showStart": 1792150200000,
+   "showEnd": 1792310400000,
+   "venue": "犀有空間",
+   "priceMin": 550,
+   "priceMax": 550,
+   "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
+   "url": "https://www.opentix.life/event/2094279822423867392",
+   "firstSeen": "2026-09-05",
    "status": "onsale"
   },
   {
