@@ -1,24 +1,7 @@
 {
- "updated": 1790212458831,
+ "updated": 1790255835994,
  "count": 158,
  "items": [
-  {
-   "id": "opentix:2054406826574860289",
-   "source": "OPENTIX",
-   "title": "C MUSICAL 韓國授權音樂劇《我的遺願清單》",
-   "kind": "音樂劇",
-   "listedAt": 1779687000000,
-   "saleStart": 1779687000000,
-   "showStart": 1790249400000,
-   "showEnd": 1790496600000,
-   "venue": "西門紅樓二樓劇場",
-   "priceMin": 1200,
-   "priceMax": 2200,
-   "image": "https://s3.resource.opentix.life/upload/program/17794390024849vKGGB8SH6.jpeg",
-   "url": "https://www.opentix.life/event/2054406826574860289",
-   "firstSeen": null,
-   "status": "onsale"
-  },
   {
    "id": "opentix:2047993997244669953",
    "source": "OPENTIX",
@@ -33,6 +16,23 @@
    "priceMax": 2500,
    "image": "https://s3.resource.opentix.life/upload/program/1777114640278RHt9VfX45f.jpeg",
    "url": "https://www.opentix.life/event/2047993997244669953",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2054406826574860289",
+   "source": "OPENTIX",
+   "title": "C MUSICAL 韓國授權音樂劇《我的遺願清單》",
+   "kind": "音樂劇",
+   "listedAt": 1779687000000,
+   "saleStart": 1779687000000,
+   "showStart": 1790317800000,
+   "showEnd": 1790496600000,
+   "venue": "西門紅樓二樓劇場",
+   "priceMin": 1200,
+   "priceMax": 2200,
+   "image": "https://s3.resource.opentix.life/upload/program/17794390024849vKGGB8SH6.jpeg",
+   "url": "https://www.opentix.life/event/2054406826574860289",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1076,7 +1076,7 @@
   {
    "id": "opentix:2054124040675516417",
    "source": "OPENTIX",
-   "title": "圓仔花意識拼貼劇坊《鶯鶯》",
+   "title": "圓仔花意識拼貼劇坊《鶯鶯》(取消)",
    "kind": "舞台劇",
    "listedAt": 1784088000000,
    "saleStart": 1784088000000,
@@ -1136,7 +1136,7 @@
    "venue": "臺北市藝文推廣處城市舞台",
    "priceMin": 500,
    "priceMax": 3500,
-   "image": "https://s3.resource.opentix.life/upload/program/1785896304531XA3WGzKnxK.jpeg",
+   "image": "https://s3.resource.opentix.life/upload/program/1790242596445WnLrVNHC25.jpeg",
    "url": "https://www.opentix.life/event/2067174521020350465",
    "firstSeen": null,
    "status": "onsale"
@@ -1380,23 +1380,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2101978067626668032",
-   "source": "OPENTIX",
-   "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
-   "kind": "舞台劇",
-   "listedAt": 1790049600000,
-   "saleStart": 1790049600000,
-   "showStart": 1793428200000,
-   "showEnd": 1793433600000,
-   "venue": "南投縣政府文化局演藝廳",
-   "priceMin": 300,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
-   "url": "https://www.opentix.life/event/2101978067626668032",
-   "firstSeen": "2026-09-22",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2054370434090917888",
    "source": "OPENTIX",
    "title": "2026臺東藝術節《我不是影后》",
@@ -1411,6 +1394,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1778635111679ZpBTFw9csA.jpeg",
    "url": "https://www.opentix.life/event/2054370434090917888",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2101978067626668032",
+   "source": "OPENTIX",
+   "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
+   "kind": "舞台劇",
+   "listedAt": 1790049600000,
+   "saleStart": 1790049600000,
+   "showStart": 1793428200000,
+   "showEnd": 1793433600000,
+   "venue": "南投縣政府文化局演藝廳",
+   "priceMin": 300,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
+   "url": "https://www.opentix.life/event/2101978067626668032",
+   "firstSeen": "2026-09-22",
    "status": "onsale"
   },
   {
@@ -1705,7 +1705,7 @@
   {
    "id": "opentix:2100802203576029184",
    "source": "OPENTIX",
-   "title": "動見体《美好如此》讀劇演出",
+   "title": "動見体《美好如此》讀劇劇場",
    "kind": "舞台劇",
    "listedAt": 1790136000000,
    "saleStart": 1790136000000,
