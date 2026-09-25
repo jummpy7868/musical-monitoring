@@ -1,5 +1,5 @@
 {
- "updated": 1790255835994,
+ "updated": 1790298876514,
  "count": 158,
  "items": [
   {
@@ -411,23 +411,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082029137613692928",
-   "source": "OPENTIX",
-   "title": "2026趨勢詩劇場《零雨的房間》",
-   "kind": "舞台劇",
-   "listedAt": 1785729600000,
-   "saleStart": 1785729600000,
-   "showStart": 1791009000000,
-   "showEnd": 1791100200000,
-   "venue": "臺灣大學藝文中心遊心劇場",
-   "priceMin": 700,
-   "priceMax": 700,
-   "image": "https://s3.resource.opentix.life/upload/program/1785907246918ZUkseE0a1H.jpeg",
-   "url": "https://www.opentix.life/event/2082029137613692928",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2056657152138346497",
    "source": "OPENTIX",
    "title": "《咱兜lán tau》雙版本巡演",
@@ -441,6 +424,23 @@
    "priceMax": 2000,
    "image": "https://s3.resource.opentix.life/upload/program/1779179678642AvCdyxtZxd.jpeg",
    "url": "https://www.opentix.life/event/2056657152138346497",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082029137613692928",
+   "source": "OPENTIX",
+   "title": "2026趨勢詩劇場《零雨的房間》",
+   "kind": "舞台劇",
+   "listedAt": 1785729600000,
+   "saleStart": 1785729600000,
+   "showStart": 1791009000000,
+   "showEnd": 1791100200000,
+   "venue": "臺灣大學藝文中心遊心劇場",
+   "priceMin": 700,
+   "priceMax": 700,
+   "image": "https://s3.resource.opentix.life/upload/program/1785907246918ZUkseE0a1H.jpeg",
+   "url": "https://www.opentix.life/event/2082029137613692928",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -802,23 +802,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2081904868818423809",
-   "source": "OPENTIX",
-   "title": "新文化館年度戲劇演出《大正十六年》",
-   "kind": "舞台劇",
-   "listedAt": 1785902400000,
-   "saleStart": 1785902400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792310400000,
-   "venue": "西門紅樓二樓劇場",
-   "priceMin": 800,
-   "priceMax": 1000,
-   "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
-   "url": "https://www.opentix.life/event/2081904868818423809",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2094279822423867392",
    "source": "OPENTIX",
    "title": "犀牛劇團《非常新生活》",
@@ -833,6 +816,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
    "url": "https://www.opentix.life/event/2094279822423867392",
    "firstSeen": "2026-09-05",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2081904868818423809",
+   "source": "OPENTIX",
+   "title": "新文化館年度戲劇演出《大正十六年》",
+   "kind": "舞台劇",
+   "listedAt": 1785902400000,
+   "saleStart": 1785902400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792310400000,
+   "venue": "西門紅樓二樓劇場",
+   "priceMin": 800,
+   "priceMax": 1000,
+   "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
+   "url": "https://www.opentix.life/event/2081904868818423809",
+   "firstSeen": null,
    "status": "onsale"
   },
   {
@@ -1380,23 +1380,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2054370434090917888",
-   "source": "OPENTIX",
-   "title": "2026臺東藝術節《我不是影后》",
-   "kind": "舞台劇",
-   "listedAt": 1779163200000,
-   "saleStart": 1779336000000,
-   "showStart": 1793428200000,
-   "showEnd": 1793433600000,
-   "venue": "臺東縣政府文化處藝文中心演藝廳",
-   "priceMin": 400,
-   "priceMax": 1000,
-   "image": "https://s3.resource.opentix.life/upload/program/1778635111679ZpBTFw9csA.jpeg",
-   "url": "https://www.opentix.life/event/2054370434090917888",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2101978067626668032",
    "source": "OPENTIX",
    "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
@@ -1411,6 +1394,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
    "url": "https://www.opentix.life/event/2101978067626668032",
    "firstSeen": "2026-09-22",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2054370434090917888",
+   "source": "OPENTIX",
+   "title": "2026臺東藝術節《我不是影后》",
+   "kind": "舞台劇",
+   "listedAt": 1779163200000,
+   "saleStart": 1779336000000,
+   "showStart": 1793428200000,
+   "showEnd": 1793433600000,
+   "venue": "臺東縣政府文化處藝文中心演藝廳",
+   "priceMin": 400,
+   "priceMax": 1000,
+   "image": "https://s3.resource.opentix.life/upload/program/1778635111679ZpBTFw9csA.jpeg",
+   "url": "https://www.opentix.life/event/2054370434090917888",
+   "firstSeen": null,
    "status": "onsale"
   },
   {
@@ -1448,23 +1448,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2070116012517888001",
-   "source": "OPENTIX",
-   "title": "2026秋天藝術節 菲利普．肯恩《人間樂園》",
-   "kind": "舞台劇",
-   "listedAt": 1785124800000,
-   "saleStart": 1785556800000,
-   "showStart": 1793964600000,
-   "showEnd": 1794126300000,
-   "venue": "國家戲劇院",
-   "priceMin": 600,
-   "priceMax": 2000,
-   "image": "https://s3.resource.opentix.life/upload/program/1785132411369fmvl1LwFDQ.png",
-   "url": "https://www.opentix.life/event/2070116012517888001",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2075422956057141248",
    "source": "OPENTIX",
    "title": "2026正港雄有戲─橄欖葉劇團《四個同床異夢的枕邊人》",
@@ -1478,6 +1461,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1785450115517sLIGcjSGpv.jpeg",
    "url": "https://www.opentix.life/event/2075422956057141248",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2070116012517888001",
+   "source": "OPENTIX",
+   "title": "2026秋天藝術節 菲利普．肯恩《人間樂園》",
+   "kind": "舞台劇",
+   "listedAt": 1785124800000,
+   "saleStart": 1785556800000,
+   "showStart": 1793964600000,
+   "showEnd": 1794126300000,
+   "venue": "國家戲劇院",
+   "priceMin": 600,
+   "priceMax": 2000,
+   "image": "https://s3.resource.opentix.life/upload/program/1785132411369fmvl1LwFDQ.png",
+   "url": "https://www.opentix.life/event/2070116012517888001",
    "firstSeen": null,
    "status": "onsale"
   },
