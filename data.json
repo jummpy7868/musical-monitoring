@@ -1,6 +1,6 @@
 {
- "updated": 1790644549271,
- "count": 149,
+ "updated": 1790687956377,
+ "count": 150,
  "items": [
   {
    "id": "opentix:2035978919460421633",
@@ -337,7 +337,7 @@
    "venue": "臺中市港區藝術中心演藝廳",
    "priceMin": 200,
    "priceMax": 300,
-   "image": "https://s3.resource.opentix.life/upload/program/17857345092780xE1jWPXOX.png",
+   "image": "https://s3.resource.opentix.life/upload/program/1790665713092YqJe6lvwRL.jpeg",
    "url": "https://www.opentix.life/event/2080207173602664449",
    "firstSeen": null,
    "status": "onsale"
@@ -564,23 +564,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082037328271515648",
-   "source": "OPENTIX",
-   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
-   "kind": "舞台劇",
-   "listedAt": 1786334400000,
-   "saleStart": 1786334400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792308600000,
-   "venue": "牯嶺街小劇場一樓實驗劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
-   "url": "https://www.opentix.life/event/2082037328271515648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2071498427878363137",
    "source": "OPENTIX",
    "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
@@ -594,6 +577,23 @@
    "priceMax": 1500,
    "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
    "url": "https://www.opentix.life/event/2071498427878363137",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082037328271515648",
+   "source": "OPENTIX",
+   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
+   "kind": "舞台劇",
+   "listedAt": 1786334400000,
+   "saleStart": 1786334400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792308600000,
+   "venue": "牯嶺街小劇場一樓實驗劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
+   "url": "https://www.opentix.life/event/2082037328271515648",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1261,23 +1261,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2075422956057141248",
-   "source": "OPENTIX",
-   "title": "2026正港雄有戲─橄欖葉劇團《四個同床異夢的枕邊人》",
-   "kind": "舞台劇",
-   "listedAt": 1785902400000,
-   "saleStart": 1785902400000,
-   "showStart": 1793964600000,
-   "showEnd": 1794125400000,
-   "venue": "駁二正港小劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1785450115517sLIGcjSGpv.jpeg",
-   "url": "https://www.opentix.life/event/2075422956057141248",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2070116012517888001",
    "source": "OPENTIX",
    "title": "2026秋天藝術節 菲利普．肯恩《人間樂園》",
@@ -1291,6 +1274,23 @@
    "priceMax": 2000,
    "image": "https://s3.resource.opentix.life/upload/program/1785132411369fmvl1LwFDQ.png",
    "url": "https://www.opentix.life/event/2070116012517888001",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2075422956057141248",
+   "source": "OPENTIX",
+   "title": "2026正港雄有戲─橄欖葉劇團《四個同床異夢的枕邊人》",
+   "kind": "舞台劇",
+   "listedAt": 1785902400000,
+   "saleStart": 1785902400000,
+   "showStart": 1793964600000,
+   "showEnd": 1794125400000,
+   "venue": "駁二正港小劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1785450115517sLIGcjSGpv.jpeg",
+   "url": "https://www.opentix.life/event/2075422956057141248",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1751,6 +1751,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1778046179128PtaePFiJss.jpeg",
    "url": "https://www.opentix.life/event/2051266879060606977",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2101837655424311296",
+   "source": "OPENTIX",
+   "title": "《請你看看我的信：荒謬、自由、幸福與三十七年的人生規劃》",
+   "kind": "舞台劇",
+   "listedAt": 1790654400000,
+   "saleStart": 1790654400000,
+   "showStart": 1795174200000,
+   "showEnd": 1795352400000,
+   "venue": "邊譜書店3樓",
+   "priceMin": 600,
+   "priceMax": 600,
+   "image": "https://s3.resource.opentix.life/upload/program/1790640565882j2J1PaOBWW.jpeg",
+   "url": "https://www.opentix.life/event/2101837655424311296",
+   "firstSeen": "2026-09-29",
    "status": "onsale"
   },
   {
