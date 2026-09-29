@@ -1,5 +1,5 @@
 {
- "updated": 1790601428370,
+ "updated": 1790644549271,
  "count": 149,
  "items": [
   {
@@ -207,23 +207,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082029137613692928",
-   "source": "OPENTIX",
-   "title": "2026趨勢詩劇場《零雨的房間》",
-   "kind": "舞台劇",
-   "listedAt": 1785729600000,
-   "saleStart": 1785729600000,
-   "showStart": 1791009000000,
-   "showEnd": 1791100200000,
-   "venue": "臺灣大學藝文中心遊心劇場",
-   "priceMin": 700,
-   "priceMax": 700,
-   "image": "https://s3.resource.opentix.life/upload/program/1785907246918ZUkseE0a1H.jpeg",
-   "url": "https://www.opentix.life/event/2082029137613692928",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2056657152138346497",
    "source": "OPENTIX",
    "title": "《咱兜lán tau》雙版本巡演",
@@ -237,6 +220,23 @@
    "priceMax": 2000,
    "image": "https://s3.resource.opentix.life/upload/program/1779179678642AvCdyxtZxd.jpeg",
    "url": "https://www.opentix.life/event/2056657152138346497",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082029137613692928",
+   "source": "OPENTIX",
+   "title": "2026趨勢詩劇場《零雨的房間》",
+   "kind": "舞台劇",
+   "listedAt": 1785729600000,
+   "saleStart": 1785729600000,
+   "showStart": 1791009000000,
+   "showEnd": 1791100200000,
+   "venue": "臺灣大學藝文中心遊心劇場",
+   "priceMin": 700,
+   "priceMax": 700,
+   "image": "https://s3.resource.opentix.life/upload/program/1785907246918ZUkseE0a1H.jpeg",
+   "url": "https://www.opentix.life/event/2082029137613692928",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -564,23 +564,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2071498427878363137",
-   "source": "OPENTIX",
-   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
-   "kind": "舞台劇",
-   "listedAt": 1785211200000,
-   "saleStart": 1785816000000,
-   "showStart": 1792150200000,
-   "showEnd": 1792309800000,
-   "venue": "臺中國家歌劇院中劇院",
-   "priceMin": 700,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
-   "url": "https://www.opentix.life/event/2071498427878363137",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2082037328271515648",
    "source": "OPENTIX",
    "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
@@ -594,6 +577,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
    "url": "https://www.opentix.life/event/2082037328271515648",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2071498427878363137",
+   "source": "OPENTIX",
+   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
+   "kind": "舞台劇",
+   "listedAt": 1785211200000,
+   "saleStart": 1785816000000,
+   "showStart": 1792150200000,
+   "showEnd": 1792309800000,
+   "venue": "臺中國家歌劇院中劇院",
+   "priceMin": 700,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
+   "url": "https://www.opentix.life/event/2071498427878363137",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1193,23 +1193,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2101978067626668032",
-   "source": "OPENTIX",
-   "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
-   "kind": "舞台劇",
-   "listedAt": 1790049600000,
-   "saleStart": 1790049600000,
-   "showStart": 1793428200000,
-   "showEnd": 1793433600000,
-   "venue": "南投縣政府文化局演藝廳",
-   "priceMin": 300,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
-   "url": "https://www.opentix.life/event/2101978067626668032",
-   "firstSeen": "2026-09-22",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2054370434090917888",
    "source": "OPENTIX",
    "title": "2026臺東藝術節《我不是影后》",
@@ -1224,6 +1207,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1778635111679ZpBTFw9csA.jpeg",
    "url": "https://www.opentix.life/event/2054370434090917888",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2101978067626668032",
+   "source": "OPENTIX",
+   "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
+   "kind": "舞台劇",
+   "listedAt": 1790049600000,
+   "saleStart": 1790049600000,
+   "showStart": 1793428200000,
+   "showEnd": 1793433600000,
+   "venue": "南投縣政府文化局演藝廳",
+   "priceMin": 300,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
+   "url": "https://www.opentix.life/event/2101978067626668032",
+   "firstSeen": "2026-09-22",
    "status": "onsale"
   },
   {
