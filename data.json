@@ -1,24 +1,7 @@
 {
- "updated": 1790817420779,
- "count": 150,
+ "updated": 1790860829518,
+ "count": 154,
  "items": [
-  {
-   "id": "opentix:2037519395154640897",
-   "source": "OPENTIX",
-   "title": "2026同黨劇團《父親母親》",
-   "kind": "舞台劇",
-   "listedAt": 1777003200000,
-   "saleStart": 1777608000000,
-   "showStart": 1790854200000,
-   "showEnd": 1791103200000,
-   "venue": "水源劇場",
-   "priceMin": 900,
-   "priceMax": 2400,
-   "image": "https://s3.resource.opentix.life/upload/program/1774617190713E4HGn5I89m.jpeg",
-   "url": "https://www.opentix.life/event/2037519395154640897",
-   "firstSeen": null,
-   "status": "onsale"
-  },
   {
    "id": "opentix:2062350124831883265",
    "source": "OPENTIX",
@@ -122,6 +105,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2037519395154640897",
+   "source": "OPENTIX",
+   "title": "2026同黨劇團《父親母親》",
+   "kind": "舞台劇",
+   "listedAt": 1777003200000,
+   "saleStart": 1777608000000,
+   "showStart": 1790940600000,
+   "showEnd": 1791103200000,
+   "venue": "水源劇場",
+   "priceMin": 900,
+   "priceMax": 2400,
+   "image": "https://s3.resource.opentix.life/upload/program/1774617190713E4HGn5I89m.jpeg",
+   "url": "https://www.opentix.life/event/2037519395154640897",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2009991201670881281",
    "source": "OPENTIX",
    "title": "《西門町一番地》2026好評回歸雙十同慶",
@@ -190,23 +190,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2056657152138346497",
-   "source": "OPENTIX",
-   "title": "《咱兜lán tau》雙版本巡演",
-   "kind": "舞台劇",
-   "listedAt": 1780891200000,
-   "saleStart": 1780891200000,
-   "showStart": 1791009000000,
-   "showEnd": 1791102600000,
-   "venue": "米倉劇場",
-   "priceMin": 700,
-   "priceMax": 2000,
-   "image": "https://s3.resource.opentix.life/upload/program/1779179678642AvCdyxtZxd.jpeg",
-   "url": "https://www.opentix.life/event/2056657152138346497",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2082029137613692928",
    "source": "OPENTIX",
    "title": "2026趨勢詩劇場《零雨的房間》",
@@ -220,6 +203,23 @@
    "priceMax": 700,
    "image": "https://s3.resource.opentix.life/upload/program/1785907246918ZUkseE0a1H.jpeg",
    "url": "https://www.opentix.life/event/2082029137613692928",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2056657152138346497",
+   "source": "OPENTIX",
+   "title": "《咱兜lán tau》雙版本巡演",
+   "kind": "舞台劇",
+   "listedAt": 1780891200000,
+   "saleStart": 1780891200000,
+   "showStart": 1791009000000,
+   "showEnd": 1791102600000,
+   "venue": "米倉劇場",
+   "priceMin": 700,
+   "priceMax": 2000,
+   "image": "https://s3.resource.opentix.life/upload/program/1779179678642AvCdyxtZxd.jpeg",
+   "url": "https://www.opentix.life/event/2056657152138346497",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -513,6 +513,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2099754153870073857",
+   "source": "OPENTIX",
+   "title": "遠雄人壽2026家庭照顧者喘息服務《有一天我們會》公益舞台劇",
+   "kind": "舞台劇",
+   "listedAt": 1790753400000,
+   "saleStart": 1790753400000,
+   "showStart": 1792135800000,
+   "showEnd": 1792144800000,
+   "venue": "臺北市政大樓親子劇場",
+   "priceMin": 0,
+   "priceMax": 0,
+   "image": "https://s3.resource.opentix.life/upload/program/1790151246272fd5gbdcgJs.jpeg",
+   "url": "https://www.opentix.life/event/2099754153870073857",
+   "firstSeen": "2026-10-01",
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2037069944678072321",
    "source": "OPENTIX",
    "title": "唱進心靈的眼眸：「青瞑猴，出外讀冊拼出頭」音樂劇",
@@ -547,23 +564,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2071498427878363137",
-   "source": "OPENTIX",
-   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
-   "kind": "舞台劇",
-   "listedAt": 1785211200000,
-   "saleStart": 1785816000000,
-   "showStart": 1792150200000,
-   "showEnd": 1792309800000,
-   "venue": "臺中國家歌劇院中劇院",
-   "priceMin": 700,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
-   "url": "https://www.opentix.life/event/2071498427878363137",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2082037328271515648",
    "source": "OPENTIX",
    "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
@@ -577,6 +577,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
    "url": "https://www.opentix.life/event/2082037328271515648",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2071498427878363137",
+   "source": "OPENTIX",
+   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
+   "kind": "舞台劇",
+   "listedAt": 1785211200000,
+   "saleStart": 1785816000000,
+   "showStart": 1792150200000,
+   "showEnd": 1792309800000,
+   "venue": "臺中國家歌劇院中劇院",
+   "priceMin": 700,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
+   "url": "https://www.opentix.life/event/2071498427878363137",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -598,23 +615,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2094279822423867392",
-   "source": "OPENTIX",
-   "title": "犀牛劇團《非常新生活》",
-   "kind": "舞台劇",
-   "listedAt": 1788580800000,
-   "saleStart": 1788580800000,
-   "showStart": 1792150200000,
-   "showEnd": 1792310400000,
-   "venue": "犀有空間",
-   "priceMin": 550,
-   "priceMax": 550,
-   "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
-   "url": "https://www.opentix.life/event/2094279822423867392",
-   "firstSeen": "2026-09-05",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2081904868818423809",
    "source": "OPENTIX",
    "title": "新文化館年度戲劇演出《大正十六年》",
@@ -629,6 +629,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
    "url": "https://www.opentix.life/event/2081904868818423809",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2094279822423867392",
+   "source": "OPENTIX",
+   "title": "犀牛劇團《非常新生活》",
+   "kind": "舞台劇",
+   "listedAt": 1788580800000,
+   "saleStart": 1788580800000,
+   "showStart": 1792150200000,
+   "showEnd": 1792310400000,
+   "venue": "犀有空間",
+   "priceMin": 550,
+   "priceMax": 550,
+   "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
+   "url": "https://www.opentix.life/event/2094279822423867392",
+   "firstSeen": "2026-09-05",
    "status": "onsale"
   },
   {
@@ -928,7 +945,7 @@
    "listedAt": 1778990400000,
    "saleStart": 1779076800000,
    "showStart": 1792823400000,
-   "showEnd": 1794058200000,
+   "showEnd": 1792917000000,
    "venue": "臺北市客家音樂戲劇中心二樓劇場",
    "priceMin": 700,
    "priceMax": 1000,
@@ -1190,6 +1207,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/17876281269150otLnJl910.png",
    "url": "https://www.opentix.life/event/2068957182809317377",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2102310370504650753",
+   "source": "OPENTIX",
+   "title": "2026嘉義縣表演藝術中心《遊園戲夢》環境劇場導覽演出",
+   "kind": "舞台劇",
+   "listedAt": 1790827200000,
+   "saleStart": 1790827200000,
+   "showStart": 1793412000000,
+   "showEnd": 1793418000000,
+   "venue": "嘉義縣表演藝術中心全園區",
+   "priceMin": 200,
+   "priceMax": 200,
+   "image": "https://s3.resource.opentix.life/upload/program/1790064644145oxlelrrF9L.jpeg",
+   "url": "https://www.opentix.life/event/2102310370504650753",
+   "firstSeen": "2026-10-01",
    "status": "onsale"
   },
   {
@@ -1482,6 +1516,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2102944534086070273",
+   "source": "OPENTIX",
+   "title": "2026三分生劇團《從前從前，在花蓮》",
+   "kind": "舞台劇",
+   "listedAt": 1790827200000,
+   "saleStart": 1790827200000,
+   "showStart": 1794049200000,
+   "showEnd": 1794124200000,
+   "venue": "花蓮文化創意產業園區 第4棟小米酒劇場",
+   "priceMin": 400,
+   "priceMax": 400,
+   "image": "https://s3.resource.opentix.life/upload/program/1790214950015iYETsyN8DC.jpeg",
+   "url": "https://www.opentix.life/event/2102944534086070273",
+   "firstSeen": "2026-10-01",
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2091822012383260673",
    "source": "OPENTIX",
    "title": "盤花仙境大冒險",
@@ -1530,6 +1581,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1787557356992A1sLkXdduV.jpeg",
    "url": "https://www.opentix.life/event/2091794538773053440",
    "firstSeen": "2026-09-16",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2079024127582380033",
+   "source": "OPENTIX",
+   "title": "2026 正港雄有戲《功德嘉年華》",
+   "kind": "舞台劇",
+   "listedAt": 1785902400000,
+   "saleStart": 1785902400000,
+   "showStart": 1794637800000,
+   "showEnd": 1794729600000,
+   "venue": "駁二正港小劇場",
+   "priceMin": 600,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1786171632045joxSB4uUCE.png",
+   "url": "https://www.opentix.life/event/2079024127582380033",
+   "firstSeen": null,
    "status": "onsale"
   },
   {
@@ -1648,23 +1716,6 @@
    "priceMax": 200,
    "image": "https://s3.resource.opentix.life/upload/program/1785223237442KgfcPCzNGj.png",
    "url": "https://www.opentix.life/event/2082004320853954561",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
-   "id": "opentix:2079024127582380033",
-   "source": "OPENTIX",
-   "title": "2026 正港雄有戲《功德嘉年華》",
-   "kind": "舞台劇",
-   "listedAt": 1785902400000,
-   "saleStart": 1785902400000,
-   "showStart": 1794637800000,
-   "showEnd": 1794729600000,
-   "venue": "駁二正港小劇場",
-   "priceMin": 600,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1786171632045joxSB4uUCE.png",
-   "url": "https://www.opentix.life/event/2079024127582380033",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -2466,6 +2517,23 @@
    "url": "https://www.opentix.life/event/2059243467760234496",
    "firstSeen": null,
    "status": "onsale"
+  },
+  {
+   "id": "opentix:2100041290423484417",
+   "source": "OPENTIX",
+   "title": "《烏秋—黑羽的斷翼者》動漫式武打音樂劇",
+   "kind": "音樂劇",
+   "listedAt": 1790827200000,
+   "saleStart": 1791086400000,
+   "showStart": 1800617400000,
+   "showEnd": 1801384200000,
+   "venue": "D.D.Box 劇場（Date Day Box）",
+   "priceMin": 1200,
+   "priceMax": 2300,
+   "image": "https://s3.resource.opentix.life/upload/program/1789523629375Sa2iLdf5tk.png",
+   "url": "https://www.opentix.life/event/2100041290423484417",
+   "firstSeen": "2026-10-01",
+   "status": "upcoming"
   },
   {
    "id": "udn:P185ZP45",
