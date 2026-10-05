@@ -1,5 +1,5 @@
 {
- "updated": 1791182623906,
+ "updated": 1791234152287,
  "count": 141,
  "items": [
   {
@@ -9,7 +9,7 @@
    "kind": "舞台劇",
    "listedAt": 1786521600000,
    "saleStart": 1786334400000,
-   "showStart": 1791196200000,
+   "showStart": 1791282600000,
    "showEnd": 1791381600000,
    "venue": "誠品表演廳",
    "priceMin": 500,
@@ -275,23 +275,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2071498427878363137",
-   "source": "OPENTIX",
-   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
-   "kind": "舞台劇",
-   "listedAt": 1785211200000,
-   "saleStart": 1785816000000,
-   "showStart": 1792150200000,
-   "showEnd": 1792309800000,
-   "venue": "臺中國家歌劇院中劇院",
-   "priceMin": 700,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
-   "url": "https://www.opentix.life/event/2071498427878363137",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2082037328271515648",
    "source": "OPENTIX",
    "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
@@ -305,6 +288,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
    "url": "https://www.opentix.life/event/2082037328271515648",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2071498427878363137",
+   "source": "OPENTIX",
+   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
+   "kind": "舞台劇",
+   "listedAt": 1785211200000,
+   "saleStart": 1785816000000,
+   "showStart": 1792150200000,
+   "showEnd": 1792309800000,
+   "venue": "臺中國家歌劇院中劇院",
+   "priceMin": 700,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
+   "url": "https://www.opentix.life/event/2071498427878363137",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -955,23 +955,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2054370434090917888",
-   "source": "OPENTIX",
-   "title": "2026臺東藝術節《我不是影后》",
-   "kind": "舞台劇",
-   "listedAt": 1779163200000,
-   "saleStart": 1779336000000,
-   "showStart": 1793428200000,
-   "showEnd": 1793433600000,
-   "venue": "臺東縣政府文化處藝文中心演藝廳",
-   "priceMin": 400,
-   "priceMax": 1000,
-   "image": "https://s3.resource.opentix.life/upload/program/1778635111679ZpBTFw9csA.jpeg",
-   "url": "https://www.opentix.life/event/2054370434090917888",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2101978067626668032",
    "source": "OPENTIX",
    "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
@@ -986,6 +969,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
    "url": "https://www.opentix.life/event/2101978067626668032",
    "firstSeen": "2026-09-22",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2054370434090917888",
+   "source": "OPENTIX",
+   "title": "2026臺東藝術節《我不是影后》",
+   "kind": "舞台劇",
+   "listedAt": 1779163200000,
+   "saleStart": 1779336000000,
+   "showStart": 1793428200000,
+   "showEnd": 1793433600000,
+   "venue": "臺東縣政府文化處藝文中心演藝廳",
+   "priceMin": 400,
+   "priceMax": 1000,
+   "image": "https://s3.resource.opentix.life/upload/program/1778635111679ZpBTFw9csA.jpeg",
+   "url": "https://www.opentix.life/event/2054370434090917888",
+   "firstSeen": null,
    "status": "onsale"
   },
   {
