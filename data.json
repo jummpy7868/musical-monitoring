@@ -1,6 +1,6 @@
 {
- "updated": 1791271389276,
- "count": 142,
+ "updated": 1791312671427,
+ "count": 143,
  "items": [
   {
    "id": "opentix:2084532856189726721",
@@ -9,7 +9,7 @@
    "kind": "舞台劇",
    "listedAt": 1786521600000,
    "saleStart": 1786334400000,
-   "showStart": 1791282600000,
+   "showStart": 1791369000000,
    "showEnd": 1791381600000,
    "venue": "誠品表演廳",
    "priceMin": 500,
@@ -955,23 +955,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2101978067626668032",
-   "source": "OPENTIX",
-   "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
-   "kind": "舞台劇",
-   "listedAt": 1790049600000,
-   "saleStart": 1790049600000,
-   "showStart": 1793428200000,
-   "showEnd": 1793433600000,
-   "venue": "南投縣政府文化局演藝廳",
-   "priceMin": 300,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
-   "url": "https://www.opentix.life/event/2101978067626668032",
-   "firstSeen": "2026-09-22",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2054370434090917888",
    "source": "OPENTIX",
    "title": "2026臺東藝術節《我不是影后》",
@@ -986,6 +969,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1778635111679ZpBTFw9csA.jpeg",
    "url": "https://www.opentix.life/event/2054370434090917888",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2101978067626668032",
+   "source": "OPENTIX",
+   "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
+   "kind": "舞台劇",
+   "listedAt": 1790049600000,
+   "saleStart": 1790049600000,
+   "showStart": 1793428200000,
+   "showEnd": 1793433600000,
+   "venue": "南投縣政府文化局演藝廳",
+   "priceMin": 300,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
+   "url": "https://www.opentix.life/event/2101978067626668032",
+   "firstSeen": "2026-09-22",
    "status": "onsale"
   },
   {
@@ -1544,7 +1544,7 @@
    "venue": "邊譜書店3樓",
    "priceMin": 600,
    "priceMax": 600,
-   "image": "https://s3.resource.opentix.life/upload/program/1790640565882j2J1PaOBWW.jpeg",
+   "image": "https://s3.resource.opentix.life/upload/program/1791297208765uwxOoJhIkh.jpeg",
    "url": "https://www.opentix.life/event/2101837655424311296",
    "firstSeen": "2026-09-29",
    "status": "onsale"
@@ -2026,6 +2026,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2102703088441663489",
+   "source": "OPENTIX",
+   "title": "四把椅子劇團《世界是舞台，那 Center Center 在哪裡？》——演員請上台",
+   "kind": "舞台劇",
+   "listedAt": 1791172800000,
+   "saleStart": 1791432000000,
+   "showStart": 1796988600000,
+   "showEnd": 1797147000000,
+   "venue": "國家兩廳院實驗劇場",
+   "priceMin": 1000,
+   "priceMax": 1000,
+   "image": "https://s3.resource.opentix.life/upload/program/1791271398875pBTvuXwHGK.jpeg",
+   "url": "https://www.opentix.life/event/2102703088441663489",
+   "firstSeen": "2026-10-07",
+   "status": "upcoming"
+  },
+  {
    "id": "opentix:2084474010942377985",
    "source": "OPENTIX",
    "title": "《當時光起舞》臺北市中山堂90週年紀念演出",
@@ -2196,23 +2213,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2099390015667625985",
-   "source": "OPENTIX",
-   "title": "2026大觀國際表演藝術節 -【潮渡人之歌】",
-   "kind": "舞台劇",
-   "listedAt": 1790992800000,
-   "saleStart": 1790992800000,
-   "showStart": 1797661800000,
-   "showEnd": 1797755400000,
-   "venue": "臺藝表演廳",
-   "priceMin": 300,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1790926203697iJ5EnUmPDV.png",
-   "url": "https://www.opentix.life/event/2099390015667625985",
-   "firstSeen": "2026-10-03",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2078014126655860736",
    "source": "OPENTIX",
    "title": "2026南風音樂節x演藝廳十週年-《漂浪半島》原創音樂劇",
@@ -2227,6 +2227,23 @@
    "image": "https://s3.resource.opentix.life/default/programInfoDefault.png",
    "url": "https://www.opentix.life/event/2078014126655860736",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2099390015667625985",
+   "source": "OPENTIX",
+   "title": "2026大觀國際表演藝術節 -【潮渡人之歌】",
+   "kind": "舞台劇",
+   "listedAt": 1790992800000,
+   "saleStart": 1790992800000,
+   "showStart": 1797661800000,
+   "showEnd": 1797755400000,
+   "venue": "臺藝表演廳",
+   "priceMin": 300,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1790926203697iJ5EnUmPDV.png",
+   "url": "https://www.opentix.life/event/2099390015667625985",
+   "firstSeen": "2026-10-03",
    "status": "onsale"
   },
   {
