@@ -1,6 +1,6 @@
 {
- "updated": 1791234152287,
- "count": 141,
+ "updated": 1791271389276,
+ "count": 142,
  "items": [
   {
    "id": "opentix:2084532856189726721",
@@ -275,23 +275,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082037328271515648",
-   "source": "OPENTIX",
-   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
-   "kind": "舞台劇",
-   "listedAt": 1786334400000,
-   "saleStart": 1786334400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792308600000,
-   "venue": "牯嶺街小劇場一樓實驗劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
-   "url": "https://www.opentix.life/event/2082037328271515648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2071498427878363137",
    "source": "OPENTIX",
    "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
@@ -305,6 +288,23 @@
    "priceMax": 1500,
    "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
    "url": "https://www.opentix.life/event/2071498427878363137",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082037328271515648",
+   "source": "OPENTIX",
+   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
+   "kind": "舞台劇",
+   "listedAt": 1786334400000,
+   "saleStart": 1786334400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792308600000,
+   "venue": "牯嶺街小劇場一樓實驗劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
+   "url": "https://www.opentix.life/event/2082037328271515648",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -326,23 +326,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2094279822423867392",
-   "source": "OPENTIX",
-   "title": "犀牛劇團《非常新生活》",
-   "kind": "舞台劇",
-   "listedAt": 1788580800000,
-   "saleStart": 1788580800000,
-   "showStart": 1792150200000,
-   "showEnd": 1792310400000,
-   "venue": "犀有空間",
-   "priceMin": 550,
-   "priceMax": 550,
-   "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
-   "url": "https://www.opentix.life/event/2094279822423867392",
-   "firstSeen": "2026-09-05",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2081904868818423809",
    "source": "OPENTIX",
    "title": "新文化館年度戲劇演出《大正十六年》",
@@ -357,6 +340,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
    "url": "https://www.opentix.life/event/2081904868818423809",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2094279822423867392",
+   "source": "OPENTIX",
+   "title": "犀牛劇團《非常新生活》",
+   "kind": "舞台劇",
+   "listedAt": 1788580800000,
+   "saleStart": 1788580800000,
+   "showStart": 1792150200000,
+   "showEnd": 1792310400000,
+   "venue": "犀有空間",
+   "priceMin": 550,
+   "priceMax": 550,
+   "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
+   "url": "https://www.opentix.life/event/2094279822423867392",
+   "firstSeen": "2026-09-05",
    "status": "onsale"
   },
   {
@@ -673,9 +673,9 @@
    "listedAt": 1778990400000,
    "saleStart": 1779076800000,
    "showStart": 1792823400000,
-   "showEnd": 1792917000000,
+   "showEnd": 1794058200000,
    "venue": "臺北市客家音樂戲劇中心二樓劇場",
-   "priceMin": 700,
+   "priceMin": 0,
    "priceMax": 1000,
    "image": "https://s3.resource.opentix.life/upload/program/1778568363743LpK6Dc7S65.png",
    "url": "https://www.opentix.life/event/2051483080915320833",
@@ -2196,23 +2196,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2078014126655860736",
-   "source": "OPENTIX",
-   "title": "2026南風音樂節x演藝廳十週年-《漂浪半島》原創音樂劇",
-   "kind": "音樂劇",
-   "listedAt": 1785132000000,
-   "saleStart": 1785132000000,
-   "showStart": 1797661800000,
-   "showEnd": 1797755400000,
-   "venue": "恆春文化中心劇場館表演廳",
-   "priceMin": 300,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/default/programInfoDefault.png",
-   "url": "https://www.opentix.life/event/2078014126655860736",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2099390015667625985",
    "source": "OPENTIX",
    "title": "2026大觀國際表演藝術節 -【潮渡人之歌】",
@@ -2227,6 +2210,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1790926203697iJ5EnUmPDV.png",
    "url": "https://www.opentix.life/event/2099390015667625985",
    "firstSeen": "2026-10-03",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2078014126655860736",
+   "source": "OPENTIX",
+   "title": "2026南風音樂節x演藝廳十週年-《漂浪半島》原創音樂劇",
+   "kind": "音樂劇",
+   "listedAt": 1785132000000,
+   "saleStart": 1785132000000,
+   "showStart": 1797661800000,
+   "showEnd": 1797755400000,
+   "venue": "恆春文化中心劇場館表演廳",
+   "priceMin": 300,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/default/programInfoDefault.png",
+   "url": "https://www.opentix.life/event/2078014126655860736",
+   "firstSeen": null,
    "status": "onsale"
   },
   {
@@ -2296,6 +2296,23 @@
    "url": "https://www.opentix.life/event/2059243467760234496",
    "firstSeen": null,
    "status": "onsale"
+  },
+  {
+   "id": "opentix:2101959359186153473",
+   "source": "OPENTIX",
+   "title": "Re:密室遊戲",
+   "kind": "舞台劇",
+   "listedAt": 1791259200000,
+   "saleStart": 1791694800000,
+   "showStart": 1799407800000,
+   "showEnd": 1800175500000,
+   "venue": "D.D.Box 劇場（Date Day Box）",
+   "priceMin": 1200,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/179091318052532wp2XJ6Hy.png",
+   "url": "https://www.opentix.life/event/2101959359186153473",
+   "firstSeen": "2026-10-06",
+   "status": "upcoming"
   },
   {
    "id": "opentix:2100041290423484417",
