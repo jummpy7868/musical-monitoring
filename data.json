@@ -1,24 +1,7 @@
 {
- "updated": 1791356554723,
- "count": 146,
+ "updated": 1791400581710,
+ "count": 145,
  "items": [
-  {
-   "id": "opentix:2084532856189726721",
-   "source": "OPENTIX",
-   "title": "「外交官的故事」部分發表會（含劇團重要報告等）",
-   "kind": "舞台劇",
-   "listedAt": 1786521600000,
-   "saleStart": 1786334400000,
-   "showStart": 1791369000000,
-   "showEnd": 1791381600000,
-   "venue": "誠品表演廳",
-   "priceMin": 500,
-   "priceMax": 1200,
-   "image": "https://s3.resource.opentix.life/upload/program/1786607307552vGexzElz01.png",
-   "url": "https://www.opentix.life/event/2084532856189726721",
-   "firstSeen": null,
-   "status": "onsale"
-  },
   {
    "id": "opentix:2082382491747409921",
    "source": "OPENTIX",
@@ -326,23 +309,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2081904868818423809",
-   "source": "OPENTIX",
-   "title": "新文化館年度戲劇演出《大正十六年》",
-   "kind": "舞台劇",
-   "listedAt": 1785902400000,
-   "saleStart": 1785902400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792310400000,
-   "venue": "西門紅樓二樓劇場",
-   "priceMin": 800,
-   "priceMax": 1000,
-   "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
-   "url": "https://www.opentix.life/event/2081904868818423809",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2094279822423867392",
    "source": "OPENTIX",
    "title": "犀牛劇團《非常新生活》",
@@ -357,6 +323,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
    "url": "https://www.opentix.life/event/2094279822423867392",
    "firstSeen": "2026-09-05",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2081904868818423809",
+   "source": "OPENTIX",
+   "title": "新文化館年度戲劇演出《大正十六年》",
+   "kind": "舞台劇",
+   "listedAt": 1785902400000,
+   "saleStart": 1785902400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792310400000,
+   "venue": "西門紅樓二樓劇場",
+   "priceMin": 800,
+   "priceMax": 1000,
+   "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
+   "url": "https://www.opentix.life/event/2081904868818423809",
+   "firstSeen": null,
    "status": "onsale"
   },
   {
@@ -758,7 +741,7 @@
    "listedAt": 1791345600000,
    "saleStart": 1791345600000,
    "showStart": 1793014200000,
-   "showEnd": 1795334400000,
+   "showEnd": 1795338000000,
    "venue": "臺中國家歌劇院小劇場",
    "priceMin": 800,
    "priceMax": 800,
@@ -972,23 +955,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2101978067626668032",
-   "source": "OPENTIX",
-   "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
-   "kind": "舞台劇",
-   "listedAt": 1790049600000,
-   "saleStart": 1790049600000,
-   "showStart": 1793428200000,
-   "showEnd": 1793433600000,
-   "venue": "南投縣政府文化局演藝廳",
-   "priceMin": 300,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
-   "url": "https://www.opentix.life/event/2101978067626668032",
-   "firstSeen": "2026-09-22",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2054370434090917888",
    "source": "OPENTIX",
    "title": "2026臺東藝術節《我不是影后》",
@@ -1003,6 +969,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1778635111679ZpBTFw9csA.jpeg",
    "url": "https://www.opentix.life/event/2054370434090917888",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2101978067626668032",
+   "source": "OPENTIX",
+   "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
+   "kind": "舞台劇",
+   "listedAt": 1790049600000,
+   "saleStart": 1790049600000,
+   "showStart": 1793428200000,
+   "showEnd": 1793433600000,
+   "venue": "南投縣政府文化局演藝廳",
+   "priceMin": 300,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
+   "url": "https://www.opentix.life/event/2101978067626668032",
+   "firstSeen": "2026-09-22",
    "status": "onsale"
   },
   {
