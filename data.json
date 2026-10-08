@@ -1,24 +1,7 @@
 {
- "updated": 1791443458571,
- "count": 146,
+ "updated": 1791486760572,
+ "count": 145,
  "items": [
-  {
-   "id": "opentix:2082382491747409921",
-   "source": "OPENTIX",
-   "title": "Hot咖百老匯~周處大爺買香屁",
-   "kind": "舞台劇",
-   "listedAt": 1786507200000,
-   "saleStart": 1786507200000,
-   "showStart": 1791459000000,
-   "showEnd": 1791466200000,
-   "venue": "苗栗縣政府文化觀光局中正堂",
-   "priceMin": 500,
-   "priceMax": 500,
-   "image": "https://s3.resource.opentix.life/upload/program/1787902603177YO3v4T39WJ.jpeg",
-   "url": "https://www.opentix.life/event/2082382491747409921",
-   "firstSeen": null,
-   "status": "onsale"
-  },
   {
    "id": "opentix:2009991201670881281",
    "source": "OPENTIX",
@@ -258,23 +241,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082037328271515648",
-   "source": "OPENTIX",
-   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
-   "kind": "舞台劇",
-   "listedAt": 1786334400000,
-   "saleStart": 1786334400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792308600000,
-   "venue": "牯嶺街小劇場一樓實驗劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
-   "url": "https://www.opentix.life/event/2082037328271515648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2071498427878363137",
    "source": "OPENTIX",
    "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
@@ -288,6 +254,23 @@
    "priceMax": 1500,
    "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
    "url": "https://www.opentix.life/event/2071498427878363137",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082037328271515648",
+   "source": "OPENTIX",
+   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
+   "kind": "舞台劇",
+   "listedAt": 1786334400000,
+   "saleStart": 1786334400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792308600000,
+   "venue": "牯嶺街小劇場一樓實驗劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
+   "url": "https://www.opentix.life/event/2082037328271515648",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -2230,6 +2213,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2078014126655860736",
+   "source": "OPENTIX",
+   "title": "2026南風音樂節x演藝廳十週年-《漂浪半島》原創音樂劇",
+   "kind": "音樂劇",
+   "listedAt": 1785132000000,
+   "saleStart": 1785132000000,
+   "showStart": 1797661800000,
+   "showEnd": 1797755400000,
+   "venue": "恆春文化中心劇場館表演廳",
+   "priceMin": 300,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1791454178492RtWDL5oO1n.jpeg",
+   "url": "https://www.opentix.life/event/2078014126655860736",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2099390015667625985",
    "source": "OPENTIX",
    "title": "2026大觀國際表演藝術節 -【潮渡人之歌】",
@@ -2244,23 +2244,6 @@
    "image": "https://s3.resource.opentix.life/upload/program/1791434365803QMZ5gBv1rb.png",
    "url": "https://www.opentix.life/event/2099390015667625985",
    "firstSeen": "2026-10-03",
-   "status": "onsale"
-  },
-  {
-   "id": "opentix:2078014126655860736",
-   "source": "OPENTIX",
-   "title": "2026南風音樂節x演藝廳十週年-《漂浪半島》原創音樂劇",
-   "kind": "音樂劇",
-   "listedAt": 1785132000000,
-   "saleStart": 1785132000000,
-   "showStart": 1797661800000,
-   "showEnd": 1797755400000,
-   "venue": "恆春文化中心劇場館表演廳",
-   "priceMin": 300,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/default/programInfoDefault.png",
-   "url": "https://www.opentix.life/event/2078014126655860736",
-   "firstSeen": null,
    "status": "onsale"
   },
   {
