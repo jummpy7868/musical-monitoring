@@ -1,6 +1,6 @@
 {
- "updated": 1791400581710,
- "count": 145,
+ "updated": 1791443458571,
+ "count": 146,
  "items": [
   {
    "id": "opentix:2082382491747409921",
@@ -258,23 +258,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2071498427878363137",
-   "source": "OPENTIX",
-   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
-   "kind": "舞台劇",
-   "listedAt": 1785211200000,
-   "saleStart": 1785816000000,
-   "showStart": 1792150200000,
-   "showEnd": 1792309800000,
-   "venue": "臺中國家歌劇院中劇院",
-   "priceMin": 700,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
-   "url": "https://www.opentix.life/event/2071498427878363137",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2082037328271515648",
    "source": "OPENTIX",
    "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
@@ -288,6 +271,23 @@
    "priceMax": 800,
    "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
    "url": "https://www.opentix.life/event/2082037328271515648",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2071498427878363137",
+   "source": "OPENTIX",
+   "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
+   "kind": "舞台劇",
+   "listedAt": 1785211200000,
+   "saleStart": 1785816000000,
+   "showStart": 1792150200000,
+   "showEnd": 1792309800000,
+   "venue": "臺中國家歌劇院中劇院",
+   "priceMin": 700,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
+   "url": "https://www.opentix.life/event/2071498427878363137",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -309,23 +309,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2094279822423867392",
-   "source": "OPENTIX",
-   "title": "犀牛劇團《非常新生活》",
-   "kind": "舞台劇",
-   "listedAt": 1788580800000,
-   "saleStart": 1788580800000,
-   "showStart": 1792150200000,
-   "showEnd": 1792310400000,
-   "venue": "犀有空間",
-   "priceMin": 550,
-   "priceMax": 550,
-   "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
-   "url": "https://www.opentix.life/event/2094279822423867392",
-   "firstSeen": "2026-09-05",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2081904868818423809",
    "source": "OPENTIX",
    "title": "新文化館年度戲劇演出《大正十六年》",
@@ -340,6 +323,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
    "url": "https://www.opentix.life/event/2081904868818423809",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2094279822423867392",
+   "source": "OPENTIX",
+   "title": "犀牛劇團《非常新生活》",
+   "kind": "舞台劇",
+   "listedAt": 1788580800000,
+   "saleStart": 1788580800000,
+   "showStart": 1792150200000,
+   "showEnd": 1792310400000,
+   "venue": "犀有空間",
+   "priceMin": 550,
+   "priceMax": 550,
+   "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
+   "url": "https://www.opentix.life/event/2094279822423867392",
+   "firstSeen": "2026-09-05",
    "status": "onsale"
   },
   {
@@ -785,6 +785,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2092887492767944705",
+   "source": "OPENTIX",
+   "title": "《那個女人是誰？》原創音樂劇",
+   "kind": "音樂劇",
+   "listedAt": 1787889600000,
+   "saleStart": 1788235200000,
+   "showStart": 1793273400000,
+   "showEnd": 1793435400000,
+   "venue": "臺北市政府青年局3樓臺北演藝廳",
+   "priceMin": 500,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1787817707294JRJ0lfwMRX.png",
+   "url": "https://www.opentix.life/event/2092887492767944705",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2013457114793156609",
    "source": "OPENTIX",
    "title": "果陀劇場《深夜小狗神秘習題》",
@@ -849,23 +866,6 @@
    "priceMax": 1600,
    "image": "https://s3.resource.opentix.life/upload/program/1784879018418gBSlOglVcU.png",
    "url": "https://www.opentix.life/event/2070445180942770176",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
-   "id": "opentix:2092887492767944705",
-   "source": "OPENTIX",
-   "title": "《那個女人是誰？》原創音樂劇",
-   "kind": "音樂劇",
-   "listedAt": 1787889600000,
-   "saleStart": 1788235200000,
-   "showStart": 1793359800000,
-   "showEnd": 1793435400000,
-   "venue": "臺北市政府青年局3樓臺北演藝廳",
-   "priceMin": 500,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1787817707294JRJ0lfwMRX.png",
-   "url": "https://www.opentix.life/event/2092887492767944705",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1029,7 +1029,7 @@
    "kind": "舞台劇",
    "listedAt": 1785902400000,
    "saleStart": 1785902400000,
-   "showStart": 1793964600000,
+   "showStart": 1793943000000,
    "showEnd": 1794125400000,
    "venue": "駁二正港小劇場",
    "priceMin": 800,
@@ -1318,7 +1318,7 @@
    "kind": "舞台劇",
    "listedAt": 1785902400000,
    "saleStart": 1785902400000,
-   "showStart": 1794637800000,
+   "showStart": 1794547800000,
    "showEnd": 1794729600000,
    "venue": "駁二正港小劇場",
    "priceMin": 600,
@@ -2040,7 +2040,7 @@
    "image": "https://s3.resource.opentix.life/upload/program/1791271398875pBTvuXwHGK.jpeg",
    "url": "https://www.opentix.life/event/2102703088441663489",
    "firstSeen": "2026-10-07",
-   "status": "upcoming"
+   "status": "onsale"
   },
   {
    "id": "opentix:2084474010942377985",
@@ -2241,7 +2241,7 @@
    "venue": "臺藝表演廳",
    "priceMin": 300,
    "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1790926203697iJ5EnUmPDV.png",
+   "image": "https://s3.resource.opentix.life/upload/program/1791434365803QMZ5gBv1rb.png",
    "url": "https://www.opentix.life/event/2099390015667625985",
    "firstSeen": "2026-10-03",
    "status": "onsale"
@@ -2347,6 +2347,23 @@
    "url": "https://www.opentix.life/event/2101959359186153473",
    "firstSeen": "2026-10-06",
    "status": "upcoming"
+  },
+  {
+   "id": "opentix:2100147656938684416",
+   "source": "OPENTIX",
+   "title": "他在星期一死去",
+   "kind": "舞台劇",
+   "listedAt": 1791432000000,
+   "saleStart": 1790740800000,
+   "showStart": 1799476200000,
+   "showEnd": 1799570400000,
+   "venue": "牯嶺街小劇場二樓藝文空間",
+   "priceMin": 800,
+   "priceMax": 1000,
+   "image": "https://s3.resource.opentix.life/upload/program/1789549112665l9IL1Hwb88.png",
+   "url": "https://www.opentix.life/event/2100147656938684416",
+   "firstSeen": "2026-10-08",
+   "status": "onsale"
   },
   {
    "id": "opentix:2103016123029098497",
