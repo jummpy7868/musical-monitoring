@@ -1,5 +1,5 @@
 {
- "updated": 1791788970267,
+ "updated": 1791841195525,
  "count": 151,
  "items": [
   {
@@ -105,23 +105,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2081904868818423809",
-   "source": "OPENTIX",
-   "title": "新文化館年度戲劇演出《大正十六年》",
-   "kind": "舞台劇",
-   "listedAt": 1785902400000,
-   "saleStart": 1785902400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792310400000,
-   "venue": "西門紅樓二樓劇場",
-   "priceMin": 800,
-   "priceMax": 1000,
-   "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
-   "url": "https://www.opentix.life/event/2081904868818423809",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2094279822423867392",
    "source": "OPENTIX",
    "title": "犀牛劇團《非常新生活》",
@@ -136,6 +119,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
    "url": "https://www.opentix.life/event/2094279822423867392",
    "firstSeen": "2026-09-05",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2081904868818423809",
+   "source": "OPENTIX",
+   "title": "新文化館年度戲劇演出《大正十六年》",
+   "kind": "舞台劇",
+   "listedAt": 1785902400000,
+   "saleStart": 1785902400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792310400000,
+   "venue": "西門紅樓二樓劇場",
+   "priceMin": 800,
+   "priceMax": 1000,
+   "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
+   "url": "https://www.opentix.life/event/2081904868818423809",
+   "firstSeen": null,
    "status": "onsale"
   },
   {
@@ -1799,7 +1799,7 @@
    "venue": "PLAY HUB 玩・劇 創意基地",
    "priceMin": 589,
    "priceMax": 589,
-   "image": "https://s3.resource.opentix.life/upload/program/1791173041446E05GgiJcdd.jpeg",
+   "image": "https://s3.resource.opentix.life/upload/program/179179147724236zHYogUdd.jpeg",
    "url": "https://www.opentix.life/event/2104768412676886528",
    "firstSeen": "2026-10-12",
    "status": "upcoming"
