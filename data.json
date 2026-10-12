@@ -1,6 +1,6 @@
 {
- "updated": 1791741426719,
- "count": 145,
+ "updated": 1791788970267,
+ "count": 151,
  "items": [
   {
    "id": "opentix:2099754153870073857",
@@ -105,23 +105,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2094279822423867392",
-   "source": "OPENTIX",
-   "title": "犀牛劇團《非常新生活》",
-   "kind": "舞台劇",
-   "listedAt": 1788580800000,
-   "saleStart": 1788580800000,
-   "showStart": 1792150200000,
-   "showEnd": 1792310400000,
-   "venue": "犀有空間",
-   "priceMin": 550,
-   "priceMax": 550,
-   "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
-   "url": "https://www.opentix.life/event/2094279822423867392",
-   "firstSeen": "2026-09-05",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2081904868818423809",
    "source": "OPENTIX",
    "title": "新文化館年度戲劇演出《大正十六年》",
@@ -136,6 +119,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/178547866748537GDOjxEez.jpeg",
    "url": "https://www.opentix.life/event/2081904868818423809",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2094279822423867392",
+   "source": "OPENTIX",
+   "title": "犀牛劇團《非常新生活》",
+   "kind": "舞台劇",
+   "listedAt": 1788580800000,
+   "saleStart": 1788580800000,
+   "showStart": 1792150200000,
+   "showEnd": 1792310400000,
+   "venue": "犀有空間",
+   "priceMin": 550,
+   "priceMax": 550,
+   "image": "https://s3.resource.opentix.life/upload/program/1788150282021eIZYhBD3KF.png",
+   "url": "https://www.opentix.life/event/2094279822423867392",
+   "firstSeen": "2026-09-05",
    "status": "onsale"
   },
   {
@@ -1788,6 +1788,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2104768412676886528",
+   "source": "OPENTIX",
+   "title": "【讀劇匯】音樂劇《天選之子PRODUCE 8+9》讀劇音樂會",
+   "kind": "音樂劇",
+   "listedAt": 1791777600000,
+   "saleStart": 1792036800000,
+   "showStart": 1796124600000,
+   "showEnd": 1796217600000,
+   "venue": "PLAY HUB 玩・劇 創意基地",
+   "priceMin": 589,
+   "priceMax": 589,
+   "image": "https://s3.resource.opentix.life/upload/program/1791173041446E05GgiJcdd.jpeg",
+   "url": "https://www.opentix.life/event/2104768412676886528",
+   "firstSeen": "2026-10-12",
+   "status": "upcoming"
+  },
+  {
    "id": "opentix:2084175420436328449",
    "source": "OPENTIX",
    "title": "2026廳院選 當代傳奇劇場《慾望城國》王者再臨",
@@ -1958,6 +1975,40 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2107010598838661121",
+   "source": "OPENTIX",
+   "title": "【讀劇匯】原創音樂劇《On Air》",
+   "kind": "音樂劇",
+   "listedAt": 1791777600000,
+   "saleStart": 1792036800000,
+   "showStart": 1796556600000,
+   "showEnd": 1796649000000,
+   "venue": "PLAY HUB 玩・劇 創意基地",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1791193075766rzIKc7YdHZ.png",
+   "url": "https://www.opentix.life/event/2107010598838661121",
+   "firstSeen": "2026-10-12",
+   "status": "upcoming"
+  },
+  {
+   "id": "opentix:2102694867868659713",
+   "source": "OPENTIX",
+   "title": "【讀劇匯】四喜坊劇集 音樂劇《暗戀對象加入了邪教該怎麼辦》",
+   "kind": "音樂劇",
+   "listedAt": 1791777600000,
+   "saleStart": 1792036800000,
+   "showStart": 1796902200000,
+   "showEnd": 1797063600000,
+   "venue": "PLAY HUB 玩・劇 創意基地",
+   "priceMin": 666,
+   "priceMax": 666,
+   "image": "https://s3.resource.opentix.life/upload/program/1791091157414TyGPvfHYxd.jpeg",
+   "url": "https://www.opentix.life/event/2102694867868659713",
+   "firstSeen": "2026-10-12",
+   "status": "upcoming"
+  },
+  {
    "id": "opentix:2095689964381159424",
    "source": "OPENTIX",
    "title": "國立臺灣大學戲劇學系2026學期製作《BIG LOVE》",
@@ -2058,6 +2109,23 @@
    "url": "https://www.opentix.life/event/2078001512166543361",
    "firstSeen": null,
    "status": "onsale"
+  },
+  {
+   "id": "opentix:2105556026520125441",
+   "source": "OPENTIX",
+   "title": "【讀劇匯】音樂劇《刻在你心底的名字》讀劇演出",
+   "kind": "音樂劇",
+   "listedAt": 1791777600000,
+   "saleStart": 1792036800000,
+   "showStart": 1797420600000,
+   "showEnd": 1797754200000,
+   "venue": "PLAY HUB 玩・劇 創意基地",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1791176943926XpxaNMSFxI.jpeg",
+   "url": "https://www.opentix.life/event/2105556026520125441",
+   "firstSeen": "2026-10-12",
+   "status": "upcoming"
   },
   {
    "id": "opentix:1881618375330443264",
@@ -2196,23 +2264,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2099390015667625985",
-   "source": "OPENTIX",
-   "title": "2026大觀國際表演藝術節 -【潮渡人之歌】",
-   "kind": "舞台劇",
-   "listedAt": 1790992800000,
-   "saleStart": 1790992800000,
-   "showStart": 1797661800000,
-   "showEnd": 1797755400000,
-   "venue": "臺藝表演廳",
-   "priceMin": 300,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1791434365803QMZ5gBv1rb.png",
-   "url": "https://www.opentix.life/event/2099390015667625985",
-   "firstSeen": "2026-10-03",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2078014126655860736",
    "source": "OPENTIX",
    "title": "2026南風音樂節x演藝廳十週年-《漂浪半島》原創音樂劇",
@@ -2230,6 +2281,40 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2099390015667625985",
+   "source": "OPENTIX",
+   "title": "2026大觀國際表演藝術節 -【潮渡人之歌】",
+   "kind": "舞台劇",
+   "listedAt": 1790992800000,
+   "saleStart": 1790992800000,
+   "showStart": 1797661800000,
+   "showEnd": 1797755400000,
+   "venue": "臺藝表演廳",
+   "priceMin": 300,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1791434365803QMZ5gBv1rb.png",
+   "url": "https://www.opentix.life/event/2099390015667625985",
+   "firstSeen": "2026-10-03",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2105853083317858305",
+   "source": "OPENTIX",
+   "title": "【讀劇匯】音樂劇《找死俱樂部》讀劇演出",
+   "kind": "音樂劇",
+   "listedAt": 1791777600000,
+   "saleStart": 1792036800000,
+   "showStart": 1797661800000,
+   "showEnd": 1797861600000,
+   "venue": "PLAY HUB 玩・劇 創意基地",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1791185633600WWe1sK4Jlp.png",
+   "url": "https://www.opentix.life/event/2105853083317858305",
+   "firstSeen": "2026-10-12",
+   "status": "upcoming"
+  },
+  {
    "id": "opentix:2100752451028361216",
    "source": "OPENTIX",
    "title": "【醫聲．白袍金嗓】施宗賢醫師 廣音域 跨界演唱會",
@@ -2245,6 +2330,23 @@
    "url": "https://www.opentix.life/event/2100752451028361216",
    "firstSeen": "2026-09-23",
    "status": "onsale"
+  },
+  {
+   "id": "opentix:2105961360965922817",
+   "source": "OPENTIX",
+   "title": "【讀劇匯】音樂劇《反攻！反攻！下一位偉人請就位》",
+   "kind": "音樂劇",
+   "listedAt": 1791777600000,
+   "saleStart": 1792036800000,
+   "showStart": 1798111800000,
+   "showEnd": 1798289400000,
+   "venue": "PLAY HUB 玩・劇 創意基地",
+   "priceMin": 800,
+   "priceMax": 1200,
+   "image": "https://s3.resource.opentix.life/upload/program/1791235139460gRlfBZVSBt.png",
+   "url": "https://www.opentix.life/event/2105961360965922817",
+   "firstSeen": "2026-10-12",
+   "status": "upcoming"
   },
   {
    "id": "opentix:2100923426582679553",
