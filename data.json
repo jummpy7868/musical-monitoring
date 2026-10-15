@@ -1,6 +1,6 @@
 {
- "updated": 1792000427233,
- "count": 151,
+ "updated": 1792043027448,
+ "count": 152,
  "items": [
   {
    "id": "opentix:2099754153870073857",
@@ -54,23 +54,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2082037328271515648",
-   "source": "OPENTIX",
-   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
-   "kind": "舞台劇",
-   "listedAt": 1786334400000,
-   "saleStart": 1786334400000,
-   "showStart": 1792150200000,
-   "showEnd": 1792308600000,
-   "venue": "牯嶺街小劇場一樓實驗劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
-   "url": "https://www.opentix.life/event/2082037328271515648",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2071498427878363137",
    "source": "OPENTIX",
    "title": "2026 NTT遇見巨人—愛爾蘭鬼才編導丹．科利《迷失的李爾》",
@@ -84,6 +67,23 @@
    "priceMax": 1500,
    "image": "https://s3.resource.opentix.life/upload/program/1784880465455tFHE9Q4qgO.jpeg",
    "url": "https://www.opentix.life/event/2071498427878363137",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2082037328271515648",
+   "source": "OPENTIX",
+   "title": "2026莫比斯圓環創作公社《非常譯外：群盲》",
+   "kind": "舞台劇",
+   "listedAt": 1786334400000,
+   "saleStart": 1786334400000,
+   "showStart": 1792150200000,
+   "showEnd": 1792308600000,
+   "venue": "牯嶺街小劇場一樓實驗劇場",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1786001920298alAjDnzWzF.png",
+   "url": "https://www.opentix.life/event/2082037328271515648",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1802,7 +1802,7 @@
    "image": "https://s3.resource.opentix.life/upload/program/179179147724236zHYogUdd.jpeg",
    "url": "https://www.opentix.life/event/2104768412676886528",
    "firstSeen": "2026-10-12",
-   "status": "upcoming"
+   "status": "onsale"
   },
   {
    "id": "opentix:2084175420436328449",
@@ -1989,7 +1989,7 @@
    "image": "https://s3.resource.opentix.life/upload/program/1791193075766rzIKc7YdHZ.png",
    "url": "https://www.opentix.life/event/2107010598838661121",
    "firstSeen": "2026-10-12",
-   "status": "upcoming"
+   "status": "onsale"
   },
   {
    "id": "opentix:2102694867868659713",
@@ -2006,7 +2006,7 @@
    "image": "https://s3.resource.opentix.life/upload/program/1791091157414TyGPvfHYxd.jpeg",
    "url": "https://www.opentix.life/event/2102694867868659713",
    "firstSeen": "2026-10-12",
-   "status": "upcoming"
+   "status": "onsale"
   },
   {
    "id": "opentix:2095689964381159424",
@@ -2125,7 +2125,7 @@
    "image": "https://s3.resource.opentix.life/upload/program/1791176943926XpxaNMSFxI.jpeg",
    "url": "https://www.opentix.life/event/2105556026520125441",
    "firstSeen": "2026-10-12",
-   "status": "upcoming"
+   "status": "onsale"
   },
   {
    "id": "opentix:1881618375330443264",
@@ -2176,6 +2176,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1768748886775BPmXYgEbqD.png",
    "url": "https://www.opentix.life/event/2009540733916356608",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2107309051821379585",
+   "source": "OPENTIX",
+   "title": "再一次，聽覺劇場高歌進擊!《抒情詩》",
+   "kind": "舞台劇",
+   "listedAt": 1792036800000,
+   "saleStart": 1792036800000,
+   "showStart": 1797591600000,
+   "showEnd": 1797753600000,
+   "venue": "五維聚所MotiFive",
+   "priceMin": 850,
+   "priceMax": 1050,
+   "image": "https://s3.resource.opentix.life/upload/program/1791942129945hNuZfliEwB.png",
+   "url": "https://www.opentix.life/event/2107309051821379585",
+   "firstSeen": "2026-10-15",
    "status": "onsale"
   },
   {
@@ -2312,7 +2329,7 @@
    "image": "https://s3.resource.opentix.life/upload/program/1791185633600WWe1sK4Jlp.png",
    "url": "https://www.opentix.life/event/2105853083317858305",
    "firstSeen": "2026-10-12",
-   "status": "upcoming"
+   "status": "onsale"
   },
   {
    "id": "opentix:2100752451028361216",
@@ -2346,7 +2363,7 @@
    "image": "https://s3.resource.opentix.life/upload/program/1791235139460gRlfBZVSBt.png",
    "url": "https://www.opentix.life/event/2105961360965922817",
    "firstSeen": "2026-10-12",
-   "status": "upcoming"
+   "status": "onsale"
   },
   {
    "id": "opentix:2100923426582679553",
