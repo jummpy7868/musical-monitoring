@@ -1,6 +1,6 @@
 {
- "updated": 1792086105275,
- "count": 152,
+ "updated": 1792129196930,
+ "count": 153,
  "items": [
   {
    "id": "opentix:2099754153870073857",
@@ -751,23 +751,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2101978067626668032",
-   "source": "OPENTIX",
-   "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
-   "kind": "舞台劇",
-   "listedAt": 1790049600000,
-   "saleStart": 1790049600000,
-   "showStart": 1793428200000,
-   "showEnd": 1793433600000,
-   "venue": "南投縣政府文化局演藝廳",
-   "priceMin": 300,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
-   "url": "https://www.opentix.life/event/2101978067626668032",
-   "firstSeen": "2026-09-22",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2054370434090917888",
    "source": "OPENTIX",
    "title": "2026臺東藝術節《我不是影后》",
@@ -782,6 +765,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1778635111679ZpBTFw9csA.jpeg",
    "url": "https://www.opentix.life/event/2054370434090917888",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2101978067626668032",
+   "source": "OPENTIX",
+   "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
+   "kind": "舞台劇",
+   "listedAt": 1790049600000,
+   "saleStart": 1790049600000,
+   "showStart": 1793428200000,
+   "showEnd": 1793433600000,
+   "venue": "南投縣政府文化局演藝廳",
+   "priceMin": 300,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
+   "url": "https://www.opentix.life/event/2101978067626668032",
+   "firstSeen": "2026-09-22",
    "status": "onsale"
   },
   {
@@ -2397,6 +2397,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1790234652994V1iCAGFxlZ.png",
    "url": "https://www.opentix.life/event/2101876354656706560",
    "firstSeen": "2026-10-05",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2107364566848765953",
+   "source": "OPENTIX",
+   "title": "0000特殊行動：盜走巴別塔",
+   "kind": "舞台劇",
+   "listedAt": 1792112400000,
+   "saleStart": 1792112400000,
+   "showStart": 1798198200000,
+   "showEnd": 1798357800000,
+   "venue": "臺北市客家音樂戲劇中心二樓劇場",
+   "priceMin": 600,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/17912696804185s9F4D7JNi.png",
+   "url": "https://www.opentix.life/event/2107364566848765953",
+   "firstSeen": "2026-10-16",
    "status": "onsale"
   },
   {
