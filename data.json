@@ -1,24 +1,7 @@
 {
- "updated": 1792170929139,
+ "updated": 1792214739329,
  "count": 152,
  "items": [
-  {
-   "id": "opentix:2083103083691253760",
-   "source": "OPENTIX",
-   "title": "2026正港雄有戲-豆子劇團《蝴蝶大變！(是變身的變)》",
-   "kind": "舞台劇",
-   "listedAt": 1785902400000,
-   "saleStart": 1785902400000,
-   "showStart": 1792204200000,
-   "showEnd": 1792312200000,
-   "venue": "駁二正港小劇場",
-   "priceMin": 600,
-   "priceMax": 600,
-   "image": "https://s3.resource.opentix.life/upload/program/1785828260129rsmQHUHpwz.jpeg",
-   "url": "https://www.opentix.life/event/2083103083691253760",
-   "firstSeen": null,
-   "status": "onsale"
-  },
   {
    "id": "opentix:2051591825313611777",
    "source": "OPENTIX",
@@ -237,6 +220,23 @@
    "priceMax": 1200,
    "image": "https://s3.resource.opentix.life/upload/program/1784814719862EjgTiYi4QF.jpeg",
    "url": "https://www.opentix.life/event/2067437498881695745",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2083103083691253760",
+   "source": "OPENTIX",
+   "title": "2026正港雄有戲-豆子劇團《蝴蝶大變！(是變身的變)》",
+   "kind": "舞台劇",
+   "listedAt": 1785902400000,
+   "saleStart": 1785902400000,
+   "showStart": 1792222200000,
+   "showEnd": 1792312200000,
+   "venue": "駁二正港小劇場",
+   "priceMin": 600,
+   "priceMax": 600,
+   "image": "https://s3.resource.opentix.life/upload/program/1785828260129rsmQHUHpwz.jpeg",
+   "url": "https://www.opentix.life/event/2083103083691253760",
    "firstSeen": null,
    "status": "onsale"
   },
