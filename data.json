@@ -1,5 +1,5 @@
 {
- "updated": 1792340731809,
+ "updated": 1792389300050,
  "count": 135,
  "items": [
   {
@@ -1329,6 +1329,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2058773455445823489",
+   "source": "OPENTIX",
+   "title": "唱歌集《以為是BL結果是BFF》青春校園音樂劇",
+   "kind": "音樂劇",
+   "listedAt": 1779768000000,
+   "saleStart": 1779768000000,
+   "showStart": 1795779000000,
+   "showEnd": 1795940700000,
+   "venue": "駁二正港小劇場",
+   "priceMin": 900,
+   "priceMax": 1600,
+   "image": "https://s3.resource.opentix.life/upload/program/1779770677753dq36J8ZFBA.png",
+   "url": "https://www.opentix.life/event/2058773455445823489",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2076923186045493249",
    "source": "OPENTIX",
    "title": "2026 NTT遇見巨人—羅伯．勒帕吉╳柏林雷寧廣場劇院《信仰、金錢、戰爭與愛》",
@@ -1360,23 +1377,6 @@
    "image": "https://s3.resource.opentix.life/upload/program/1790783952669ioBdW1Cf5T.png",
    "url": "https://www.opentix.life/event/2101942009761730561",
    "firstSeen": "2026-10-12",
-   "status": "onsale"
-  },
-  {
-   "id": "opentix:2058773455445823489",
-   "source": "OPENTIX",
-   "title": "唱歌集《以為是BL結果是BFF》青春校園音樂劇",
-   "kind": "音樂劇",
-   "listedAt": 1779768000000,
-   "saleStart": 1779768000000,
-   "showStart": 1795779000000,
-   "showEnd": 1795940700000,
-   "venue": "駁二正港小劇場",
-   "priceMin": 900,
-   "priceMax": 1600,
-   "image": "https://s3.resource.opentix.life/upload/program/1779770677753dq36J8ZFBA.png",
-   "url": "https://www.opentix.life/event/2058773455445823489",
-   "firstSeen": null,
    "status": "onsale"
   },
   {
@@ -2079,7 +2079,7 @@
   {
    "id": "opentix:2107364566848765953",
    "source": "OPENTIX",
-   "title": "0000特殊行動：盜走巴別塔",
+   "title": "00：00特殊行動：盜走巴別塔",
    "kind": "舞台劇",
    "listedAt": 1792112400000,
    "saleStart": 1792112400000,
