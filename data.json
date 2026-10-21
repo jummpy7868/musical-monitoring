@@ -1,6 +1,6 @@
 {
- "updated": 1792518693287,
- "count": 137,
+ "updated": 1792561843170,
+ "count": 138,
  "items": [
   {
    "id": "opentix:2035978919460421633",
@@ -1040,6 +1040,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2107767976924282881",
+   "source": "OPENTIX",
+   "title": "2026盜火劇團華文LAB編劇實驗室讀劇演出—有病啊你~~",
+   "kind": "舞台劇",
+   "listedAt": 1792555200000,
+   "saleStart": 1792555200000,
+   "showStart": 1795174200000,
+   "showEnd": 1795332600000,
+   "venue": "牯嶺街小劇場二樓藝文空間",
+   "priceMin": 300,
+   "priceMax": 300,
+   "image": "https://s3.resource.opentix.life/upload/program/1792549336408SeSjLlCUQ3.png",
+   "url": "https://www.opentix.life/event/2107767976924282881",
+   "firstSeen": "2026-10-21",
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2051266879060606977",
    "source": "OPENTIX",
    "title": "柏林雷寧廣場劇院《夢想清單》",
@@ -1268,7 +1285,7 @@
    "listedAt": 1789531200000,
    "saleStart": 1789531200000,
    "showStart": 1795314600000,
-   "showEnd": 1796559300000,
+   "showEnd": 1811670300000,
    "venue": "桃園展演中心展演廳",
    "priceMin": 600,
    "priceMax": 1200,
