@@ -1,41 +1,7 @@
 {
- "updated": 1792994009799,
- "count": 137,
+ "updated": 1793041540072,
+ "count": 136,
  "items": [
-  {
-   "id": "opentix:2082667316303683585",
-   "source": "OPENTIX",
-   "title": "【牛山海灣之歌】",
-   "kind": "舞台劇",
-   "listedAt": 1789178400000,
-   "saleStart": 1789178400000,
-   "showStart": 1792994400000,
-   "showEnd": 1792997400000,
-   "venue": "花蓮文化創意產業園區 第18棟包裝工廠",
-   "priceMin": 400,
-   "priceMax": 3600,
-   "image": "https://s3.resource.opentix.life/upload/program/1789307084210IdZbt1HRlP.png",
-   "url": "https://www.opentix.life/event/2082667316303683585",
-   "firstSeen": "2026-09-12",
-   "status": "onsale"
-  },
-  {
-   "id": "opentix:2105121072633548800",
-   "source": "OPENTIX",
-   "title": "TCC 沙龍音樂會系列-閱讀音樂2《心動莎翁》",
-   "kind": "舞台劇",
-   "listedAt": 1791345600000,
-   "saleStart": 1791345600000,
-   "showStart": 1793014200000,
-   "showEnd": 1795338900000,
-   "venue": "臺中國家歌劇院小劇場",
-   "priceMin": 800,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/179134353710871F46Y6jmt.png",
-   "url": "https://www.opentix.life/event/2105121072633548800",
-   "firstSeen": "2026-10-07",
-   "status": "onsale"
-  },
   {
    "id": "opentix:2059829556966187009",
    "source": "OPENTIX",
@@ -932,7 +898,7 @@
    "venue": "牯嶺街小劇場二樓藝文空間",
    "priceMin": 300,
    "priceMax": 300,
-   "image": "https://s3.resource.opentix.life/upload/program/1792549336408SeSjLlCUQ3.png",
+   "image": "https://s3.resource.opentix.life/upload/program/17930342658130Gr3huMDe6.png",
    "url": "https://www.opentix.life/event/2107767976924282881",
    "firstSeen": "2026-10-21",
    "status": "onsale"
@@ -1207,6 +1173,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1790783986033sm4sxdBzH9.png",
    "url": "https://www.opentix.life/event/2101976846260805633",
    "firstSeen": "2026-10-12",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2105121072633548800",
+   "source": "OPENTIX",
+   "title": "TCC 沙龍音樂會系列-閱讀音樂2《心動莎翁》",
+   "kind": "舞台劇",
+   "listedAt": 1791345600000,
+   "saleStart": 1791345600000,
+   "showStart": 1795332600000,
+   "showEnd": 1795338900000,
+   "venue": "衛武營國家藝術文化中心表演廳",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/179134353710871F46Y6jmt.png",
+   "url": "https://www.opentix.life/event/2105121072633548800",
+   "firstSeen": "2026-10-07",
    "status": "onsale"
   },
   {
