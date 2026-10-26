@@ -1,5 +1,5 @@
 {
- "updated": 1792947613739,
+ "updated": 1792994009799,
  "count": 137,
  "items": [
   {
@@ -275,23 +275,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2101978067626668032",
-   "source": "OPENTIX",
-   "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
-   "kind": "舞台劇",
-   "listedAt": 1790049600000,
-   "saleStart": 1790049600000,
-   "showStart": 1793428200000,
-   "showEnd": 1793433600000,
-   "venue": "南投縣政府文化局演藝廳",
-   "priceMin": 300,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
-   "url": "https://www.opentix.life/event/2101978067626668032",
-   "firstSeen": "2026-09-22",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2054370434090917888",
    "source": "OPENTIX",
    "title": "2026臺東藝術節《我不是影后》",
@@ -306,6 +289,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1778635111679ZpBTFw9csA.jpeg",
    "url": "https://www.opentix.life/event/2054370434090917888",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2101978067626668032",
+   "source": "OPENTIX",
+   "title": "2026南投劇場藝術季《音樂舞台劇-阿嬤的歌本》",
+   "kind": "舞台劇",
+   "listedAt": 1790049600000,
+   "saleStart": 1790049600000,
+   "showStart": 1793428200000,
+   "showEnd": 1793433600000,
+   "venue": "南投縣政府文化局演藝廳",
+   "priceMin": 300,
+   "priceMax": 1500,
+   "image": "https://s3.resource.opentix.life/upload/program/1790051044983uXmCbepG0w.jpeg",
+   "url": "https://www.opentix.life/event/2101978067626668032",
+   "firstSeen": "2026-09-22",
    "status": "onsale"
   },
   {
@@ -1856,23 +1856,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2105913187410526208",
-   "source": "OPENTIX",
-   "title": "斜槓青年創作體《那一天我們跟在雞屁股後面尋路》讀劇會",
-   "kind": "舞台劇",
-   "listedAt": 1791345600000,
-   "saleStart": 1791345600000,
-   "showStart": 1797593400000,
-   "showEnd": 1797752400000,
-   "venue": "南美里活動中心 A館大型禮堂",
-   "priceMin": 200,
-   "priceMax": 200,
-   "image": "https://s3.resource.opentix.life/upload/program/1791289666892hwchTnoqEW.png",
-   "url": "https://www.opentix.life/event/2105913187410526208",
-   "firstSeen": "2026-10-07",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2110369335028596737",
    "source": "OPENTIX",
    "title": "《吟遊詩人的新唸歌——桃園米倉》",
@@ -1887,6 +1870,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/17920353007000HXK88T6MI.jpeg",
    "url": "https://www.opentix.life/event/2110369335028596737",
    "firstSeen": "2026-10-23",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2105913187410526208",
+   "source": "OPENTIX",
+   "title": "斜槓青年創作體《那一天我們跟在雞屁股後面尋路》讀劇會",
+   "kind": "舞台劇",
+   "listedAt": 1791345600000,
+   "saleStart": 1791345600000,
+   "showStart": 1797593400000,
+   "showEnd": 1797752400000,
+   "venue": "南美里活動中心 A館大型禮堂",
+   "priceMin": 200,
+   "priceMax": 200,
+   "image": "https://s3.resource.opentix.life/upload/program/1791289666892hwchTnoqEW.png",
+   "url": "https://www.opentix.life/event/2105913187410526208",
+   "firstSeen": "2026-10-07",
    "status": "onsale"
   },
   {
@@ -1941,23 +1941,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2099390015667625985",
-   "source": "OPENTIX",
-   "title": "2026大觀國際表演藝術節 -【潮渡人之歌】",
-   "kind": "舞台劇",
-   "listedAt": 1790992800000,
-   "saleStart": 1790992800000,
-   "showStart": 1797661800000,
-   "showEnd": 1797755400000,
-   "venue": "臺藝表演廳",
-   "priceMin": 300,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1791434365803QMZ5gBv1rb.png",
-   "url": "https://www.opentix.life/event/2099390015667625985",
-   "firstSeen": "2026-10-03",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2078014126655860736",
    "source": "OPENTIX",
    "title": "2026南風音樂節x演藝廳十週年-《漂浪半島》原創音樂劇",
@@ -1972,6 +1955,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1791454178492RtWDL5oO1n.jpeg",
    "url": "https://www.opentix.life/event/2078014126655860736",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2099390015667625985",
+   "source": "OPENTIX",
+   "title": "2026大觀國際表演藝術節 -【潮渡人之歌】",
+   "kind": "舞台劇",
+   "listedAt": 1790992800000,
+   "saleStart": 1790992800000,
+   "showStart": 1797661800000,
+   "showEnd": 1797755400000,
+   "venue": "臺藝表演廳",
+   "priceMin": 300,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1791434365803QMZ5gBv1rb.png",
+   "url": "https://www.opentix.life/event/2099390015667625985",
+   "firstSeen": "2026-10-03",
    "status": "onsale"
   },
   {
