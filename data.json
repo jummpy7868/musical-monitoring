@@ -1,5 +1,5 @@
 {
- "updated": 1793212996404,
+ "updated": 1793256714012,
  "count": 136,
  "items": [
   {
@@ -156,23 +156,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2080134872605343745",
-   "source": "OPENTIX",
-   "title": "所在劇集 2026原創歷史音樂劇《無聲の海腳間仔》",
-   "kind": "音樂劇",
-   "listedAt": 1784952000000,
-   "saleStart": 1784952000000,
-   "showStart": 1793359800000,
-   "showEnd": 1793521800000,
-   "venue": "高雄中山堂劇場",
-   "priceMin": 400,
-   "priceMax": 1200,
-   "image": "https://s3.resource.opentix.life/upload/program/1784777684036htNGZAGn6G.jpeg",
-   "url": "https://www.opentix.life/event/2080134872605343745",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2092882777473224704",
    "source": "OPENTIX",
    "title": "2026關渡藝術節戲劇學院秋季公演《那該死美好的日子》",
@@ -186,6 +169,23 @@
    "priceMax": 1000,
    "image": "https://s3.resource.opentix.life/upload/program/1787816825158h8ml2A75ca.jpeg",
    "url": "https://www.opentix.life/event/2092882777473224704",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2080134872605343745",
+   "source": "OPENTIX",
+   "title": "所在劇集 2026原創歷史音樂劇《無聲の海腳間仔》",
+   "kind": "音樂劇",
+   "listedAt": 1784952000000,
+   "saleStart": 1784952000000,
+   "showStart": 1793359800000,
+   "showEnd": 1793521800000,
+   "venue": "高雄中山堂劇場",
+   "priceMin": 400,
+   "priceMax": 1200,
+   "image": "https://s3.resource.opentix.life/upload/program/1784777684036htNGZAGn6G.jpeg",
+   "url": "https://www.opentix.life/event/2080134872605343745",
    "firstSeen": null,
    "status": "onsale"
   },
