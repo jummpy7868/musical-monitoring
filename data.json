@@ -1,6 +1,6 @@
 {
- "updated": 1793557181392,
- "count": 124,
+ "updated": 1793604609391,
+ "count": 125,
  "items": [
   {
    "id": "opentix:2059829556966187009",
@@ -9,7 +9,7 @@
    "kind": "舞台劇",
    "listedAt": 1780891200000,
    "saleStart": 1780891200000,
-   "showStart": 1793597400000,
+   "showStart": 1793602800000,
    "showEnd": 1793778600000,
    "venue": "臺南文化中心演藝廳",
    "priceMin": 900,
@@ -1258,6 +1258,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/17888584711975HK3sCMHnS.jpeg",
    "url": "https://www.opentix.life/event/2097251126499532800",
    "firstSeen": "2026-09-10",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2114964102637150209",
+   "source": "OPENTIX",
+   "title": "2026關渡藝術節戲劇學院冬季公演《城堡裡的公主》《梁祝的繼承者們》",
+   "kind": "舞台劇",
+   "listedAt": 1793592000000,
+   "saleStart": 1793160000000,
+   "showStart": 1796452200000,
+   "showEnd": 1797151800000,
+   "venue": "國立臺北藝術大學戲劇廳",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1793345643717QL4XHS48qj.png",
+   "url": "https://www.opentix.life/event/2114964102637150209",
+   "firstSeen": "2026-11-02",
    "status": "onsale"
   },
   {
