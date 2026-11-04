@@ -1,5 +1,5 @@
 {
- "updated": 1793736002465,
+ "updated": 1793776982299,
  "count": 125,
  "items": [
   {
@@ -9,7 +9,7 @@
    "kind": "舞台劇",
    "listedAt": 1780891200000,
    "saleStart": 1780891200000,
-   "showStart": 1793770200000,
+   "showStart": 1793775600000,
    "showEnd": 1793778600000,
    "venue": "臺南文化中心演藝廳",
    "priceMin": 900,
@@ -379,7 +379,7 @@
   {
    "id": "opentix:2072574785822879745",
    "source": "OPENTIX",
-   "title": "果陀劇場音樂劇《生命最美好的5分鐘》2026苗北藝術節",
+   "title": "果陀劇場音樂劇《生命中最美好的5分鐘》2026苗北藝術節",
    "kind": "音樂劇",
    "listedAt": 1784088000000,
    "saleStart": 1784088000000,
@@ -1686,23 +1686,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2099390015667625985",
-   "source": "OPENTIX",
-   "title": "2026大觀國際表演藝術節 -【潮渡人之歌】",
-   "kind": "舞台劇",
-   "listedAt": 1790992800000,
-   "saleStart": 1790992800000,
-   "showStart": 1797661800000,
-   "showEnd": 1797755400000,
-   "venue": "臺藝表演廳",
-   "priceMin": 300,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1791434365803QMZ5gBv1rb.png",
-   "url": "https://www.opentix.life/event/2099390015667625985",
-   "firstSeen": "2026-10-03",
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2078014126655860736",
    "source": "OPENTIX",
    "title": "2026南風音樂節x演藝廳十週年-《漂浪半島》原創音樂劇",
@@ -1717,6 +1700,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1791454178492RtWDL5oO1n.jpeg",
    "url": "https://www.opentix.life/event/2078014126655860736",
    "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2099390015667625985",
+   "source": "OPENTIX",
+   "title": "2026大觀國際表演藝術節 -【潮渡人之歌】",
+   "kind": "舞台劇",
+   "listedAt": 1790992800000,
+   "saleStart": 1790992800000,
+   "showStart": 1797661800000,
+   "showEnd": 1797755400000,
+   "venue": "臺藝表演廳",
+   "priceMin": 300,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1791434365803QMZ5gBv1rb.png",
+   "url": "https://www.opentix.life/event/2099390015667625985",
+   "firstSeen": "2026-10-03",
    "status": "onsale"
   },
   {
