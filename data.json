@@ -1,6 +1,6 @@
 {
- "updated": 1794161825520,
- "count": 112,
+ "updated": 1794210479578,
+ "count": 114,
  "items": [
   {
    "id": "opentix:2072516129034670080",
@@ -175,7 +175,7 @@
   {
    "id": "opentix:2059836421888937985",
    "source": "OPENTIX",
-   "title": "2026臺南藝術節：複象公場《回家》",
+   "title": "2026臺南藝術節：複象公場《回家》成大劇場版",
    "kind": "舞台劇",
    "listedAt": 1780891200000,
    "saleStart": 1780891200000,
@@ -734,23 +734,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2052573679595487233",
-   "source": "OPENTIX",
-   "title": "果陀劇場《三個傻瓜》2026熱血回歸",
-   "kind": "舞台劇",
-   "listedAt": 1779071400000,
-   "saleStart": 1778774400000,
-   "showStart": 1795847400000,
-   "showEnd": 1795942800000,
-   "venue": "嘉義縣表演藝術中心演藝廳",
-   "priceMin": 500,
-   "priceMax": 3000,
-   "image": "https://s3.resource.opentix.life/upload/program/1779069834228ssxYwPNRvi.jpeg",
-   "url": "https://www.opentix.life/event/2052573679595487233",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2088117837816233984",
    "source": "OPENTIX",
    "title": "豬探長小劇場《松鼠大亨驚魂記》",
@@ -764,6 +747,23 @@
    "priceMax": 2000,
    "image": "https://s3.resource.opentix.life/upload/program/1786677786171Bpr2dCWkyU.jpeg",
    "url": "https://www.opentix.life/event/2088117837816233984",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2052573679595487233",
+   "source": "OPENTIX",
+   "title": "果陀劇場《三個傻瓜》2026熱血回歸",
+   "kind": "舞台劇",
+   "listedAt": 1779071400000,
+   "saleStart": 1778774400000,
+   "showStart": 1795847400000,
+   "showEnd": 1795942800000,
+   "venue": "嘉義縣表演藝術中心演藝廳",
+   "priceMin": 500,
+   "priceMax": 3000,
+   "image": "https://s3.resource.opentix.life/upload/program/1779069834228ssxYwPNRvi.jpeg",
+   "url": "https://www.opentix.life/event/2052573679595487233",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1305,7 +1305,7 @@
    "showEnd": 1801387800000,
    "venue": "國家戲劇院",
    "priceMin": 1800,
-   "priceMax": 8300,
+   "priceMax": 10000,
    "image": "https://s3.resource.opentix.life/upload/program/1782291487012RQ2fTlTn5J.jpeg",
    "url": "https://www.opentix.life/event/2054505084713033728",
    "firstSeen": null,
@@ -1465,23 +1465,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2078014126655860736",
-   "source": "OPENTIX",
-   "title": "2026南風音樂節x演藝廳十週年-《漂浪半島》原創音樂劇",
-   "kind": "音樂劇",
-   "listedAt": 1785132000000,
-   "saleStart": 1785132000000,
-   "showStart": 1797661800000,
-   "showEnd": 1797755400000,
-   "venue": "恆春文化中心劇場館表演廳",
-   "priceMin": 300,
-   "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1791454178492RtWDL5oO1n.jpeg",
-   "url": "https://www.opentix.life/event/2078014126655860736",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2099390015667625985",
    "source": "OPENTIX",
    "title": "2026大觀國際表演藝術節 -【潮渡人之歌】",
@@ -1496,6 +1479,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/1791434365803QMZ5gBv1rb.png",
    "url": "https://www.opentix.life/event/2099390015667625985",
    "firstSeen": "2026-10-03",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2078014126655860736",
+   "source": "OPENTIX",
+   "title": "2026南風音樂節x演藝廳十週年-《漂浪半島》原創音樂劇",
+   "kind": "音樂劇",
+   "listedAt": 1785132000000,
+   "saleStart": 1785132000000,
+   "showStart": 1797661800000,
+   "showEnd": 1797755400000,
+   "venue": "恆春文化中心劇場館表演廳",
+   "priceMin": 300,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1791454178492RtWDL5oO1n.jpeg",
+   "url": "https://www.opentix.life/event/2078014126655860736",
+   "firstSeen": null,
    "status": "onsale"
   },
   {
@@ -1799,7 +1799,7 @@
    "venue": "屏東藝術館",
    "priceMin": 500,
    "priceMax": 1000,
-   "image": "https://s3.resource.opentix.life/upload/program/1791802680871Rhw8rA02og.jpeg",
+   "image": "https://s3.resource.opentix.life/upload/program/1794209291676DdZNAwNJFf.png",
    "url": "https://www.opentix.life/event/2108153136375832577",
    "firstSeen": "2026-10-17",
    "status": "onsale"
@@ -1819,6 +1819,40 @@
    "image": "https://s3.resource.opentix.life/upload/program/1793337343102U0UlP6Qzkq.png",
    "url": "https://www.opentix.life/event/2115259153358184449",
    "firstSeen": "2026-10-31",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2117512111295655936",
+   "source": "OPENTIX",
+   "title": "2027同黨劇團《灰男孩》",
+   "kind": "舞台劇",
+   "listedAt": 1794196800000,
+   "saleStart": 1794801600000,
+   "showStart": 1805455800000,
+   "showEnd": 1806221100000,
+   "venue": "臺北表演藝術中心 藍盒子",
+   "priceMin": 900,
+   "priceMax": 2200,
+   "image": "https://s3.resource.opentix.life/upload/program/1794206300488yVR2YI6v0w.png",
+   "url": "https://www.opentix.life/event/2117512111295655936",
+   "firstSeen": "2026-11-09",
+   "status": "upcoming"
+  },
+  {
+   "id": "opentix:2118581126929088513",
+   "source": "OPENTIX",
+   "title": "2027亞洲國際文化藝術音樂盛典",
+   "kind": "舞台劇",
+   "listedAt": 1794196800000,
+   "saleStart": 1794196800000,
+   "showStart": 1809072000000,
+   "showEnd": 1809090000000,
+   "venue": "大直典華會館",
+   "priceMin": 3000,
+   "priceMax": 3000,
+   "image": "https://s3.resource.opentix.life/default/programInfoDefault.png",
+   "url": "https://www.opentix.life/event/2118581126929088513",
+   "firstSeen": "2026-11-09",
    "status": "onsale"
   },
   {
