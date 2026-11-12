@@ -1,5 +1,5 @@
 {
- "updated": 1794427511302,
+ "updated": 1794470738341,
  "count": 114,
  "items": [
   {
@@ -734,23 +734,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2052573679595487233",
-   "source": "OPENTIX",
-   "title": "果陀劇場《三個傻瓜》2026熱血回歸",
-   "kind": "舞台劇",
-   "listedAt": 1779071400000,
-   "saleStart": 1778774400000,
-   "showStart": 1795847400000,
-   "showEnd": 1795942800000,
-   "venue": "嘉義縣表演藝術中心演藝廳",
-   "priceMin": 500,
-   "priceMax": 3000,
-   "image": "https://s3.resource.opentix.life/upload/program/1779069834228ssxYwPNRvi.jpeg",
-   "url": "https://www.opentix.life/event/2052573679595487233",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2088117837816233984",
    "source": "OPENTIX",
    "title": "豬探長小劇場《松鼠大亨驚魂記》",
@@ -764,6 +747,23 @@
    "priceMax": 2000,
    "image": "https://s3.resource.opentix.life/upload/program/1786677786171Bpr2dCWkyU.jpeg",
    "url": "https://www.opentix.life/event/2088117837816233984",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2052573679595487233",
+   "source": "OPENTIX",
+   "title": "果陀劇場《三個傻瓜》2026熱血回歸",
+   "kind": "舞台劇",
+   "listedAt": 1779071400000,
+   "saleStart": 1778774400000,
+   "showStart": 1795847400000,
+   "showEnd": 1795942800000,
+   "venue": "嘉義縣表演藝術中心演藝廳",
+   "priceMin": 500,
+   "priceMax": 3000,
+   "image": "https://s3.resource.opentix.life/upload/program/1779069834228ssxYwPNRvi.jpeg",
+   "url": "https://www.opentix.life/event/2052573679595487233",
    "firstSeen": null,
    "status": "onsale"
   },
