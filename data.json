@@ -1,24 +1,7 @@
 {
- "updated": 1795077179649,
+ "updated": 1795123003303,
  "count": 106,
  "items": [
-  {
-   "id": "opentix:2101971185433255936",
-   "source": "OPENTIX",
-   "title": "2026 序場讀劇節《（鳥）》",
-   "kind": "舞台劇",
-   "listedAt": 1791734400000,
-   "saleStart": 1791172800000,
-   "showStart": 1795087800000,
-   "showEnd": 1795440600000,
-   "venue": "相信世代 University Café二樓",
-   "priceMin": 400,
-   "priceMax": 400,
-   "image": "https://s3.resource.opentix.life/upload/program/1790784311351tVwDICr7uc.png",
-   "url": "https://www.opentix.life/event/2101971185433255936",
-   "firstSeen": "2026-10-12",
-   "status": "onsale"
-  },
   {
    "id": "opentix:2029816885442543616",
    "source": "OPENTIX",
@@ -394,6 +377,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2101971185433255936",
+   "source": "OPENTIX",
+   "title": "2026 序場讀劇節《（鳥）》",
+   "kind": "舞台劇",
+   "listedAt": 1791734400000,
+   "saleStart": 1791172800000,
+   "showStart": 1795433400000,
+   "showEnd": 1795440600000,
+   "venue": "華山1914文化創意產業園區 華山中3館2F 拱廳",
+   "priceMin": 400,
+   "priceMax": 400,
+   "image": "https://s3.resource.opentix.life/upload/program/1790784311351tVwDICr7uc.png",
+   "url": "https://www.opentix.life/event/2101971185433255936",
+   "firstSeen": "2026-10-12",
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2058773455445823489",
    "source": "OPENTIX",
    "title": "唱歌集《以為是BL結果是BFF》青春校園音樂劇",
@@ -462,23 +462,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2052573679595487233",
-   "source": "OPENTIX",
-   "title": "果陀劇場《三個傻瓜》2026熱血回歸",
-   "kind": "舞台劇",
-   "listedAt": 1779071400000,
-   "saleStart": 1778774400000,
-   "showStart": 1795847400000,
-   "showEnd": 1795942800000,
-   "venue": "嘉義縣表演藝術中心演藝廳",
-   "priceMin": 500,
-   "priceMax": 3000,
-   "image": "https://s3.resource.opentix.life/upload/program/1779069834228ssxYwPNRvi.jpeg",
-   "url": "https://www.opentix.life/event/2052573679595487233",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2088117837816233984",
    "source": "OPENTIX",
    "title": "豬探長小劇場《松鼠大亨驚魂記》",
@@ -492,6 +475,23 @@
    "priceMax": 2000,
    "image": "https://s3.resource.opentix.life/upload/program/1786677786171Bpr2dCWkyU.jpeg",
    "url": "https://www.opentix.life/event/2088117837816233984",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2052573679595487233",
+   "source": "OPENTIX",
+   "title": "果陀劇場《三個傻瓜》2026熱血回歸",
+   "kind": "舞台劇",
+   "listedAt": 1779071400000,
+   "saleStart": 1778774400000,
+   "showStart": 1795847400000,
+   "showEnd": 1795942800000,
+   "venue": "嘉義縣表演藝術中心演藝廳",
+   "priceMin": 500,
+   "priceMax": 3000,
+   "image": "https://s3.resource.opentix.life/upload/program/1779069834228ssxYwPNRvi.jpeg",
+   "url": "https://www.opentix.life/event/2052573679595487233",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1703,22 +1703,6 @@
    "status": "upcoming"
   },
   {
-   "id": "udn:P1EBDFKH",
-   "source": "udn售票網",
-   "title": "影集式音樂劇《不親愛家人》",
-   "kind": "音樂劇",
-   "saleStart": null,
-   "showStart": "2026/11/19",
-   "showEnd": "2026/11/29",
-   "venue": "",
-   "priceMin": null,
-   "priceMax": null,
-   "image": "",
-   "url": "https://tickets.udnfunlife.com/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1EBDFKH",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "udn:P1AEBJG5",
    "source": "udn售票網",
    "title": "倫敦全本音樂劇《史瑞克》",
@@ -1731,6 +1715,22 @@
    "priceMax": null,
    "image": "",
    "url": "https://tickets.udnfunlife.com/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1AEBJG5",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "udn:P1EBDFKH",
+   "source": "udn售票網",
+   "title": "影集式音樂劇《不親愛家人》",
+   "kind": "音樂劇",
+   "saleStart": null,
+   "showStart": "2026/11/20",
+   "showEnd": "2026/11/29",
+   "venue": "",
+   "priceMin": null,
+   "priceMax": null,
+   "image": "",
+   "url": "https://tickets.udnfunlife.com/application/UTK02/UTK0201_.aspx?PRODUCT_ID=P1EBDFKH",
    "firstSeen": null,
    "status": "onsale"
   },
