@@ -1,6 +1,6 @@
 {
- "updated": 1795036510574,
- "count": 104,
+ "updated": 1795077179649,
+ "count": 106,
  "items": [
   {
    "id": "opentix:2101971185433255936",
@@ -1380,6 +1380,23 @@
    "status": "onsale"
   },
   {
+   "id": "opentix:2115633300596482049",
+   "source": "OPENTIX",
+   "title": "國立臺灣藝術大學日間部戲劇學系百拾参級班級展演《城堡裡的公主》",
+   "kind": "舞台劇",
+   "listedAt": 1795050000000,
+   "saleStart": 1795050000000,
+   "showStart": 1798198200000,
+   "showEnd": 1798360500000,
+   "venue": "國立臺灣藝術大學實驗劇場（八角廳）",
+   "priceMin": 600,
+   "priceMax": 600,
+   "image": "https://s3.resource.opentix.life/upload/program/1793241202280cLxsFanAoB.png",
+   "url": "https://www.opentix.life/event/2115633300596482049",
+   "firstSeen": "2026-11-19",
+   "status": "onsale"
+  },
+  {
    "id": "opentix:2059243467760234496",
    "source": "OPENTIX",
    "title": "音樂劇《三個不結婚的女人》",
@@ -1479,6 +1496,23 @@
    "image": "https://s3.resource.opentix.life/upload/program/179091318052532wp2XJ6Hy.png",
    "url": "https://www.opentix.life/event/2101959359186153473",
    "firstSeen": "2026-10-06",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2119975121441427456",
+   "source": "OPENTIX",
+   "title": "乾淨的這群人",
+   "kind": "舞台劇",
+   "listedAt": 1795060800000,
+   "saleStart": 1795060800000,
+   "showStart": 1799474400000,
+   "showEnd": 1799580600000,
+   "venue": "濕地Venue-5F",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1794880570692O20waA7oUf.png",
+   "url": "https://www.opentix.life/event/2119975121441427456",
+   "firstSeen": "2026-11-19",
    "status": "onsale"
   },
   {
