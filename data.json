@@ -1,6 +1,6 @@
 {
- "updated": 1795378438023,
- "count": 92,
+ "updated": 1795423610439,
+ "count": 91,
  "items": [
   {
    "id": "opentix:2090333861981999105",
@@ -31,7 +31,7 @@
    "venue": "華山1914文化創意產業園區 華山中3館2F 拱廳",
    "priceMin": 400,
    "priceMax": 400,
-   "image": "https://s3.resource.opentix.life/upload/program/1790784311351tVwDICr7uc.png",
+   "image": "https://s3.resource.opentix.life/upload/program/1795418489542mhFOtthY5J.png",
    "url": "https://www.opentix.life/event/2101971185433255936",
    "firstSeen": "2026-10-12",
    "status": "onsale"
@@ -190,23 +190,6 @@
    "status": "onsale"
   },
   {
-   "id": "opentix:2052573679595487233",
-   "source": "OPENTIX",
-   "title": "果陀劇場《三個傻瓜》2026熱血回歸",
-   "kind": "舞台劇",
-   "listedAt": 1779071400000,
-   "saleStart": 1778774400000,
-   "showStart": 1795847400000,
-   "showEnd": 1795942800000,
-   "venue": "嘉義縣表演藝術中心演藝廳",
-   "priceMin": 500,
-   "priceMax": 3000,
-   "image": "https://s3.resource.opentix.life/upload/program/1779069834228ssxYwPNRvi.jpeg",
-   "url": "https://www.opentix.life/event/2052573679595487233",
-   "firstSeen": null,
-   "status": "onsale"
-  },
-  {
    "id": "opentix:2088117837816233984",
    "source": "OPENTIX",
    "title": "豬探長小劇場《松鼠大亨驚魂記》",
@@ -220,6 +203,23 @@
    "priceMax": 2000,
    "image": "https://s3.resource.opentix.life/upload/program/1786677786171Bpr2dCWkyU.jpeg",
    "url": "https://www.opentix.life/event/2088117837816233984",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2052573679595487233",
+   "source": "OPENTIX",
+   "title": "果陀劇場《三個傻瓜》2026熱血回歸",
+   "kind": "舞台劇",
+   "listedAt": 1779071400000,
+   "saleStart": 1778774400000,
+   "showStart": 1795847400000,
+   "showEnd": 1795942800000,
+   "venue": "嘉義縣表演藝術中心演藝廳",
+   "priceMin": 500,
+   "priceMax": 3000,
+   "image": "https://s3.resource.opentix.life/upload/program/1779069834228ssxYwPNRvi.jpeg",
+   "url": "https://www.opentix.life/event/2052573679595487233",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -1034,7 +1034,7 @@
    "venue": "恆春文化中心劇場館表演廳",
    "priceMin": 300,
    "priceMax": 800,
-   "image": "https://s3.resource.opentix.life/upload/program/1791454178492RtWDL5oO1n.jpeg",
+   "image": "https://s3.resource.opentix.life/upload/program/1795393609496vP8nwzCHuz.png",
    "url": "https://www.opentix.life/event/2078014126655860736",
    "firstSeen": null,
    "status": "onsale"
@@ -1427,23 +1427,6 @@
    "priceMax": 2200,
    "image": "https://s3.resource.opentix.life/upload/program/1794206300488yVR2YI6v0w.png",
    "url": "https://www.opentix.life/event/2117512111295655936",
-   "firstSeen": "2026-11-09",
-   "status": "onsale"
-  },
-  {
-   "id": "opentix:2118581126929088513",
-   "source": "OPENTIX",
-   "title": "2027亞洲國際文化藝術音樂盛典",
-   "kind": "舞台劇",
-   "listedAt": 1794196800000,
-   "saleStart": 1794196800000,
-   "showStart": 1809072000000,
-   "showEnd": 1809090000000,
-   "venue": "大直典華會館",
-   "priceMin": 3000,
-   "priceMax": 3000,
-   "image": "https://s3.resource.opentix.life/upload/program/179421691817458YM5rF2n1.jpeg",
-   "url": "https://www.opentix.life/event/2118581126929088513",
    "firstSeen": "2026-11-09",
    "status": "onsale"
   },
