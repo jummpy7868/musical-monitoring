@@ -1,6 +1,6 @@
 {
- "updated": 1795561074110,
- "count": 91,
+ "updated": 1795599708681,
+ "count": 92,
  "items": [
   {
    "id": "opentix:2101983877052600321",
@@ -289,23 +289,6 @@
    "image": "https://s3.resource.opentix.life/upload/program/1786677485867Q5HqZ5qr89.png",
    "url": "https://www.opentix.life/event/2088104133013299200",
    "firstSeen": null,
-   "status": "onsale"
-  },
-  {
-   "id": "opentix:2099314057961340929",
-   "source": "OPENTIX",
-   "title": "盜火劇團 權力首部曲《椅仔》",
-   "kind": "舞台劇",
-   "listedAt": 1789531200000,
-   "saleStart": 1789531200000,
-   "showStart": 1796383800000,
-   "showEnd": 1796542800000,
-   "venue": "牯嶺街小劇場一樓實驗劇場",
-   "priceMin": 1000,
-   "priceMax": 1500,
-   "image": "https://s3.resource.opentix.life/upload/program/1789381707402hWr24ASQWM.jpeg",
-   "url": "https://www.opentix.life/event/2099314057961340929",
-   "firstSeen": "2026-09-16",
    "status": "onsale"
   },
   {
@@ -1327,6 +1310,40 @@
    "url": "https://www.opentix.life/event/2100041290423484417",
    "firstSeen": "2026-10-01",
    "status": "onsale"
+  },
+  {
+   "id": "opentix:2119643475143950337",
+   "source": "OPENTIX",
+   "title": "元泰劇坊《濁世金蓮》",
+   "kind": "舞台劇",
+   "listedAt": 1795579200000,
+   "saleStart": 1795579200000,
+   "showStart": 1800685800000,
+   "showEnd": 1800777600000,
+   "venue": "大稻埕戲苑",
+   "priceMin": 500,
+   "priceMax": 5000,
+   "image": "https://s3.resource.opentix.life/upload/program/1794197300258BsWe5AcNbs.png",
+   "url": "https://www.opentix.life/event/2119643475143950337",
+   "firstSeen": "2026-11-25",
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2119991593554890753",
+   "source": "OPENTIX",
+   "title": "近乎正常 - 英國音樂劇現場",
+   "kind": "音樂劇",
+   "listedAt": 1795579200000,
+   "saleStart": 1796097600000,
+   "showStart": 1801305900000,
+   "showEnd": 1801313940000,
+   "venue": "國家電影及視聽文化中心-大影格",
+   "priceMin": 800,
+   "priceMax": 800,
+   "image": "https://s3.resource.opentix.life/upload/program/1794280259240ZhOb8p0YCy.png",
+   "url": "https://www.opentix.life/event/2119991593554890753",
+   "firstSeen": "2026-11-25",
+   "status": "upcoming"
   },
   {
    "id": "opentix:2108153136375832577",
