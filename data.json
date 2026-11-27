@@ -1,24 +1,7 @@
 {
- "updated": 1795731145192,
- "count": 98,
+ "updated": 1795771962014,
+ "count": 99,
  "items": [
-  {
-   "id": "opentix:2058773455445823489",
-   "source": "OPENTIX",
-   "title": "唱歌集《以為是BL結果是BFF》青春校園音樂劇",
-   "kind": "音樂劇",
-   "listedAt": 1779768000000,
-   "saleStart": 1779768000000,
-   "showStart": 1795757400000,
-   "showEnd": 1795940700000,
-   "venue": "駁二正港小劇場",
-   "priceMin": 900,
-   "priceMax": 1600,
-   "image": "https://s3.resource.opentix.life/upload/program/1779770677753dq36J8ZFBA.png",
-   "url": "https://www.opentix.life/event/2058773455445823489",
-   "firstSeen": null,
-   "status": "onsale"
-  },
   {
    "id": "opentix:2076923186045493249",
    "source": "OPENTIX",
@@ -84,6 +67,23 @@
    "priceMax": 3500,
    "image": "https://s3.resource.opentix.life/upload/program/1781492017784HG74ULseY1.png",
    "url": "https://www.opentix.life/event/2065059039769808896",
+   "firstSeen": null,
+   "status": "onsale"
+  },
+  {
+   "id": "opentix:2058773455445823489",
+   "source": "OPENTIX",
+   "title": "唱歌集《以為是BL結果是BFF》青春校園音樂劇",
+   "kind": "音樂劇",
+   "listedAt": 1779768000000,
+   "saleStart": 1779768000000,
+   "showStart": 1795779000000,
+   "showEnd": 1795940700000,
+   "venue": "駁二正港小劇場",
+   "priceMin": 900,
+   "priceMax": 1600,
+   "image": "https://s3.resource.opentix.life/upload/program/1779770677753dq36J8ZFBA.png",
+   "url": "https://www.opentix.life/event/2058773455445823489",
    "firstSeen": null,
    "status": "onsale"
   },
@@ -898,7 +898,7 @@
    "venue": "D.D.Box 劇場（Date Day Box）",
    "priceMin": 700,
    "priceMax": 1000,
-   "image": "https://s3.resource.opentix.life/upload/program/1793777752907c5ZFGtlSvp.png",
+   "image": "https://s3.resource.opentix.life/upload/program/1795747102891PFGr3dfLum.jpeg",
    "url": "https://www.opentix.life/event/2115664349903020033",
    "firstSeen": "2026-11-06",
    "status": "onsale"
@@ -1531,6 +1531,23 @@
    "url": "https://www.opentix.life/event/2118596951134978049",
    "firstSeen": "2026-11-24",
    "status": "upcoming"
+  },
+  {
+   "id": "opentix:2120010986401112065",
+   "source": "OPENTIX",
+   "title": "英國Emma Rice劇團《崔斯坦與伊索德》",
+   "kind": "舞台劇",
+   "listedAt": 1794901200000,
+   "saleStart": 1795492800000,
+   "showStart": 1811503800000,
+   "showEnd": 1811666400000,
+   "venue": "衛武營國家藝術文化中心戲劇院",
+   "priceMin": 800,
+   "priceMax": 3000,
+   "image": "https://s3.resource.opentix.life/upload/program/1794554927229OBAUTuyr1Z.jpeg",
+   "url": "https://www.opentix.life/event/2120010986401112065",
+   "firstSeen": "2026-11-27",
+   "status": "onsale"
   },
   {
    "id": "opentix:2120024606565634049",
